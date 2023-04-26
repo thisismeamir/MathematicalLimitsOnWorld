@@ -98,15 +98,18 @@
     enlarge by=0.5pt}
 
 \newcounter{def}
-\newtcolorbox[use counter=def]{definition}
-	{center,%
-    colframe =richblack!100,%
-    colback=cultured,
-    title={Definition \thetcbcounter},
-    coltitle=richblack,
-    attach title to upper={\ ---\ },
-    sharpish corners,
-    enlarge by=0.5pt}
+\newtcolorbox{define}
+{center,
+	colframe=darkliver!50,
+	colback=white!0,
+	title={\large "},
+	coltitle=darkliver!50,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
 
 \newcounter{examplecounter}
 \newtcolorbox[use counter=examplecounter]{example}
@@ -207,6 +210,18 @@
             \indent The last question is rather the aim of the project in front of you. This questions invites the careful study of the source of knowledge to be more specific, to show if it has any boundaries, or is it an endless tunnel of ever comming knowledge. We may what to argue, or more clearly, philosophize about the topic. But the important considerations of this questions comes in later drafts (or chapters depending on where you are reading thins). Where we investigate the logic of the world, Computation, and mathematical view of nature and experience.
         
         \section{Knowledge and Justification}
+            \newpoint{Absilute Knowledge:} The idea starts with the question, is there an absolute knowledge, and if so is it possible to gain it. Parmenide wanted the idea to be true, and for being so, he describes that knowledge should not depend upon changing observations and experiences, because it has its sole origin in the logic of rational thought; A knowledge that is to assure the experiences but at the same time, a knowledge that is given a priori and is conditioned by nothing but itself. \textit{A Knowledge that can claim for itself absolute centainty and validity.}
+            \\
+            \\
+            Parmendise could be the first to attain the concept that it might be possible to grasp the absolute knowledge of the world, with the vision that the phenomenal reality is merely the deceptive illusiveness of a true and unchangeable worl. This hidden world, was believed to be accessible only by pure reasoning.
+            \begin{qt}
+                Thus, the idea coagulated that true knowledge of the world could only be arrived at by following the path of rational thought,
+            \end{qt}
+            The weak point in the ontology of Parmenides was already pointed out by Aristotle. Instead Aristotle introduced a distinction between that which is \textit{"actuality"} and that which might be \textit{"potentiality"}. This he ultimately raised to a point of departure for his own metaphysics, in which he differs clearly from that of the Eleates.
+            \\
+            \\
+            But as Parmendise intended the concept of \textit{true being, that is only accessible through rational thought} was sustained. We'll turn back again after some basic investigation.\cite{Kuppers2018-vv}
+
             \newpoint{Cognitive Success} is a term used to describe the ability of an individual to think, reason, learn, and solve probelms effectively. The ability to solve problems, and find the true values to things we seek, is a complex process, requiring one's mind to adjust, learn, be creative and manipulate information in a way that is actually useful to solve a problem. But despite that, one can easily argue that if you got the wrong information, false premises and false statements. No amount of intelligent process (without considering luck) would be able to make a useful prediction, or any effective progress toward one's goal. In fact this is known as a motto in data science \textit{Garbage in, Garbage out.}\cite{sep-epistemology}\cite{Clegg2017-ev}
             \\
             \\
@@ -247,9 +262,43 @@
                 \\
                 \\
                 \newpoint{Defining Justification:}
+                Imagine a situation where a kid, despite having a birth certificate, and what he has been told his entire life, were to find that the parents he thought are not his actual parents. This situation shows that although a belief was justified, it ultimately came to be wrong. Debates concerning the nature of justification can be understood as debates concernin the nature of such non-knowledge-guaranteeing cognitive successes as the one this imaginary kid would enjoy.
+                \\
+                \\
+                The term justification is used as to say \textit{under no obligation to refrain.} This definition of understanding is labeled as \textit{Dentological Justification} we can define:
+                \begin{define}
+                    $S$ is justified in doing $x$ if and only if $S$ is not obliged to refrain from doing $x$.
+                \end{define}
+                So for the term justification we would define:
+                \begin{define}
+                    $S$ is justified in believing that $p$ if and only if $S$ is not oblied to refrain from believing that that $p$.
+                \end{define}
+                The dentological understanding of the concept of justification is common among philosophers such as, Descartes, Locke, Moore and Chisholm.
+                \\
+                \\
+                Dentological justification is commonly used, \textit{"Inocent until proven guily"} is an obvious example in law, where we are assumming the most common assertion (people are mostly inocent) until there's an evidence to support otherwise. But such generalization is not the case in science, or to be more specific, until no evidence is gathered, we cannot put our finger on where the logical place to stand is. Although it is important to get back to dentological justification in science. We'll cover the use of it later.
+                \\
+                \\
+                But on the other hand we can define another type for justification:
+                \begin{define}
+                    $S$ is justified in believing that $p$ if and only if $S$ believes that $p$ in a way that makes it sufficiently likely that her belief is true.
+                \end{define}
+                Dentological justification, though promising, lacks an important concept, where the justification should be correlated with the evaluation of the belief, one can believe in a justified manner (dentologically), but nevertheless his/her belief is false. The problem arises since dentological justification asserts true until proven false (we are justified to believe that $p$ is true because there's no obligation to refrain us from doing so), This sort of implication puts facts, and unfalsifiable assertions into one basket. We are able to be justified in believing any sort of assertion even if it is not justified.\cite{sep-epistemology}
+                \\
+                \\
+                As an easy example of how a dentological justification might result in a false belief let us review the Russell's teapot analogy, though the claim is to show that the philosophic burden of proof lies upon a person making empirically unfalsifiable, the example would also show how a dentological justification is weak. \cite{enwiki:1149010951}
+                \\
+                \\
+                In his paper "Is There a God?" we have:
+                \begin{qt}
+                    Many orthodox people speak as though it were the business of sceptics to disprove received dogmas rather than of dogmatists to prove them. This is, of course, a mistake. If I were to suggest that between the Earth and Mars there is a china teapot revolving about the sun in an elliptical orbit, nobody would be able to disprove my assertion provided I were careful to add that the teapot is too small to be revealed even by our most powerful telescopes. But if I were to go on to say that, since my assertion cannot be disproved, it is intolerable presumption on the part of human reason to doubt it, I should rightly be thought to be talking nonsense. If, however, the existence of such a teapot were affirmed in ancient books, taught as the sacred truth every Sunday, and instilled into the minds of children at school, hesitation to believe in its existence would become a mark of eccentricity and entitle the doubter to the attentions of the psychiatrist in an 10 enlightened age or of the Inquisitor in an earlier time.
+                \end{qt}
+                Although the debate, that is there any evidence to prove gods existence remains, for what seems like forever, the burden of proof is always upon the one claiming it. There are several more cases that can easily fit under the label \textit{Knowledge}, that no-one would accept, most of the folklore sotries of beings such as Zeus, Thor, unicorns, etc... were widely regarded as a true belief, with the justification that you cannot disprove their existence. But any person in the 21st century would deny their existence. Therefore, the second type (Sufficiently Likely Justification), seems to work the best for most cases, and be the justification that Russell would mean.\cite{Russell1952}
+                \\
+                \\
+                \newpoint{Evidentialism:} Whether a blief is truley justified or not, there's something that makes it so,
 
-        
-        
+
         
         
         
