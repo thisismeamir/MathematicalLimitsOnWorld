@@ -1,0 +1,268 @@
+\documentclass[9pt,a4paper,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{graphicx, adjustbox}
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{mhchem}
+\usepackage[left=1.5cm,right=1.5cm,top=2cm,bottom=3cm]{geometry}
+\usepackage{multicol}
+\usepackage{soul}
+
+
+
+%Colors
+\usepackage[dvipsnames]{xcolor}
+
+
+\definecolor{black}{RGB}{0, 0, 0}
+\definecolor{richblack}{RGB}{7, 14, 13}
+\definecolor{charcoal}{RGB}{45, 67, 77}
+\definecolor{delectricblue}{RGB}{93, 117, 131}
+\definecolor{cultured}{RGB}{245, 245, 245}
+\definecolor{lightgray}{RGB}{211, 216, 218}
+\definecolor{silversand}{RGB}{190, 194, 198}
+\definecolor{spanishgray}{RGB}{148, 150, 157}
+\definecolor{darkliver}{RGB}{64, 63, 76}
+
+\colorlet{lightdelectricblue}{delectricblue!30}
+\colorlet{lightdarkliver}{darkliver!30}
+
+
+%ColorDefines
+\newcommand{\trueblack}[1]{\textcolor{black}{#1}}
+\newcommand{\rich}[1]{\textcolor{richblack}{#1}}
+\newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
+\newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
+\newcommand{\liver}[1]{\textcolor{darkliver}{#1}}
+
+%Boxes
+\usepackage{tcolorbox}
+\newtcolorbox{calloutbox}{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Callout},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newtcolorbox[use counter=equation]{eq}{center,
+	colframe =red!0,
+	colback=cultured,
+	title={\thetcbcounter},
+	coltitle=richblack,
+	detach title,
+	after upper={\par\hfill\tcbtitle},
+	sharpish corners,
+    enlarge by=0.5pt }
+    
+\newtcolorbox{qt}{center,
+	colframe=delectricblue,
+	colback=white!0,
+	title={\large "},
+	coltitle=delectricblue,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
+	
+\newtcolorbox{exc}{center,%
+    colframe =red!0,%
+    colback=darkliver!15,
+    title={Excercise},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+    
+\newcounter{theo}
+\newtcolorbox[use counter=theo]{theobox}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Theorem \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{def}
+\newtcolorbox[use counter=def]{definition}
+	{center,%
+    colframe =richblack!100,%
+    colback=cultured,
+    title={Definition \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{examplecounter}
+\newtcolorbox[use counter=examplecounter]{example}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Example},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+    
+
+        
+    
+% Highlighters
+\newcommand{\hldl}[1]{%
+	\sethlcolor{lightdarkliver}%
+	\hl{#1}
+}
+\newcommand{\hldb}[1]{%
+    \sethlcolor{lightdelectricblue}%
+    \hl{#1}%
+}
+
+
+% Images
+\newcounter{figurecounter}
+\setcounter{figurecounter}{1}
+
+\newcommand{\img}[3]{
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=#2\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small\textbf{fig-\thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{figure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgr}[3]{
+    \begin{wrapfigure}{r}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgl}[3]{
+    \begin{wrapfigure}{l}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+% New commands
+\newenvironment{callout}
+	{\begin{calloutbox}\color{charcoal}\textbf\textit}
+	{\end{calloutbox}}
+
+% for this file
+\newcommand{\newpoint}[1]{\indent$\blacktriangleright$ \textbf{#1}}
+
+\title{Epistemology \\ \large A Review on Knowledge}
+\author{Amir H. Ebrahimnezhad}
+\date{}
+
+\begin{document}
+        \maketitle
+        \tableofcontents
+        \section*{Abstract}
+                In this draft we investigate \textit{Epistemology, How do we know things?, Evidence and Knowldge, Why science works,etc.}
+        \section{Introduction}
+            \indent At the core of the science there's always a simple question to be answered, the question that needs to be asked and properly investigated before any kind of scientific advancement is acheived. That is \textit{"Why are we sure about the knowledge we have, and what is it after all?"}. The boundaries of science are small to hold such a question within, since they infact are the product of it themselves.
+            \\
+            \\
+            \indent In this draft, I will investigate the philosophy of knowledge, or as it is commonly called \textit{"Epistemology"}. It seems to be a good place to start, since the question of the whole research lies upon the statement that \textit{maybe} it is not possible to know everything about the universe, where we have to first define what we mean by everything. But knowledge itself is where we begin.
+            \\
+            \\
+            \indent Epistemology, concerns itself about the problems and theories regarding knowldege. The word is derived from the Greek words \textit{epistéme} and \textit{logos}, which together means the study of knowledge. But to even begin with such philosophy one must try to define first hand:
+            \begin{itemize}
+                \item What is knowledge, and what do we mean when we say that we know something?
+                \item What is the source of knowledge, how do we gain reliable information and consider them as knowledge?
+                \item Is absolute knowledge possible? If not, what are the limitation?\cite{CW/E}
+            \end{itemize}
+            \indent The first question, seems to be a matter of definition, but an important roleis being played by asking about \textit{"What knowledge is?"}. The importance of the question arises from the fact that by defining knowledge carelessly we might include falsehood with the truth. which by any good considerations, is the last thing, which one in search of knowing would intend to do. Beside that if you define knowledge in a careless manner, you get in trouble to argue for good strategies and sources, and even not be able to find true limitations of knowledge.
+            \\
+            \\
+            \indent The second question concerns us to think about methods, with which we gain information (false or true premises) about anything. What makes a method reliable and other don't. This qeustion incudes the old fashioned problem \textit{Why should we trust science?}, with this question I'll try to show that science, and specifically the process of experimenting is found to be the most reliable way to produce knowledge.
+            \\
+            \\
+            \indent The last question is rather the aim of the project in front of you. This questions invites the careful study of the source of knowledge to be more specific, to show if it has any boundaries, or is it an endless tunnel of ever comming knowledge. We may what to argue, or more clearly, philosophize about the topic. But the important considerations of this questions comes in later drafts (or chapters depending on where you are reading thins). Where we investigate the logic of the world, Computation, and mathematical view of nature and experience.
+        
+        \section{Knowledge and Justification}
+            \newpoint{Cognitive Success} is a term used to describe the ability of an individual to think, reason, learn, and solve probelms effectively. The ability to solve problems, and find the true values to things we seek, is a complex process, requiring one's mind to adjust, learn, be creative and manipulate information in a way that is actually useful to solve a problem. But despite that, one can easily argue that if you got the wrong information, false premises and false statements. No amount of intelligent process (without considering luck) would be able to make a useful prediction, or any effective progress toward one's goal. In fact this is known as a motto in data science \textit{Garbage in, Garbage out.}\cite{sep-epistemology}\cite{Clegg2017-ev}
+            \\
+            \\
+            Therefore it is safe to say: \textbf{\textit{By any process, of which we receive information from, we seek statements that are true}}. From here we first have to define a true statement (knowledge) which is the first question posed in the introduction.
+            \begin{callout}
+                It is worth to note that since this is the study of science, we might not consider all the possible ways one might use \textit{knowledge}. One might know someone, know how to do something, etc... Although one can argue that these concepts are also a higher conceptions of just basic facts (one might know how to do something because he understands basic factual statements of the system and prepared a path to follow, which, because of the facts beneath, happens to reach the desiered goal). We would only talk about, things we consider to be facts, in it's scientific term. (i.e earth is orbiting sun.).
+            \end{callout}
+                \newpoint{Defining Knowldege:} We have different opinion in different areas of our lives and works, we might have an opinion about who is going to be the president later this year, or if the stocks are going to be bullish or bearish next week; Although we are able to hold any opinion and belief in our mind, we might like to be able to categorize them by some statements.\cite{CW/E}\cite{sep-epistemology}
+                \\
+                \\
+                \newpoint{Validity:} The first way to characterize an statement is the validity. It is safe to assume that we desire statements that we believe to be true. Consider the following statement:
+                \begin{align*}
+                    \text{Gravity is described by Newton's law}
+                \end{align*}
+                The statement is true. Not always but if we have an accuracy of a 1700s' scientist, it is most certainly a true statement about the gravity. I would here propose that when we talk about the validity of an statement we might like to consider how accurate are we talking. For that the statement was considered to be a true statement for centuries; Now it is considered true but only if we change a little:
+                \begin{align*}
+                    \text{In the limit of small velocities (with small accuracies)...}
+                \end{align*}
+                The validity of the statemen changed over time, it might happen to any statement, for instance if you believe that it's raining outside, you might find it true or false. This is a problem, not only you might find contradiction with what you hold as a belief. But the worst is yet to come, there can be scenarios where you are evaluating an statement correctly (you might be right about the weather), but it just happens to be a lucky guess. 
+                \\
+                \\
+                Certainly we would like true statements we hold, which are not evaluated true by mere luck, to be considered as knowledge. This would lead us to the second characteristic of knowledge.
+                \\
+                \\
+                \newpoint{Justified:} When Alice and Bob say that it's raining outside, where Alice just guessed, and Bob have looked through the window and actually saw the raining. One must consider the two ways, upon which they stated the condition of weather, differently. The first is unable to answer, \textit{"Why do you believe that it's raining?"}, while the latter would.
+                \\
+                \\
+                Assume that Alice and Bob always hold believes, by the way proposed, Alice only guesses, and Bob tries to justify what he considers true and if there's no justification, he would simply change his mind. Now if you are to use the information from one of them, who would you choose? A logical answer would be to always ask Bob, since there's atleast and arguement upon which he considers the belief to be true. 
+                \\
+                \\
+                Knowledge should be justifiable, this is more than just having good excuses to believe something, because it also helps the process of finding truth working, believing without justification cannot be questioned properly (other than questioning the unquestionability itself.). Being justifiable helps us to use the socratic method, either we derive an unquestionable fact underneath, or we find another belief which can or cannot be justified. Therefore it seems that \textit{Knowledge is Justified True Belief.}
+                \\
+                \\
+                But there are problems with such statement, since the justification condition was added to ensure that the belief is not true merely because of luck. For instance believing you have lung cancer, because an astrology magazine suggests, would be considered not justified from a scientist prespective but justified if you believe in astrology.
+                \\
+                \\
+                Edmun Gettier, showed that there are cases of \textit{Justified True Belief} that are not cases of knowledge. JTB, therefore, is not sufficient for knowledge. Cases that this is the case are known as the Gettier cases, which arise because neither the possession of adequate evidence, nor origination in reliable faculties, nor the conjunction of these conditions, is sufficient for ensuring that a belief is not true merely because of luck. This suggests that we must add another element to JTB, so that it is sufficient to be considered Knowledge.\cite{sep-epistemology}
+                \\
+                \\
+                \newpoint{Defining Justification:}
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        \newpage
+        \bibliography{library}
+        \bibliographystyle{plain}
+
+\end{document}

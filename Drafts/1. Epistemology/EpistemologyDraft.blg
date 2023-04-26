@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: EpistemologyDraft.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Database file #1: library.bib
+Warning--empty journal in CW/E
+You've used 3 entries,
+            2118 wiz_defined-function locations,
+            520 strings with 4474 characters,
+and the built_in function-call counts, 775 in all, are:
+= -- 73
+> -- 31
+< -- 0
++ -- 12
+- -- 9
+* -- 41
+:= -- 146
+add.period$ -- 11
+call.type$ -- 3
+change.case$ -- 13
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 37
+empty$ -- 69
+format.name$ -- 9
+if$ -- 161
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 4
+newline$ -- 18
+num.names$ -- 8
+pop$ -- 19
+preamble$ -- 1
+purify$ -- 10
+quote$ -- 0
+skip$ -- 19
+stack$ -- 0
+substring$ -- 15
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 10
+warning$ -- 1
+while$ -- 7
+width$ -- 4
+write$ -- 35
+(There was 1 warning)
