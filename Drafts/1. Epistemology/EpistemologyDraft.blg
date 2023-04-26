@@ -5,47 +5,51 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Database file #1: library.bib
+Repeated entry---line 167 of file library.bib
+ : @incollection{sep-democritus
+ :                             ,
+I'm skipping whatever remains of this entry
 Warning--empty journal in Russell1952
 Warning--empty journal in CW/E
-You've used 6 entries,
+You've used 10 entries,
             2118 wiz_defined-function locations,
-            540 strings with 5072 characters,
-and the built_in function-call counts, 1443 in all, are:
-= -- 138
-> -- 52
+            563 strings with 5586 characters,
+and the built_in function-call counts, 2485 in all, are:
+= -- 233
+> -- 96
 < -- 0
-+ -- 21
-- -- 15
-* -- 67
-:= -- 263
-add.period$ -- 21
-call.type$ -- 6
-change.case$ -- 25
++ -- 38
+- -- 27
+* -- 120
+:= -- 450
+add.period$ -- 35
+call.type$ -- 10
+change.case$ -- 41
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 69
-empty$ -- 136
-format.name$ -- 15
-if$ -- 305
+cite$ -- 12
+duplicate$ -- 123
+empty$ -- 238
+format.name$ -- 27
+if$ -- 530
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 6
-newline$ -- 33
-num.names$ -- 14
-pop$ -- 39
+int.to.str$ -- 10
+missing$ -- 12
+newline$ -- 53
+num.names$ -- 26
+pop$ -- 68
 preamble$ -- 1
-purify$ -- 19
+purify$ -- 31
 quote$ -- 0
-skip$ -- 39
+skip$ -- 62
 stack$ -- 0
-substring$ -- 30
-swap$ -- 4
+substring$ -- 51
+swap$ -- 8
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 22
+type$ -- 34
 warning$ -- 2
-while$ -- 13
-width$ -- 7
-write$ -- 67
-(There were 2 warnings)
+while$ -- 23
+width$ -- 12
+write$ -- 112
+(There was 1 error message)
