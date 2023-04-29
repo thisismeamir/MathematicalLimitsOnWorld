@@ -2,10 +2,9 @@
 
 \bibitem{sep-democritus}
 Sylvia Berryman.
-\newblock {Democritus}.
-\newblock In Edward~N. Zalta and Uri Nodelman, editors, {\em The {Stanford}
-  Encyclopedia of Philosophy}. Metaphysics Research Lab, Stanford University,
-  {S}pring 2023 edition, 2023.
+\newblock {\em {Democritus}}.
+\newblock Metaphysics Research Lab, Stanford University, {S}pring 2023 edition,
+  2023.
 
 \bibitem{Cartledge1998-CARDTG-3}
 R.~Cartledge.
@@ -22,11 +21,30 @@ Daniel~W Graham.
 \newblock {\em The texts of early Greek philosophy}.
 \newblock Cambridge University Press, Cambridge, England, September 2010.
 
+\bibitem{greg-grav}
+Erik. Gregersen.
+\newblock Gravity: From apples to the universe.
+\newblock
+  \url{https://www.britannica.com/story/gravity-from-apples-to-the-universe.}
+\newblock Accessed: 2023-4-29.
+
 \bibitem{Kuppers2018-vv}
 Bernd-Olaf K{\"u}ppers.
 \newblock Is absolute knowledge of the world possible?
 \newblock In {\em The Frontiers Collection}, Frontiers Collection. Springer
   International Publishing, Cham, 2018.
+
+\bibitem{sep-rationalism-empiricism}
+Peter Markie and M.~Folescu.
+\newblock {Rationalism vs. Empiricism}.
+\newblock In Edward~N. Zalta and Uri Nodelman, editors, {\em The {Stanford}
+  Encyclopedia of Philosophy}. Metaphysics Research Lab, Stanford University,
+  {S}pring 2023 edition, 2023.
+
+\bibitem{Mittag2015-qc}
+Daniel~M Mittag.
+\newblock Evidentialism.
+\newblock In {\em The Routledge Companion to Epistemology}. Routledge, 2015.
 
 \bibitem{Russell1952}
 Bertrand Russell.
@@ -45,10 +63,20 @@ Carl~J. Wenning.
 \newblock Scientific epistemology: How scientists know what they know.
 \newblock 2009.
 
+\bibitem{enwiki:1149588226}
+{Wikipedia contributors}.
+\newblock Evidentialism --- {Wikipedia}{,} the free encyclopedia, 2023.
+\newblock [Online; accessed 29-April-2023].
+
 \bibitem{enwiki:1149010951}
 {Wikipedia contributors}.
 \newblock Russell's teapot --- {Wikipedia}{,} the free encyclopedia, 2023.
 \newblock [Online; accessed 26-April-2023].
+
+\bibitem{enwiki:1145200450}
+{Wikipedia contributors}.
+\newblock Syllogism --- {Wikipedia}{,} the free encyclopedia, 2023.
+\newblock [Online; accessed 29-April-2023].
 
 \bibitem{sep-kant-reason}
 Garrath Williams.
