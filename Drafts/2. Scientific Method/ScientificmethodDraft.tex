@@ -1,0 +1,199 @@
+\documentclass[9pt,a4paper,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{graphicx, adjustbox}
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{mhchem}
+\usepackage[left=1.5cm,right=1.5cm,top=1cm,bottom=3cm]{geometry}
+\usepackage{multicol}
+\usepackage{soul}
+
+
+
+%Colors
+\usepackage[dvipsnames]{xcolor}
+
+
+\definecolor{black}{RGB}{0, 0, 0}
+\definecolor{richblack}{RGB}{7, 14, 13}
+\definecolor{charcoal}{RGB}{45, 67, 77}
+\definecolor{delectricblue}{RGB}{93, 117, 131}
+\definecolor{cultured}{RGB}{245, 245, 245}
+\definecolor{lightgray}{RGB}{211, 216, 218}
+\definecolor{silversand}{RGB}{190, 194, 198}
+\definecolor{spanishgray}{RGB}{148, 150, 157}
+\definecolor{darkliver}{RGB}{64, 63, 76}
+
+\colorlet{lightdelectricblue}{delectricblue!30}
+\colorlet{lightdarkliver}{darkliver!30}
+
+
+%ColorDefines
+\newcommand{\trueblack}[1]{\textcolor{black}{#1}}
+\newcommand{\rich}[1]{\textcolor{richblack}{#1}}
+\newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
+\newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
+\newcommand{\liver}[1]{\textcolor{darkliver}{#1}}
+
+%Boxes
+\usepackage{tcolorbox}
+\newtcolorbox{calloutbox}{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Callout},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newtcolorbox[use counter=equation]{eq}{center,
+	colframe =red!0,
+	colback=cultured,
+	title={\thetcbcounter},
+	coltitle=richblack,
+	detach title,
+	after upper={\par\hfill\tcbtitle},
+	sharpish corners,
+    enlarge by=0.5pt }
+    
+\newtcolorbox{qt}{center,
+	colframe=delectricblue,
+	colback=white!0,
+	title={\large "},
+	coltitle=delectricblue,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
+	
+\newtcolorbox{exc}{center,%
+    colframe =red!0,%
+    colback=darkliver!15,
+    title={Excercise},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+    
+\newcounter{theo}
+\newtcolorbox[use counter=theo]{theobox}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Theorem \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{def}
+\newtcolorbox{define}
+{center,
+	colframe=darkliver!50,
+	colback=white!0,
+	title={\large "},
+	coltitle=darkliver!50,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
+
+\newcounter{examplecounter}
+\newtcolorbox[use counter=examplecounter]{example}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Example},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+    
+
+        
+    
+% Highlighters
+\newcommand{\hldl}[1]{%
+	\sethlcolor{lightdarkliver}%
+	\hl{#1}
+}
+\newcommand{\hldb}[1]{%
+    \sethlcolor{lightdelectricblue}%
+    \hl{#1}%
+}
+
+
+% Images
+\newcounter{figurecounter}
+\setcounter{figurecounter}{1}
+
+\newcommand{\img}[3]{
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=#2\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small\textbf{fig-\thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{figure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgr}[3]{
+    \begin{wrapfigure}{r}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgl}[3]{
+    \begin{wrapfigure}{l}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+% New commands
+\newenvironment{callout}
+	{\begin{calloutbox}\color{charcoal}\textbf\textit}
+	{\end{calloutbox}}
+
+% for this file
+\newcommand{\newpoint}[1]{\indent$\blacktriangleright$ \textbf{#1}}
+
+\title{Scientific Method \\ \large Understanding How Science Works}
+\author{Amir H. Ebrahimnezhad}
+\date{}
+
+\begin{document}
+        \maketitle
+        \tableofcontents
+        \section*{Abstract}
+                While epistemology is a vast philosophy, we consider a more specific part of it. In this draft we are looking at the philosophy of science, scientific method, mathematical modeling and empiricism. By the end of this draft one would know the grounding mechanism that science has been working upon.
+        \section{Introduction}
+        \newpoint{What are the concerns of Science?}
+        As in epistemology we concerned oueselves with the definition and considerations of one possessing knowledge, here we have to be more specific while dealing with science. Althought science is an epistemologic approach and it is dealing with knowledge there is a more specific task to it.
+                       
+        \newpage
+        \bibliography{libscientificmethod}
+        \bibliographystyle{plain}
+
+\end{document}
