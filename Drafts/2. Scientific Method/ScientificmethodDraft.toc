@@ -1,2 +1,4 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{}%
-\contentsline {subsection}{\numberline {1.1}What are the concerns of Science?}{1}{}%
+\contentsline {subsection}{\numberline {1.1}Considering Science}{1}{}%
+\contentsline {section}{\numberline {2}Plato and Forms}{1}{}%
+\contentsline {section}{\numberline {3}Aristotle's Philosophy of Science}{1}{}%

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.26)  9 MAY 2023 11:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.26)  14 MAY 2023 15:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./ScientificmethodDraft.tex
-(ScientificmethodDraft.tex
+**./Scientificmethoddraft.tex
+(Scientificmethoddraft.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-03-30>
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -957,8 +957,8 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 LaTeX Warning: Unused global option(s):
     [9pt].
 
-(ScientificmethodDraft.aux)
-\openout1 = `ScientificmethodDraft.aux'.
+(Scientificmethoddraft.aux)
+\openout1 = `Scientificmethoddraft.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 186.
 LaTeX Font Info:    ... okay on input line 186.
@@ -1100,7 +1100,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 187.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.43999pt on input line 187.
-(ScientificmethodDraft.toc
+(Scientificmethoddraft.toc
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 2.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1115,30 +1115,78 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 2.
 )
 \tf@toc=\write4
-\openout4 = `ScientificmethodDraft.toc'.
+\openout4 = `Scientificmethoddraft.toc'.
 
 
-No file ScientificmethodDraft.bbl.
+Underfull \hbox (badness 1014) in paragraph at lines 193--200
+\T1/futs/m/n/10 to know what kind of \T1/futs/m/it/10 knowl-edge \T1/futs/m/n/1
+0 is con-sid-ered sci-en-tific
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--200
+
+ []
+
+
+Underfull \hbox (badness 3049) in paragraph at lines 193--200
+\T1/futs/m/n/10 A Sci-en-tific Jus-ti-fied True Be-lief there-fore can be con-
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 193--200
+\T1/futs/m/n/10 have a bet-ter un-der-stand-ing of the Sci-en-tific Knowl-edge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--200
+
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 193--200
+\T1/futs/m/n/10 But be-fore that what kind of be-liefs are sci-en-tific? Do
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 206--206
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--211
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 218--218
+[] 
+ []
+
 [1{C:/Users/amirebrahim/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Us
 ers/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-(ScientificmethodDraft.aux) ) 
+(Scientificmethoddraft.bbl) [2] (Scientificmethoddraft.aux) ) 
 Here is how much of TeX's memory you used:
- 18490 strings out of 476331
- 370614 string characters out of 5784933
- 1853660 words of memory out of 5000000
- 38575 multiletter control sequences out of 15000+600000
- 581620 words of font info for 98 fonts, out of 8000000 for 9000
+ 18537 strings out of 476331
+ 371698 string characters out of 5784933
+ 1867660 words of memory out of 5000000
+ 38612 multiletter control sequences out of 15000+600000
+ 591235 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,8n,117p,470b,256s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/amirebrahim/AppData/Local/Programs/MiKTe
-X/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/amirebrahim/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on ScientificmethodDraft.pdf (1 page, 32573 bytes).
+ 83i,9n,117p,697b,457s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/amirebra
+him/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-ms.pfb><C:
+/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sy
+mbols/msam10.pfb><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/type
+1/adobe/utopia/putb8a.pfb><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/f
+onts/type1/adobe/utopia/putr8a.pfb><C:/Users/amirebrahim/AppData/Local/Programs
+/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on Scientificmethoddraft.pdf (2 pages, 72798 bytes).
 PDF statistics:
- 20 PDF objects out of 1000 (max. 8388607)
+ 38 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
