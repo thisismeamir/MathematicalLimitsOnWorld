@@ -97,19 +97,20 @@
     sharpish corners,
     enlarge by=0.5pt}
 
-\newcounter{def}
-\newtcolorbox{define}
-{center,
-	colframe=darkliver!50,
+\newcounter{defcounting}
+\newtcolorbox[use counter=defcounting]{define}
+{center,%
+	colframe=darkliver!50,%
 	colback=white!0,
-	title={\large "},
+	title={\textcolor{black}{\textbf{\textit{Definition}} \  \thetcbcounter  \ --}},
 	coltitle=darkliver!50,
 	attach title to upper,
-	after upper ={\large "},
+	after upper ={ },
 	sharp corners,
 	enlarge by=0.5pt,
 	boxrule=0pt,
-	leftrule=2pt}
+	leftrule=2pt,
+    rightrule = 0pt}
 
 \newcounter{examplecounter}
 \newtcolorbox[use counter=examplecounter]{example}
@@ -178,6 +179,7 @@
 
 % for this file
 \newcommand{\newpoint}[1]{\indent$\blacktriangleright$ \textbf{#1}}
+\newcommand{\curveL}{\mathcal{L}}
 
 \title{Mathematical Limits \\ \large Logic and Computational Theorems}
 \author{Amir H. Ebrahimnezhad}
@@ -191,14 +193,58 @@
                 \\
                 \\
                 In the following work we will first describe the theorem and preliminaries, and then prove it using algorithm theory methods and other methods. Then we are going to talk about it's consequences in pure mathematics and philosophy of mathematics, later we will discuss the relation between the theorems and the church-turing thesis We then would discuss related works that has pushed the theorem further and shown aspects of it. At the final section we will investigate a philosophical picture of Mathematical Universe and if it is acceptable to consider a bigger abstract world of mathematical objects where the real world is a subset of it. 
-            \subsection{What is the Incompleteness Theorems?}
-                Before starting with the theorems, one have to know the key concepts essential to it. 
-                \\
-                \\
-                \newpoint{Formal Systems:} Each formal system is described by primitive symbols where they collectively form an alphabet $L$ to finitely construct a formal language a set of axioms through inferential rules of formation. 
-                \begin{enumerate}
-                    \item \textbf{Formal Language} consist of words whose letter are taken from an alphabet
-                    \item \textbf{Axioms} are statements that are taken to be true, to stop forming regression (Look up the Scientific Method Draft) they serve as a premise or starting point for further reasoning and arguments.
+            \section{Formal Language Theory}
+                The investigation of Incompleteness theorem requiers the knowledge of some basic ideas such as languages, grammars, automatas and others. Therefore we start this draft by talking about these topics in a general format. A more detailed version would be published later.
+                \subsection{Languages}
+                    We would begin by the definition of a language. In a informal way a language is what we speak or what we write on a paper to give information to another person, mathematically and a more abstract idea of a language is a bunch of symbols that we have to make words (gluing symbols together to resemble a unity of them); To give a precise mathematical definition of language we would first define alphabet as:
+                    \begin{define}
+                        \textit{An alphabet $\Sigma$, is a set of symbols.}
+                    \end{define}
+                    \begin{define}
+                        \textit{A word $M$, is a combination of symbols from alphabet $\Sigma$.}
+                    \end{define}
+                    For instance one could choose the set $\{a,b,c,d,\dots\}$ as ones alphabet. Then "$cat$" is a word in it's alphabet. As you can see there's a meaning for the word we gave as an example. It defines an object (more accurately a living creature). Since there can be Infinetly many words for any alphabet (other than an empty set which have no words), we distinguish between the accepted combinations and the ones we don't accept by defining a grammar for our language;  A grammar is a way to characterize a language, a way to list which stings of $\Sigma$ is acceptable. We could simply list strings or have a set of rules (or an algorithm) to say if a given combination is acceptable or not for a language. Thus we define a language as:
+                    \begin{define}
+                        \textit{Given an alphabet $\Sigma$, $\Sigma^\infty$ is the set of all possible words in the alphabet.}
+                    \end{define}
+                    \begin{define}
+                        \textit{A subset $S$ of a set $X$ is decidable if and only if there exists a function that given $x\in X$ decides if $x\in S$ is true or false.}
+                    \end{define}
+                    \begin{define}
+                        \textit{A Language $L$, is a subset of the alphabet $\Sigma^\infty$ ($L\subset \Sigma^\infty$) where there exists a function $\eta(\sigma\in\Sigma^\infty)$ called grammar that decides $L$.}
+                    \end{define}
+                    Formally, we define a grammar as:
+                    \begin{define}
+                        \textit{A Grammar is a set $\{V_T,V_N,S, R\}$ where $V_T$ is the set of terminal elements, $V_N$ is the set of non-terminal elements, $S$ is a memeber of $V_N$, and $R$ is a finite set of rules.}
+                    \end{define}
+                    We would use these definitions in the later sections of this draft. But for now let us give a formal definition of $R$ as well:
+                    \begin{define}
+                        \textit{$R$ is a finite set of ordered pairs from $\Sigma^\infty V_N \Sigma^\infty\times \Sigma^\infty$, where $\Sigma = V_T\cup V_N$.}
+                    \end{define}
+                    In later drafts we would get back to the Formal language theory in more depth and examine the properties of the setsof languages each grammar formalism can accomodate and the set of abstract machines that correspond to each type. But for now we would start with the things we need for proving the incompleteness theorems that is the goal of this draft.
+                    \\
+                    \\
+                    We assume that we are given a subset $T$ of language $L$, which is called the set of \textit{true statements}. This set should contain only the statements in the language that would evaluate as True. In the process of assuming such subset we ommit the part where we would consider the statemens true or false. A language then would be completely defined (for our purpose) if we are given the \textit{fundamental pair:}
+                    \begin{define}
+                        \textit{Given a language $L$ and the subset of true statements $T$, we call $\left<L,T\right>$ a fundamental pair.}
+                    \end{define}
+                    \newpoint{A First-order Language:} $\curveL$ is defined as an infinite collection of symbols, separated into the following categories:
+                    \begin{itemize}
+                        \item \textit{Parentheses:} $(,)$.
+                        \item \textit{Connectives:} $\land, \lor, \neg$.
+                        \item \textit{Quantifier:} $\forall, \exists$.
+                        \item \textit{Variables:} one for each positive integer $n$ denoted: $v_n$ for $n$th number.
+                        \item \textit{Equality:} $=$.
+                        \item \textit{Constant:} We can have a new symbol for each positive number or any other method that we distinguish between two numbert (we can use | for 1, || for 2 etc)
+                        \item \textit{Functions:} For each positive integer $n$, some set of zero or more $n$-ary function symbols.
+                        \item \textit{Relation:} For each positive integer $n$, some set of zero or more $n$-ary relation symbols.
+                    \end{itemize}
+                    \begin{callout}
+                        Having $n$ arity means that it is intended to represent a function of $n$ variables.
+                    \end{callout}
+                    \newpoint{Terms and Formulas:} As we mentioned earlier not all words of a set $\Sigma^\infty$ is meaningful. Since any combination of the alphabet is a word there has to be distinctions between what are meaningful words and what are not.
+
+
 
 
 \end{document}
