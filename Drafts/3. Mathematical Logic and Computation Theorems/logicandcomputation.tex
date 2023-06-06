@@ -87,7 +87,7 @@
     enlarge by=0.5pt}
     
 \newcounter{theo}
-\newtcolorbox[use counter=theo]{theobox}
+\newtcolorbox[use counter=theo]{theorem}
 	{center,%
     colframe =red!0,%
     colback=cultured,
@@ -180,7 +180,7 @@
 % for this file
 \newcommand{\newpoint}[1]{\indent$\blacktriangleright$ \textbf{#1}}
 \newcommand{\curveL}{\mathcal{L}}
-
+\newcommand{\curveA}{\mathcal{A}}
 \title{Mathematical Limits \\ \large Logic and Computational Theorems}
 \author{Amir H. Ebrahimnezhad}
 \date{\today}
@@ -228,7 +228,62 @@
                     \begin{define}
                         \textit{Given a language $L$ and the subset of true statements $T$, we call $\left<L,T\right>$ a fundamental pair.}
                     \end{define}
-                    \newpoint{A First-order Language:} $\curveL$ is defined as an infinite collection of symbols, separated into the following categories:
+                    \newpoint{Induction:} Induction is a method of proving that a statemens $P(n)$ is true for every natural number $n$, that is, that the infinitely many cases, $P(0), P(1),\dots$ all hold. \cite{enwiki:1157726892}
+                    \begin{qt}
+                        Mathematical induction proves that we can climb as high as we like on a ladder, by proving that we can climb onto the bottom rung (the basis) and that from each rung we can climb up to the next one (the step).
+                    \end{qt}
+                    \begin{theorem}
+                        For every natural number $n$,
+                        \begin{equation}
+                            1+2+\dots + n = \frac{n(n+1)}{2}
+                        \end{equation}
+                    \end{theorem}
+                    \textit{proof:} If $n=1$, the equality holds. For the inductive case, fix $k\geq 1$ and assume that:
+                    \begin{equation}
+                        1+2+\dots+k =\frac{k(k+1)}{2}
+                    \end{equation}
+                    Now adding $k+1$ to each side we have:
+                    \begin{equation}
+                        1+2+\dots+(k+1) = \frac{k(k+1)}{2}+(k+1)
+                    \end{equation}
+                    Since the right hand side simplifies to:
+                    \begin{equation}
+                        \frac{(k+1)((k+1) + 1)}{2}
+                    \end{equation}
+                    Finishing the inductive step and thus the proof. As you can see in the inductive step what we prove is that:
+                    \begin{qt}
+                        \textit{If the formula holds for $k$, then the formula holds for $k+1$.}
+                    \end{qt}
+                    Looking at this from a slightly different angle, what we have done is to construct a set of numbers with a certain property. If we let $S$ stand for the set of numbers for which our theorem holds, in out proof by induction we whow that the set $S$, is identical with the set of natural numbers, thus the theorem holds for every natural number $n$, as needed.
+                    \\
+                    \\
+                    So what makes a proof by induction work is the fact that the natural numbers can be defined recursively, There is a base case, consisting of the smallest natural number, and there is a recursive case, showing how to construct bigger natural number from smaller ones.
+                    \\
+                    \\
+                    \newpoint{Terms and Formulas:} As we mentioned earlier not all words of a set $\Sigma^\infty$ is meaningful. Since any combination of the alphabet is a word there has to be distinctions between what are meaningful words and what are not. We would consider two kinds of words as \textit{terms \& formulas} as follow:
+                    \begin{define}
+                        \textit{If $\curveL$ is a language, a \textbf{term of $\curveL$} is a nonempty finite string $t$ of symbols from $\curveL$ such that either:}
+                        \begin{enumerate}
+                            \item $t$ is a variable, or
+                            \item $t$ is a constant symbol, or 
+                            \item $t:\equiv ft_1t_2t_3\dots t_n$, where $f$ is an $n$-ary function symbol of $\curveL$ and each of the $t_i$ is a term of $\curveL$.
+                        \end{enumerate}
+                    \end{define}
+                    \begin{define}
+                        \textit{If $\curveL$ is a language, a formula of $\curveL$ is a nonempty finite string of $\phi$ of symbols from $\curveL$ such that either:}
+                        \begin{enumerate}
+                            \item $\phi :\equiv = t_1t_2,$ where $t_1, t_2$ are terms of $\curveL$, or 
+                            \item $\phi :\equiv R t_1t_2\dots t_n$ where $R$ is an $n$-ary relation symbol of $\curveL$ and $t_1, t_2, \dots , t_n$ are all terms of $\curveL$, or 
+                            \item $\phi :\equiv (\neg \alpha)$ where $\alpha$ is a formula of $\curveL$, or
+                            \item $\phi:\equiv (\alpha\lor \beta)$, where $\alpha$ and $\beta$ are formulas of $\curveL$, or 
+                            \item $\phi :\equiv (\forall v)(\alpha)$, where $v$ is a variable and $\alpha$ is a formula of $\curveL$
+                        \end{enumerate}
+                    \end{define}
+                    Notice that the five clauses of the definition can be separated into two groups. The first two clauses, the atomic formulas, are explicitly defined. The last three clauses are the recursive case, showing how if $\alpha$ and $\beta$ are formulas, they can be used to build more complex formulas, such as $(\alpha\lor\beta)$ or $(\forall v)(\alpha)$.
+                    Now since the collection of formulas is defined recursively, we can use an inductive style proof when we want to prove that something is true about every formula. The inductive proof will consist of two parts, a base cae and an inductive case. First we prove the statement for every atomic formula and then using the inductive method we prove it for recursive formulas from the atomic ones. \textit{This method is called induction on the complexity of the formula, or induction on the structure of the formula.}
+                    \\
+                    \\
+                    \newpoint{A First-order Language:} Before getting to Sentences one should know a definition for a first-order language. A first-order language $\curveL$ is defined as an infinite collection of symbols, separated into the following categories:
                     \begin{itemize}
                         \item \textit{Parentheses:} $(,)$.
                         \item \textit{Connectives:} $\land, \lor, \neg$.
@@ -242,7 +297,30 @@
                     \begin{callout}
                         Having $n$ arity means that it is intended to represent a function of $n$ variables.
                     \end{callout}
-                    \newpoint{Terms and Formulas:} As we mentioned earlier not all words of a set $\Sigma^\infty$ is meaningful. Since any combination of the alphabet is a word there has to be distinctions between what are meaningful words and what are not.
+                    Notice that by defining such language one can avoid the process of finiding an algorithm of grammar (the one that differenciates between nonesense and meaningful words) since we defined all the possible functions and etc. This way we have to only
+
+                    \newpoint{Sentences:} Among the formulas in the language $\curveL$, there are some in which we will be especially interested. These are the sentences of $\curveL$. The formulas that can be either true or false in a given mathematical model.
+                    \begin{define}
+                        \textit{A sentence in a language $\curveL$ is a formula of $\curveL$ that contains no free variable.}
+                    \end{define}
+                    \newpoint{Structures: } Defining any language and with constansts, functions and etc. There can exist multiple ways to define structures as opposed to another. The point is that there is no preference. Thus without determining the structure under consideration, without deciding how we wishs to interpret the symbols of the language, we have no way of talking about the truth or falsity of a sentence. Thus we have:
+                    \begin{define}
+                        \textit{Fix a language $\curveL$. An $\curveL$-Structure $\curveA$ is a nonempty set $A$m caled the \textbf{Universe of $\curveA$}, together with:}
+                        \begin{enumerate}
+                            \item \textit{For each constant symbol $c$ of $\curveL$, an element $c^\curveA$ of $A$}
+                            \item \textit{For each $n$-ary function symbol $f$ of $\curveL$, a function $f^\curveA L A^n\rightarrow A$, and }
+                            \item \textit{For each $n$-ary relation symbol $R$ of $\curveL$, and $n$-ary relation $R^\curveA$ on $A$.}
+                        \end{enumerate}
+                    \end{define}
+                    
+
+                
+
+
+                    \newpage
+                    \bibliography{logicsources}
+                    \bibliographystyle{plain}
+            
 
 
 
