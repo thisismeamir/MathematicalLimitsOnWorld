@@ -1,0 +1,28 @@
+
+% Here I tried to explain a first order language but later seemed to me not relevant to the entirety of the draft.
+\newpoint{A First-order Language:} $\curveL$ is defined as an infinite collection of symbols, separated into the following categories:
+\begin{itemize}
+    \item \textit{Parentheses:} $(,)$.
+    \item \textit{Connectives:} $\land, \lor, \neg$.
+    \item \textit{Quantifier:} $\forall, \exists$.
+    \item \textit{Variables:} one for each positive integer $n$ denoted: $v_n$ for $n$th number.
+    \item \textit{Equality:} $=$.
+    \item \textit{Constant:} We can have a new symbol for each positive number or any other method that we distinguish between two numbert (we can use | for 1, || for 2 etc)
+    \item \textit{Functions:} For each positive integer $n$, some set of zero or more $n$-ary function symbols.
+    \item \textit{Relation:} For each positive integer $n$, some set of zero or more $n$-ary relation symbols.
+\end{itemize}
+\begin{callout}
+    Having $n$ arity means that it is intended to represent a function of $n$ variables.
+\end{callout}
+Notice that by defining such language one can avoid the process of finiding an algorithm of grammar (the one that differenciates between nonesense and meaningful words) since we defined all the possible functions and etc. This way we have to only
+\\
+\\
+\newpoint{Terms and Formulas:} As we mentioned earlier not all words of a set $\Sigma^\infty$ is meaningful. Since any combination of the alphabet is a word there has to be distinctions between what are meaningful words and what are not. We would consider two kinds of words as \textit{terms \& formulas} as follow:
+\begin{define}
+    \textit{If $\curveL$ is a language, a \textbf{term of $\curveL$} is a nonempty finite string $t$ of symbols from $\curveL$ such that either:}
+    \begin{enumerate}
+        \item $t$ is a variable, or
+        \item $t$ is a constant symbol, or 
+        \item $t:\equiv ft_1t_2t_3\dots t_n$, where $f$ is an $n$-ary function symbol of $\curveL$ and each of the $t_i$ is a term of $\curveL$.
+    \end{enumerate}
+\end{define}

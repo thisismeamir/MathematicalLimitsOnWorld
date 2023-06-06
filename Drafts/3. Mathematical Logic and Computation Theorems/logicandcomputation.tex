@@ -1,0 +1,423 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{graphicx, adjustbox}
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{mhchem}
+\usepackage[left=1.5cm,right=1.5cm,top=1cm,bottom=3cm]{geometry}
+\usepackage{multicol}
+\usepackage{soul}
+
+
+
+%Colors
+\usepackage[dvipsnames]{xcolor}
+
+
+\definecolor{black}{RGB}{0, 0, 0}
+\definecolor{richblack}{RGB}{7, 14, 13}
+\definecolor{charcoal}{RGB}{45, 67, 77}
+\definecolor{delectricblue}{RGB}{93, 117, 131}
+\definecolor{cultured}{RGB}{245, 245, 245}
+\definecolor{lightgray}{RGB}{211, 216, 218}
+\definecolor{silversand}{RGB}{190, 194, 198}
+\definecolor{spanishgray}{RGB}{148, 150, 157}
+\definecolor{darkliver}{RGB}{64, 63, 76}
+
+\colorlet{lightdelectricblue}{delectricblue!30}
+\colorlet{lightdarkliver}{darkliver!30}
+
+
+%ColorDefines
+\newcommand{\trueblack}[1]{\textcolor{black}{#1}}
+\newcommand{\rich}[1]{\textcolor{richblack}{#1}}
+\newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
+\newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
+\newcommand{\liver}[1]{\textcolor{darkliver}{#1}}
+
+%Boxes
+\usepackage{tcolorbox}
+\newtcolorbox{calloutbox}{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Callout},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newtcolorbox[use counter=equation]{eq}{center,
+	colframe =red!0,
+	colback=cultured,
+	title={\thetcbcounter},
+	coltitle=richblack,
+	detach title,
+	after upper={\par\hfill\tcbtitle},
+	sharpish corners,
+    enlarge by=0.5pt }
+    
+\newtcolorbox{qt}{center,
+	colframe=delectricblue,
+	colback=white!0,
+	title={\large "},
+	coltitle=delectricblue,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
+	
+\newtcolorbox{exc}{center,%
+    colframe =red!0,%
+    colback=darkliver!15,
+    title={Excercise},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+    
+\newcounter{theo}
+\newtcolorbox[use counter=theo]{theorem}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Theorem \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{defcounting}
+\newtcolorbox[use counter=defcounting]{define}
+{center,%
+	colframe=darkliver!50,%
+	colback=white!0,
+	title={\textcolor{black}{\textbf{\textit{Definition}} \  \thetcbcounter  \ --}},
+	coltitle=darkliver!50,
+	attach title to upper,
+	after upper ={ },
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt,
+    rightrule = 0pt}
+
+\newcounter{examplecounter}
+\newtcolorbox[use counter=examplecounter]{example}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Example},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+    
+
+        
+    
+% Highlighters
+\newcommand{\hldl}[1]{%
+	\sethlcolor{lightdarkliver}%
+	\hl{#1}
+}
+\newcommand{\hldb}[1]{%
+    \sethlcolor{lightdelectricblue}%
+    \hl{#1}%
+}
+
+
+% Images
+\newcounter{figurecounter}
+\setcounter{figurecounter}{1}
+
+\newcommand{\img}[3]{
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=#2\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small\textbf{fig-\thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{figure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgr}[3]{
+    \begin{wrapfigure}{r}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgl}[3]{
+    \begin{wrapfigure}{l}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+% New commands
+\newenvironment{callout}
+	{\begin{calloutbox}\color{charcoal}\textbf\textit}
+	{\end{calloutbox}}
+
+% for this file
+\newcommand{\newpoint}[1]{\indent$\mathsection$ \textbf{#1}}
+\newcommand{\curveL}{\mathcal{L}}
+\newcommand{\curveA}{\mathcal{A}}
+\title{Mathematical Limits \\ \large Logic and Computational Theorems}
+\author{Amir H. Ebrahimnezhad}
+\date{\today}
+\begin{document}
+        \maketitle
+        \tableofcontents
+        \section{Ground Works}
+            \subsection{Vorwort}
+                Gödel's incompleteness theorems, are two theorems of mathematical logic that deal with the limits of provability in formal axiomatic theories. The theorems are interpreted as showing that Hilber's program to find a complete and consistent set of axioms for all mathematics is impossible.
+                \\
+                \\
+                In the following work we will first describe the theorem and preliminaries, and then prove it using algorithm theory methods and other methods. Then we are going to talk about it's consequences in pure mathematics and philosophy of mathematics, later we will discuss the relation between the theorems and the church-turing thesis We then would discuss related works that has pushed the theorem further and shown aspects of it. At the final section we will investigate a philosophical picture of Mathematical Universe and if it is acceptable to consider a bigger abstract world of mathematical objects where the real world is a subset of it. 
+            \section{Formal Language Theory}
+                The investigation of Incompleteness theorem requiers the knowledge of some basic ideas such as languages, grammars, automatas and others. Therefore we start this draft by talking about these topics in a general format. A more detailed version would be published later.
+                \subsection{Languages}
+                    We would begin by the definition of a language. In a informal way a language is what we speak or what we write on a paper to give information to another person, mathematically and a more abstract idea of a language is a bunch of symbols that we have to make words (gluing symbols together to resemble a unity of them); To give a precise mathematical definition of language we would first define alphabet as:
+                    \begin{define}
+                        \textit{An alphabet $\Sigma$, is a set of symbols.}
+                    \end{define}
+                    \begin{define}
+                        \textit{A word $M$, is a combination of symbols from alphabet $\Sigma$.}
+                    \end{define}
+                    For instance one could choose the set $\{a,b,c,d,\dots\}$ as ones alphabet. Then "$cat$" is a word in it's alphabet. As you can see there's a meaning for the word we gave as an example. It defines an object (more accurately a living creature). Since there can be Infinetly many words for any alphabet (other than an empty set which have no words), we distinguish between the accepted combinations and the ones we don't accept by defining a grammar for our language;  A grammar is a way to characterize a language, a way to list which stings of $\Sigma$ is acceptable. We could simply list strings or have a set of rules (or an algorithm) to say if a given combination is acceptable or not for a language. Thus we define a language as:
+                    \begin{define}
+                        \textit{Given an alphabet $\Sigma$, $\Sigma^\infty$ is the set of all possible words in the alphabet.}
+                    \end{define}
+                    \begin{define}
+                        \textit{A subset $S$ of a set $X$ is decidable if and only if there exists a function that given $x\in X$ decides if $x\in S$ is true or false.}
+                    \end{define}
+                    \begin{define}
+                        \textit{A Language $L$, is a subset of the alphabet $\Sigma^\infty$ ($L\subset \Sigma^\infty$) where there exists a function $\eta(\sigma\in\Sigma^\infty)$ called grammar that decides $L$.}
+                    \end{define}
+                    Formally, we define a grammar as:
+                    \begin{define}
+                        \textit{A Grammar is a set $\{V_T,V_N,S, R\}$ where $V_T$ is the set of terminal elements, $V_N$ is the set of non-terminal elements, $S$ is a memeber of $V_N$, and $R$ is a finite set of rules.}
+                    \end{define}
+                    We would use these definitions in the later sections of this draft. But for now let us give a formal definition of $R$ as well:
+                    \begin{define}
+                        \textit{$R$ is a finite set of ordered pairs from $\Sigma^\infty V_N \Sigma^\infty\times \Sigma^\infty$, where $\Sigma = V_T\cup V_N$.}
+                    \end{define}
+                    In later drafts we would get back to the Formal language theory in more depth and examine the properties of the setsof languages each grammar formalism can accomodate and the set of abstract machines that correspond to each type. But for now we would start with the things we need for proving the incompleteness theorems that is the goal of this draft.
+                    \\
+                    \\
+                    We assume that we are given a subset $T$ of language $L$, which is called the set of \textit{true statements}. This set should contain only the statements in the language that would evaluate as True. In the process of assuming such subset we ommit the part where we would consider the statemens true or false. A language then would be completely defined (for our purpose) if we are given the \textit{fundamental pair:}
+                    \begin{define}
+                        \textit{Given a language $L$ and the subset of true statements $T$, we call $\left<L,T\right>$ a fundamental pair.}
+                    \end{define}
+                    \newpoint{Induction:} Induction is a method of proving that a statemens $P(n)$ is true for every natural number $n$, that is, that the infinitely many cases, $P(0), P(1),\dots$ all hold. \cite{enwiki:1157726892}
+                    \begin{qt}
+                        Mathematical induction proves that we can climb as high as we like on a ladder, by proving that we can climb onto the bottom rung (the basis) and that from each rung we can climb up to the next one (the step).
+                    \end{qt}
+                    \begin{theorem}
+                        For every natural number $n$,
+                        \begin{equation}
+                            1+2+\dots + n = \frac{n(n+1)}{2}
+                        \end{equation}
+                    \end{theorem}
+                    \textit{proof:} If $n=1$, the equality holds. For the inductive case, fix $k\geq 1$ and assume that:
+                    \begin{equation}
+                        1+2+\dots+k =\frac{k(k+1)}{2}
+                    \end{equation}
+                    Now adding $k+1$ to each side we have:
+                    \begin{equation}
+                        1+2+\dots+(k+1) = \frac{k(k+1)}{2}+(k+1)
+                    \end{equation}
+                    Since the right hand side simplifies to:
+                    \begin{equation}
+                        \frac{(k+1)((k+1) + 1)}{2}
+                    \end{equation}
+                    Finishing the inductive step and thus the proof. As you can see in the inductive step what we prove is that:
+                    \begin{qt}
+                        \textit{If the formula holds for $k$, then the formula holds for $k+1$.}
+                    \end{qt}
+                    Looking at this from a slightly different angle, what we have done is to construct a set of numbers with a certain property. If we let $S$ stand for the set of numbers for which our theorem holds, in out proof by induction we whow that the set $S$, is identical with the set of natural numbers, thus the theorem holds for every natural number $n$, as needed.
+                    \\
+                    \\
+                    So what makes a proof by induction work is the fact that the natural numbers can be defined recursively, There is a base case, consisting of the smallest natural number, and there is a recursive case, showing how to construct bigger natural number from smaller ones.
+                    \\
+                    \\
+                    \newpoint{Terms and Formulas:} As we mentioned earlier not all words of a set $\Sigma^\infty$ is meaningful. Since any combination of the alphabet is a word there has to be distinctions between what are meaningful words and what are not. We would consider two kinds of words as \textit{terms \& formulas} as follow:
+                    \begin{define}
+                        \textit{If $\curveL$ is a language, a \textbf{term of $\curveL$} is a nonempty finite string $t$ of symbols from $\curveL$ such that either:}
+                        \begin{enumerate}
+                            \item $t$ is a variable, or
+                            \item $t$ is a constant symbol, or 
+                            \item $t:\equiv ft_1t_2t_3\dots t_n$, where $f$ is an $n$-ary function symbol of $\curveL$ and each of the $t_i$ is a term of $\curveL$.
+                        \end{enumerate}
+                    \end{define}
+                    \begin{define}
+                        \textit{If $\curveL$ is a language, a formula of $\curveL$ is a nonempty finite string of $\phi$ of symbols from $\curveL$ such that either:}
+                        \begin{enumerate}
+                            \item $\phi :\equiv = t_1t_2,$ where $t_1, t_2$ are terms of $\curveL$, or 
+                            \item $\phi :\equiv R t_1t_2\dots t_n$ where $R$ is an $n$-ary relation symbol of $\curveL$ and $t_1, t_2, \dots , t_n$ are all terms of $\curveL$, or 
+                            \item $\phi :\equiv (\neg \alpha)$ where $\alpha$ is a formula of $\curveL$, or
+                            \item $\phi:\equiv (\alpha\lor \beta)$, where $\alpha$ and $\beta$ are formulas of $\curveL$, or 
+                            \item $\phi :\equiv (\forall v)(\alpha)$, where $v$ is a variable and $\alpha$ is a formula of $\curveL$
+                        \end{enumerate}
+                    \end{define}
+                    Notice that the five clauses of the definition can be separated into two groups. The first two clauses, the atomic formulas, are explicitly defined. The last three clauses are the recursive case, showing how if $\alpha$ and $\beta$ are formulas, they can be used to build more complex formulas, such as $(\alpha\lor\beta)$ or $(\forall v)(\alpha)$.
+                    Now since the collection of formulas is defined recursively, we can use an inductive style proof when we want to prove that something is true about every formula. The inductive proof will consist of two parts, a base cae and an inductive case. First we prove the statement for every atomic formula and then using the inductive method we prove it for recursive formulas from the atomic ones. \textit{This method is called induction on the complexity of the formula, or induction on the structure of the formula.}
+                    \\
+                    \\
+                    \newpoint{A First-order Language:} Before getting to Sentences one should know a definition for a first-order language. A first-order language $\curveL$ is defined as an infinite collection of symbols, separated into the following categories:
+                    \begin{itemize}
+                        \item \textit{Parentheses:} $(,)$.
+                        \item \textit{Connectives:} $\land, \lor, \neg$.
+                        \item \textit{Quantifier:} $\forall, \exists$.
+                        \item \textit{Variables:} one for each positive integer $n$ denoted: $v_n$ for $n$th number.
+                        \item \textit{Equality:} $=$.
+                        \item \textit{Constant:} We can have a new symbol for each positive number or any other method that we distinguish between two numbert (we can use | for 1, || for 2 etc)
+                        \item \textit{Functions:} For each positive integer $n$, some set of zero or more $n$-ary function symbols.
+                        \item \textit{Relation:} For each positive integer $n$, some set of zero or more $n$-ary relation symbols.
+                    \end{itemize}
+                    \begin{callout}
+                        Having $n$ arity means that it is intended to represent a function of $n$ variables.
+                    \end{callout}
+                    Notice that by defining such language one can avoid the process of finiding an algorithm of grammar (the one that differenciates between nonesense and meaningful words) since we defined all the possible functions and etc. This way we have to only
+
+                    \newpoint{Sentences:} Among the formulas in the language $\curveL$, there are some in which we will be especially interested. These are the sentences of $\curveL$. The formulas that can be either true or false in a given mathematical model.
+                    \begin{define}
+                        \textit{A sentence in a language $\curveL$ is a formula of $\curveL$ that contains no free variable.}
+                    \end{define}
+                    \newpoint{Structures: } Defining any language and with constansts, functions and etc. There can exist multiple ways to define structures as opposed to another. The point is that there is no preference. Thus without determining the structure under consideration, without deciding how we wishs to interpret the symbols of the language, we have no way of talking about the truth or falsity of a sentence. Thus we have:
+                    \begin{define}
+                        \textit{Fix a language $\curveL$. An $\curveL$-Structure $\curveA$ is a nonempty set $A$m caled the \textbf{Universe of $\curveA$}, together with:}
+                        \begin{enumerate}
+                            \item \textit{For each constant symbol $c$ of $\curveL$, an element $c^\curveA$ of $A$}
+                            \item \textit{For each $n$-ary function symbol $f$ of $\curveL$, a function $f^\curveA L A^n\rightarrow A$, and }
+                            \item \textit{For each $n$-ary relation symbol $R$ of $\curveL$, and $n$-ary relation $R^\curveA$ on $A$.}
+                        \end{enumerate}
+                    \end{define}
+                    \newpoint{Truth in a Structure:} Now that we know some formal rules about what constitutes a language, we would like to merge syntax and semantics. We want to answer what is means to say that an $\curveL$-formula is true in an $\curveL$-structure $\curveA$.
+                    \\
+                    \\
+                    To begin the process of tying together the symbols with the structures, we will introduce assignment functions. These assignment functions will formalize what it means to interpret a term or a formula in a structure.
+                    \begin{define}
+                        \textit{if $\curveA$ us an $\curveL$-structure, a \textbf{variable assignment function into $\curveA$} is a function $s$ that assigns to each variable an element of the universe $A$. So a variable assignment function into $\curveA$ is any function with domain $V$ and codomain $A$.}
+                    \end{define}
+                    We will have occasion to want to fix the value of the assignment function $s$ for certain variables, then:
+                    \begin{define}
+                        \textit{If $s$ is a variable assignment function into $\curveA$ and $x$ is a variable and $a\in A$, then $s[x|a]$ is the variable assignment function into $\curveA$ defined as follows:}
+                        \begin{equation}
+                            s[x|a](v) = \left\{
+                                \begin{matrix}
+                                    s(v) & \text{if} \ v \ \text{is a variable other than }x\\
+                                    a & \text{if} \ v \ \text{is the variable} x 
+                                \end{matrix}\right.
+                        \end{equation}
+                    \end{define} 
+                    We call the function $s[x|a]$ and $x$-modification of the assignment function $s$. This is essentially the same function, except that the variable $x$ is now assigned to a particular element of the universe.
+                    \\
+                    \\
+                    What we will do next is extend a variable assignment function to a term assignment function $\bar s$. Thius function will assign an element of the universe to each term of the language $\curveL$.
+                    \begin{define}
+                        \textit{Suppose that $\curveA$ is an $\curveL$-structure and $s$ is a variable assignment function into $\curveA$. The function $\bar s$ is called the term assignment function generated by $s$, is the function with domain consisting of the set of 
+                        $\curveL$-terms and codomain $A$ defined recursively as follows:}
+                        \begin{enumerate}
+                            \item \textit{If $t$ is a variable, $\bar s(t) = s(t)$}.
+                            \item \textit{If $t$ is a constant symbol $c$, then $\bar s(t)= c^\curveA$}.
+                            \item \textit{If $t:\equiv ft_1t_2\dots t_n$, then $\bar s(t) = f^\curveA (\bar s(t_1),\bar s(t_2),\dots,\bar s(t_n))$}.
+                        \end{enumerate}
+                    \end{define}
+                    Although we will be primarily interested in truth of sentences, we will
+                    first describe truth (or satisfaction) for arbitrary formulas, relative to an
+                    assignment function.
+                    \begin{define}
+                        \textit{Suppose that $\curveA$ us an $\curveL$-structure, $\phi$ is an $\curveL$-formula, and $s$: $V\rightarrow A$ is an assignment function. We will say that $\curveA$ satisfies $\phi$ with assignment $s$, and write $\curveA\vDash \phi[s]$, in the following circumstances:}
+                        \begin{enumerate}
+                            \item \textit{If $\phi :\equiv =t_1t_2$ and $\bar s(t_1)$ is the same element of the universe $A$ as $\bar s(t_2)$, or}
+                            \item \textit{If $\phi :\equiv Rt_1\dots t_n$ and $(\bar s(t_1),\dots,\bar s(t_n))\in R^\curveA$, or}
+                            \item \textit{If $\phi:\equiv (\neg \alpha)$ and $\curveA \not\vDash \alpha[s]$ (where $\not\vdash$ means "does not satisfy") or}
+                            \item \textit{If $\phi:\equiv (\alpha\lor\beta)$ and $\curveA\vDash\alpha[s]$, or $\curveA \vDash\beta[s]$ (or both), or}
+                            \item \textit{$\phi:\equiv(\forall x)(\alpha)$ and, for each element $a$ of $A$, $\curveA\vDash \alpha[s(x|a)]$}
+                        \end{enumerate}
+                    \end{define}
+                    \begin{callout}
+                        If $\Gamma$ is a set of $\curveL$-formulas, we say that $\curveA$ satisfies $\Gamma$ with assignment $s$, and write $\curveA\vDash \Gamma[s]$ if for each $\gamma\in\Gamma, \curveA\vDash \gamma[s]$
+                    \end{callout}
+                    \newpoint{Logical Implication: } In this section we formalize the question that If I know this statement is true, is it necessarily the case that this other statement is true.
+                    \begin{define}
+                        \textit{Suppose that $\Delta$ and $\Gamma$ are sets of $\curveL$-formulas. We will say that $\Delta$ logically implies $\Gamma$ and write $\Delta\vDash \Gamma$ if for every $\curveL$-structure $\curveA$, if $\curveA\vDash\Delta$, then $\curveA\vDash\Gamma$.}
+                    \end{define}
+                    This definition says that if $\Delta$ is true in $\curveA$, then $\Gamma$ is true in $\curveA$. Remember, for $\Delta$ to be true in $\curveA$, it must be the case that $\curveA\vDash\Delta[s]$ for every assignment function $s$.
+                    \begin{define}
+                        An $\curveL$-formula $\phi$ is said to be valid if $\emptyset\vDash\phi$, in other words, if $\phi$ is true in every $\curveL$-structure with every assignment function $s$. In this case we will write $\vDash\phi$.
+                    \end{define}
+                    \begin{callout}
+                        For the double turnstyle symbol $\vDash$, if there is a structure on the left, $\curveA\vDash \sigma$, we are discussing truth in a single structure. On the other hand if there is a set of sentences on the left $\Gamma\vDash\sigma$, then we are discussing logical implication.
+                    \end{callout}
+                \subsection{Deductions}
+                    In this section we will try to formalize what is known to be the deductive method. In mathematics we generally tend to insist upon the existence of a proof for any true statement (or at least we hope so). A proof is a sequence of statements, each one of which can be justified by referring to previous statements. This is a perfectly reasonable starting point, and it brings us to the main difficuly we will have to address as we move from an informal understanding of what constitutes a proof to a formal definition of deduction.
+                    \\
+                    \\
+                    The proofs that you have seen in your mathematical career have had a couple of nice properties. The first of these is that proofs are easy to follow. This doesn't mean that it is easy to discover a proof, but rather that if someone is showing you a proof, it should be easy to follow the steps of the proof and to understand why the proof is correct. The second admirable property of proofs is that when you prove something, you know that it is true! Our definition of deduction will be designed to make sure that deductions, too, will be easily checkable and will preserve truth.
+                    \\
+                    \\
+                    We then would impose the following restrictions on our logical axioms and rules of inference:
+                    \begin{enumerate}
+                        \item There will be an algorithm that will decide, given a formula, whether or not that formula is a logical axiom.
+                        \item There will be an algorithm that will decide, given a finite set of formulas $\Gamma$ and a fimula $\theta$, whether or not $(\Gamma,\theta)$ is a rule of inference.
+                        \item For each rule of inference $(\Gamma,\theta)$, $\Gamma$ will be a finite set of formulas.
+                        \item Each logical axiom will be valid.
+                        \item Our rules of inference will preserve truth. In other words, for each rule of inference $(\Gamma, \theta)\rightarrow \Gamma\vDash\theta$.
+                    \end{enumerate}
+                    The idea is that there should be no brilliance and no insight required to check whether an alleged deduction of $\alpha$ is, infact, a deduction of $\alpha$. To check whether a deduction is correct will be such a simple procedure that it could be programmed into a computer.
+                    \\
+                    \\
+                    We begin by fixing a language $\curveL$. Also assume that we have been given a fixed set of $\curveL$-formulas, $\Lambda$, is called the set of logical axioms, and a set of ordered pairs $(\Gamma, \phi)$, called the rules of inference. A deduction is going to be a finite sequence or ordered list, of $\curveL$-formulas with certain properties.
+                    \begin{define}
+                        \textit{Suppose that $\Sigma$ is a collection of $\curveL$-formulas and $D$ is a finite sequence $(\phi_1, \dots, \phi_n)$ of $\curveL$-formulas. We will say that $D$ is a deduction form $\Sigma$ if for each element in $D$:}
+                        \begin{enumerate}
+                            \item $\phi_i\in\Lambda$ ($\phi_i$ is a logical axiom), or
+                            \item $\phi_i\in\Sigma$ ($\phi_i$ is a nonlogical axiom), or
+                            \item There is a rule of inference $(\Gamma,\phi_i)$ such that $\Gamma\subseteq\{\phi_1,\dots,\phi_{i-1}\}$
+                        \end{enumerate}
+                    \end{define}
+                        If there is a deduction form $\Sigma$, the last line of which is the formula $\phi$, we will call this a deduction form $\Sigma$ of $\phi$. And write: $\Sigma\vdash\phi$.
+                        \begin{callout}
+                            Well, we have now established what we mean by the word justified. In a deduction we are allowed to write down any $\curveL$-formula that we like, as long as that formula is either a logical axiom or is listed explicitly in a collection $\Sigma$ of nonlogical axioms. Any formula that we write in a deduction that is not an axiom must arise from previous formulas in the deduction via a rule of inference.
+                        \end{callout}
+                        \newpoint{Logical Axioms:}
+
+
+
+
+
+                    
+
+                
+
+
+                    \newpage
+                    \bibliography{logicsources}
+                    \bibliographystyle{plain}
+            
+
+
+
+
+\end{document}
