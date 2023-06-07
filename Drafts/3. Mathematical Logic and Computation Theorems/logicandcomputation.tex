@@ -181,6 +181,8 @@
 \newcommand{\newpoint}[1]{\indent$\mathsection$ \textbf{#1}}
 \newcommand{\curveL}{\mathcal{L}}
 \newcommand{\curveA}{\mathcal{A}}
+\newcommand{\curveP}{\mathcal{P}}
+\newcommand{\thm}{\text{Thm}}
 \title{Mathematical Limits \\ \large Logic and Computational Theorems}
 \author{Amir H. Ebrahimnezhad}
 \date{\today}
@@ -359,6 +361,36 @@
                     \begin{callout}
                         If $\Gamma$ is a set of $\curveL$-formulas, we say that $\curveA$ satisfies $\Gamma$ with assignment $s$, and write $\curveA\vDash \Gamma[s]$ if for each $\gamma\in\Gamma, \curveA\vDash \gamma[s]$
                     \end{callout}
+                    \newpoint{Substitutions and Substitutability:} Suppose that you knew the sentence $\forall x \phi(x)$ was tru in particular structure $\curveA$. Then, if $c$ is a constant symbol in the language, you would certainly expect $\phi(c)$ to be true in $\curveA$ as well.
+                    \\
+                    \\
+                    Suppose now that $\curveA\vDash \forall x\exists y\neg(x=y)$. This sentence is, in fact, true in any structure $\curveA$ such that $A$ has atleast two elements. The rules of substitutability that we will discuss in this section are designed to help us avoid this problem, the problem of attempting to substitute a term inside a quantifier that binds a variable involved in the term.
+                    \begin{define}
+                        \textit{Suppose that $u$ is a term, $x$ is a variable, and $t$ is a term. We define the term $u_t^x$, and read $u$ with $x$ replaced by $t$ as:}
+                        \begin{enumerate}
+                            \item \textit{If $u$ is a variable not equal to x, then $u_t^x$ is $u$}
+                            \item \textit{If $u$ is $x$, then $u_t^x$ is $t$}
+                            \item \textit{If $u$ is a constant symbol then $u_t^x$ is $u$}
+                            \item \textit{If $u:\equiv fu_1u_2\dots u_n$, where $f$ is a $n$-ary function symbol and the $u_i$ are terms, then:}
+                            \begin{equation}
+                                u_t^x \ \text{is} \ f(u_1)_t^x\dots(u_n)_t^x
+                            \end{equation}
+                        \end{enumerate}
+                    \end{define}
+                    Having defined what it means to substitute a term for a variable now we define what is substitutability:
+                    \begin{define}
+                        \textit{Suppose that $\phi$ is a $\curveL$-formula, $t$ is a term, and $x$ is a variable. We say that $t$ is substitutable for $x$ in $\phi$ if:}
+                        \begin{enumerate}
+                            \item \textit{$\phi$ is atomic, or}
+                            \item \textit{$\phi :\equiv \neg(\alpha)$ and $t$ is substitutable for $x$ in $\alpha$, or}
+                            \item \textit{$\phi:\equiv (\alpha\lor\beta)$ and $t$ is substitutable for $x$ in both $\alpha$ and $\beta$}
+                            \item \textit{$\phi:\equiv (\forall y)(\alpha)$ and either}
+                            \begin{enumerate}
+                                \item \textit{$x$ is not free in $\phi$, or}
+                                \item \textit{$y$ does not occur in $t$ and$t$ is substitable or $x$ in $\alpha$.}
+                            \end{enumerate}
+                        \end{enumerate}
+                    \end{define}
                     \newpoint{Logical Implication: } In this section we formalize the question that If I know this statement is true, is it necessarily the case that this other statement is true.
                     \begin{define}
                         \textit{Suppose that $\Delta$ and $\Gamma$ are sets of $\curveL$-formulas. We will say that $\Delta$ logically implies $\Gamma$ and write $\Delta\vDash \Gamma$ if for every $\curveL$-structure $\curveA$, if $\curveA\vDash\Delta$, then $\curveA\vDash\Gamma$.}
@@ -401,13 +433,145 @@
                         \begin{callout}
                             Well, we have now established what we mean by the word justified. In a deduction we are allowed to write down any $\curveL$-formula that we like, as long as that formula is either a logical axiom or is listed explicitly in a collection $\Sigma$ of nonlogical axioms. Any formula that we write in a deduction that is not an axiom must arise from previous formulas in the deduction via a rule of inference.
                         \end{callout}
-                        \newpoint{Logical Axioms:}
+                        \subsubsection{Logical Axioms} 
+                            In this section we will gather together a collection of $\Lambda$ of logical axioms for $\curveL$. This set of axioms, though infinite, will be decidable. Which means that there exists an algorithm, which given an input $x$, can tell if $x\in\Lambda$ is true or false.
+                            \\
+                            \\
+                            \newpoint{Equality Axioms:} We have taken the route of assuming that the equality symbol, $=$, is a part of the language iteself. There are three groups of axioms that are designed for this symbol. The first just says that any object is equal to itself:
+                            \begin{equation}
+                                x = x
+                            \end{equation}
+                            For the second group of axioms, assume that $x_i$ and $y_i$ are variables, and $f$ is an $n$-ary frunction symbol.
+                            \begin{equation}
+                                \left[(x_1 = y_1)\land (x_2 = y_2) \land\dots\land(x_n = y_n) \right] \rightarrow \left(f(x_1,x_2,\dots,x_n) = f(y_1,y_2,\dots,y_n)\right)
+                            \end{equation}
+                            The assumption for the third group of axioms is the same as for the second group, except that $R$ is assumed to be an $n$-ary relation symbol.
+                            \begin{equation}
+                                \left[(x_1 = y_1)\land (x_2 = y_2) \land\dots\land(x_n = y_n) \right] \rightarrow \left(R(x_1,x_2,\dots,x_n) = R(y_1,y_2,\dots,y_n)\right)
+                            \end{equation}
+                            \newpoint{Quantifier Axioms:} The quantifier axioms are designed to allow a very reasonable sort of entry in a deduction. Suppose that we know $\forall xP(x)$. Then, if $t$ is any term of the language, we should be able to state that $P(t)$ . To avoid some problems we will demand that the term $t$ be substitutable for the variable $x$.
+                            \begin{align}
+                                (\forall x\phi)\rightarrow \phi_t^x, \text{if } t \text{ is substitutable for } x \text{ in } \ \phi \\
+                                \phi_t^x\rightarrow (\exists x\phi), \text{if } t \text{ is substitutable for } x \text{ in } \ \phi
+                            \end{align}
+                            In many logic texts, the first axiom would be called universal instantiation, while the second would be known as existential generalization. 
+                        \subsubsection{Rules of Inference:}
+                            There will be two types of Rules of Inference, one dealing with propositional consequence and one dealing with quantifier.
+                            \\
+                            \\
+                            \newpoint{Propositional Consequence:}We work with a restricted language $curveP$, consisting only of a set of propositional variables $A,B,C,\dots$ and the connectives $\lor$ and $\neg$ . Notice there are no quantifiers, no relation symbols, no function symbols, and no constansts. Each propositional variable can be assigned one of two truth values, T,F for truth and falsity respectively. The we can define a function $v$ to assign the truth value and for extending that we would define:
+                            \begin{equation}
+                                \bar v(\phi) = \left\{
+                                \begin{matrix}
+                                    v(\phi) &\text{if } \phi \text{ is a propositional variable}
+                                    \\
+                                    F & \text{if } \phi:\equiv(\neg\alpha) \text{ and } \bar v{\alpha} = T
+                                    \\
+                                    F & \text{if } \phi:\equiv(\alpha\lor\beta) \text{and } \bar v(\alpha) = \bar (\beta) = F
+                                    \\
+                                    T & \text{otherwise}
+                                \end{matrix}
+                                \right.
+                            \end{equation}
+                            To discuss propositional consequence in first-order logic, we will transfer our formulas to the real of propositional logic and use the idea of tautology in that area. To be specific, given $\beta$ , an $\curveL$-formula of first-order logic, gere is a procedure that will convert $\beta$ to a formula $\beta_P$ of propositional logic corresponding to $\beta$:
+                            \begin{enumerate}
+                                \item Find all subfomulas of $\beta$ of the form $\forall x\alpha$ that are not in the scope of another quantifier. Replace them with propositional variables in a systematic fashion. This means that if $\forall yQ(y,c)$ appears twice in $\beta$ it is replaced by the same letter both times, and distinct subformulas are replaced with distict letters.
+                                \item Find all aromic formulas that remain, and replace them systemically with new propositional variables.
+                                \item At this point, $\beta$ will have been replaced with a propositional formula $\beta_P$
+                            \end{enumerate}
+                            We are now almost at a point where we can state out propositional rule of inference. Recall that a rule of inference is an ordered pair $(\Gamma,\phi)$, where $\Gamma$ is a set of $\curveL$-formulas and $\phi$ is a $\curveL$-formula.
+                            \begin{define}
+                                \textit{Suppose that $\Gamma_P$ is a set of propositional formulas and $\phi_P$ is a propositional formula. We will say that $\phi_P$ is a propositional consequence of $\Gamma_P$ if every truth assignment that makes each propositional formula in $\Gamma_P$ true also makes $\phi_P$ true. Notice that $\phi_P$ is a tautology if and only if $\phi_P$ is a propositional consequence of $\emptyset$.}
+                            \end{define}
+                            Notice that if $\Gamma_P=\{\gamma_{1P},\dots,\gamma_{nP}\}$ is a nonempty finite set of propositional formulas and $\phi_P$ is a propositional formula, then $\phi_P$ is a propositional consequence of $\Gamma_P$ if and only if:
+                            \begin{equation}
+                                \left[
+                                    \gamma_{1P}\land\dots\land \gamma_{nP} 
+                                \right]\rightarrow \phi_P 
+                            \end{equation}
+                            is a tautology.
+                            \begin{callout}
+                                A tautology is a formula of assertion that is true in every possible structure $\curveA$.
+                            \end{callout}
+                            Now we extend our definition:
+                            \begin{define}
+                                Suppose that $\Gamma$ is a finite set of $\curveL$-formulas and $\phi$ is an $\curveL$-formula. We will say that $\phi$ is a propositional consequence of $\Gamma$ if $\phi_P$ is a propositional consequence of $\Gamma_P$, where the two latter are the results of applying the procedure of making a first order logic formulas into propositional formulas.
+                            \end{define}
+                            \begin{define}
+                                If $\Gamma$ is a finite set of $\curveL$-formulas, $\phi$ is an $\curveL$-formula, and $\phi$ is a propositional consequence of $\Gamma$ then $(\Gamma,\phi)$ is a rule of inference of type (PC).
+                            \end{define}
+                            \newpoint{Quantifier Rules} Suppose, without making any particular assumptions about $x$, that you were able to prove $x$ is $a$ then you also have proved $(\forall x)x$ is $a$. Looking at it from back to front we would have:
+                            \begin{define}
+                                Suppose that the variable $x$ is not free in the formula $\psi$. Then both of the following are rules of inference of type (QR).
+                                \begin{align}
+                                    \left(\left\{
+                                        \psi\rightarrow\phi
+                                    \right\}, \psi \rightarrow (\forall x \phi)\right)\\
+                                    \left(\left\{
+                                        \phi\rightarrow\psi
+                                    \right\}, \exists x\phi \rightarrow \psi\right)
+                                \end{align}
+                            \end{define}
+                    \subsection{Soundness}
+                        Generally in mathematics we would like to be sure that when something has been proved, then it is for sure, true. In thi section we will prove a theorem that shows that the logical system that we have developed has this highly desirable property. This result is called the Soundness Theorem. As you might recall the requirements that we set for our rule of inference are:
+                        \begin{enumerate}
+                            \item There will be an algorithm that will decide, given a formula $\theta$, whether or not $\theta$ is a logical axiom.
+                            \item There will be an algorithm that will decide, given a finite set of formulas $\Gamma$ and a formula $\theta$, whether or not $(\Gamma, \theta)$ is a rule of inference.
+                            \item For each rule of inference $(\Gamma,\theta)$, $\Gamma$ will be a finite set of formulas.
+                            \item Each logical axiom will be valid.
+                            \item Our rules of inference will preserve truth, or in other words, for each rule of inference $(\Gamma,\theta)$, $\Gamma\vDash \theta$.
+                        \end{enumerate}
+                        These requirements serve two purposes: They allow us to verify mechanically that an alleged deduction is in fact a deduction, and they provide the basis of the Soundness Theorem. The idea behind the Soundness theorem is very simple. Suppose that $\Sigma$ is a set of $\curveL$-formulas and suppose that there is a deduction of $\phi$ from $\Sigma$. What the Soundness Theorem tells us is that in any structure $\curveA$ that makes all of the formulas of $\Sigma$ true, $\phi$ is true as well.
+                        \begin{theorem}
+                            If $\Sigma\vdash\phi$, then $\Sigma\vDash\phi$
+                            \\
+                            \\
+                            \textit{proof.} Let $\thm_\Sigma = \{\phi | \Sigma \vdash\phi\}$ and $C =\{\phi | \Sigma \vDash \phi\}$. By showing that $\thm\subseteq C$ we prove the theorem. Notice that $C$ has the following characteristics:
+                            \begin{enumerate}
+                                \item $\Sigma \subseteq C$. If $\sigma\in\Sigma$ then certainly $\Sigma\vDash\sigma$.
+                                \item $\Lambda\subseteq C$. As the logical axioms are valid, they are true in any structure. Thus $\Sigma\vDash\lambda$ for any logical axiom.
+                                \item If $(\Gamma,\theta)$ is a rule of inference and $\Gamma\subseteq C$, then $\theta\in C$. Then because: $\curveA\vDash\Gamma$ and $\Gamma\vDash\theta$ we know that $\curveA\vDash\theta$.
+                            \end{enumerate}
+                            Since we have the following proposition and $C$ has these characteritics the prove is completed:
+                            \textit{Fix sets of $\curveL$-formulas $\Sigma$ and $\Lambda$ and a collection of rules of inference. The set $\thm_\Sigma$ is the smallest set $C$ such:}
+                            \begin{itemize}
+                                \item $\Sigma\subseteq C$
+                                \item $\Lambda\subseteq C$ 
+                                \item If $(\Gamma,\theta)$ is a rule of inference and $\Gamma\subseteq C$, then $\theta\in C$.
+                            \end{itemize}
+                        \end{theorem}
+                    \subsection{Completeness - A brief overlook}
+                        We have established a deductive system consisting of logical axioms and rules of inference. The Soundness Theorem showed that our deductive system preserves truth; that is, if there is a deduction of a formula $\varphi$ from a set of formulas $\Sigma$, then $\varphi$ is true in any model of $\Sigma$. Formally, we write this as follows:
+                        $$\Sigma \vdash \varphi \implies \Sigma \models \varphi$$
+                        where $\vdash$ denotes provability in the deductive system, and $\models$ denotes semantic entailment.
+                        
+                        The Completeness Theorem is the first major result of this chapter, and it gives us the converse to the Soundness Theorem. Specifically, it states that every semantically valid formula is provable in our deductive system. In other words, if a formula is true in every model, then it can be proved using only the logical axioms and rules of inference we have established. Formally, we write this as follows:
+
+                        \begin{equation} 
+                            \Sigma \models \varphi \implies \Sigma \vdash \varphi
+                        \end{equation}
+                        
+                        Combined with the Soundness Theorem, the Completeness Theorem gives us the following equivalence:
+                        
+                        \begin{define}
+                            A deductive system consisting of a collection of logical axioms $\Lambda$ and a collection of rules of inference is said to be complete if for every set of nonlogical axioms $\Sigma$ and every $\curveL$-formula $\phi$,
+                            \begin{equation}
+                                \text{If } \Sigma\vDash\phi \text{, then } \Sigma\vdash\phi
+                            \end{equation}
+                        \end{define}
+
+                        This equivalence assures us that if our deductive system allows us to prove a statement, then that statement is true, and conversely, if a statement is true in every model, then it can be proved using our deductive system.
+                        
+                        However, it is important to note that the Completeness Theorem only applies to formulas that are true in every possible model. It does not necessarily extend to formulas that are true in some but not all models. Furthermore, the theorem applies specifically to first-order logic and may not hold for other logical systems.
+                        
+
+                        
 
 
 
 
 
-                    
+                        
 
                 
 

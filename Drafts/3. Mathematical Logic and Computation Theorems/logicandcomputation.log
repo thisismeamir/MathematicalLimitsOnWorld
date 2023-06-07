@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.26)  6 JUN 2023 14:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.26)  7 JUN 2023 17:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -951,47 +951,47 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
  (logicandcomputation.aux)
 \openout1 = `logicandcomputation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 187.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 189.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-187.
+189.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.f
 d
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 187.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 189.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-187.
+189.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.f
 d
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 187.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 189.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-187.
+189.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.f
 d
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 187.
+LaTeX Font Info:    ... okay on input line 189.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-
 pdf.mkii
@@ -1018,13 +1018,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 -sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 187.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 187.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 189.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 189.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-Package chemgreek Info: Activating mapping `fourier' on line 187.
+Package chemgreek Info: Activating mapping `fourier' on line 189.
 
 
 *geometry* driver: auto-detecting
@@ -1062,78 +1062,78 @@ Package chemgreek Info: Activating mapping `fourier' on line 187.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 188.
+ 190.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.
 fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 188.
+(Font)              scaled to size 11.03998pt on input line 190.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 188.
+(Font)              scaled to size 8.27998pt on input line 190.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 188.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 188
+(Font)              scaled to size 6.43999pt on input line 190.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 190
 .
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 188
+LaTeX Font Info:    Trying to load font information for U+msb on input line 190
 .
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 188.
+(Font)              scaled to size 11.03998pt on input line 190.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 188.
+(Font)              scaled to size 8.27998pt on input line 190.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 188.
+(Font)              scaled to size 6.43999pt on input line 190.
 (logicandcomputation.toc)
 \tf@toc=\write4
 \openout4 = `logicandcomputation.toc'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--196
+Underfull \hbox (badness 10000) in paragraph at lines 194--198
 
  []
 
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 201.
+(Font)              scaled to size 9.19998pt on input line 203.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 201.
+(Font)              scaled to size 6.99199pt on input line 203.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 201.
+(Font)              scaled to size 5.51999pt on input line 203.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 201.
+(Font)              scaled to size 9.19998pt on input line 203.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 201.
+(Font)              scaled to size 6.99199pt on input line 203.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 201.
+(Font)              scaled to size 5.51999pt on input line 203.
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 202--202
+Overfull \hbox (1.0pt too wide) in paragraph at lines 204--204
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 205--205
+Overfull \hbox (1.0pt too wide) in paragraph at lines 207--207
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 209--209
+Overfull \hbox (1.0pt too wide) in paragraph at lines 211--211
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 212--212
+Overfull \hbox (1.0pt too wide) in paragraph at lines 214--214
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 215--215
+Overfull \hbox (1.0pt too wide) in paragraph at lines 217--217
 [] 
  []
 
@@ -1141,185 +1141,250 @@ Overfull \hbox (1.0pt too wide) in paragraph at lines 215--215
 
 {C:/Users/amirebrahim/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/User
 s/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 219--219
+Overfull \hbox (1.0pt too wide) in paragraph at lines 221--221
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 223--223
+Overfull \hbox (1.0pt too wide) in paragraph at lines 225--225
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--230
+Underfull \hbox (badness 10000) in paragraph at lines 226--232
 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 230--230
+Overfull \hbox (1.0pt too wide) in paragraph at lines 232--232
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 234--234
+Overfull \hbox (1.0pt too wide) in paragraph at lines 236--236
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 240--240
+Overfull \hbox (1.0pt too wide) in paragraph at lines 242--242
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 256--256
+Overfull \hbox (1.0pt too wide) in paragraph at lines 258--258
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--271
+Underfull \hbox (badness 10000) in paragraph at lines 259--273
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--271
+Underfull \hbox (badness 10000) in paragraph at lines 259--273
 
  []
 
 [2]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 271--271
+Overfull \hbox (1.0pt too wide) in paragraph at lines 273--273
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 281--281
+Overfull \hbox (1.0pt too wide) in paragraph at lines 283--283
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--287
+Underfull \hbox (badness 10000) in paragraph at lines 284--289
 
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
-288.
+290.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\ts1futs.f
 d
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
-Overfull \hbox (1.0pt too wide) in paragraph at lines 299--299
+Overfull \hbox (1.0pt too wide) in paragraph at lines 301--301
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 305--305
+Overfull \hbox (1.0pt too wide) in paragraph at lines 307--307
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 314--314
+Overfull \hbox (1.0pt too wide) in paragraph at lines 316--316
 [] 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 315--321
+Underfull \hbox (badness 10000) in paragraph at lines 317--323
 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 321--321
+Overfull \hbox (1.0pt too wide) in paragraph at lines 323--323
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 332--332
+Overfull \hbox (1.0pt too wide) in paragraph at lines 334--334
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--345
+Underfull \hbox (badness 10000) in paragraph at lines 335--347
 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 345--345
+Overfull \hbox (1.0pt too wide) in paragraph at lines 347--347
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 358--358
+Overfull \hbox (1.0pt too wide) in paragraph at lines 360--360
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 361--361
+Overfull \hbox (1.0pt too wide) in paragraph at lines 363--363
 [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 364--379
+
  []
 
 [4]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 365--365
+Overfull \hbox (1.0pt too wide) in paragraph at lines 379--379
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 369--369
+Overfull \hbox (1.0pt too wide) in paragraph at lines 393--393
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 372--372
+Overfull \hbox (1.0pt too wide) in paragraph at lines 397--397
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--381
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 374--381
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 388--399
-
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 399--399
+Overfull \hbox (1.0pt too wide) in paragraph at lines 401--401
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 403--403
+Overfull \hbox (1.0pt too wide) in paragraph at lines 404--404
 [] 
  []
 
-[5] [6] (logicandcomputation.bbl) [7] (logicandcomputation.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--413
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--413
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 420--431
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 431--431
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 435--435
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 437--441
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 459--463
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 485--485
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 495--495
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 499--499
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 502--502
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 514--514
+[] 
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 525--530
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 542--542
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 561--561
+[] 
+ []
+
+[8] [9] (logicandcomputation.bbl) [10] (logicandcomputation.aux) ) 
 Here is how much of TeX's memory you used:
- 18629 strings out of 476331
- 373564 string characters out of 5784933
- 1871660 words of memory out of 5000000
- 38690 multiletter control sequences out of 15000+600000
- 593962 words of font info for 117 fonts, out of 8000000 for 9000
+ 18642 strings out of 476331
+ 373747 string characters out of 5784933
+ 1873660 words of memory out of 5000000
+ 38703 multiletter control sequences out of 15000+600000
+ 602122 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,12n,117p,801b,478s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/amir
-ebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mcl.pf
-b><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourie
-r/fourier-mex.pfb><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/fourier/fourier-ml.pfb><C:/Users/amirebrahim/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Users/amirebrahim/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-ms.pfb><C:/Users/amir
-ebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/U
-sers/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putbi8a
-.pfb><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utop
-ia/putr8a.pfb><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/a
-dobe/utopia/putri8a.pfb>
-Output written on logicandcomputation.pdf (7 pages, 123758 bytes).
+<C:/Users/ami
+rebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mcl.p
+fb><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/public/fouri
+er/fourier-mex.pfb><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/fourier/fourier-ml.pfb><C:/Users/amirebrahim/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Users/amirebrahim/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-ms.pfb><C:/Users/ami
+rebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/
+Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putbi8
+a.pfb><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/uto
+pia/putr8a.pfb><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/
+adobe/utopia/putri8a.pfb>
+Output written on logicandcomputation.pdf (10 pages, 145107 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
+ 84 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
