@@ -1,5 +1,6 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -42,7 +43,7 @@
 \newcommand{\rich}[1]{\textcolor{richblack}{#1}}
 \newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
 \newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
-\newcommand{\liver}[1]{\textcolor{darkliver}{#1}}
+
 
 %Boxes
 \usepackage{tcolorbox}
@@ -111,6 +112,20 @@
 	boxrule=0pt,
 	leftrule=2pt,
     rightrule = 0pt}
+
+\newcounter{lemmacount}
+\newtcolorbox[use counter=lemmacount]{lemma}
+{center,%
+    colframe=charcoal!50,%
+    colback=white!0,
+    title={\textcolor{black}{\textbf{\textit{Lemma}} \  \thetcbcounter  \ --}},
+    coltitle=darkliver!50,
+    attach title to upper,
+    after upper ={ },
+    sharp corners,
+    enlarge by=0.5pt,
+    boxrule=2pt}
+    
 
 \newcounter{examplecounter}
 \newtcolorbox[use counter=examplecounter]{example}
@@ -183,6 +198,8 @@
 \newcommand{\curveA}{\mathcal{A}}
 \newcommand{\curveP}{\mathcal{P}}
 \newcommand{\thm}{\text{Thm}}
+\newcommand{\proof}{\\ \ \\ $\blacktriangleright$ \textit{proof: }}
+
 \title{Mathematical Limits \\ \large Logic and Computational Theorems}
 \author{Amir H. Ebrahimnezhad}
 \date{\today}
@@ -226,10 +243,6 @@
                     In later drafts we would get back to the Formal language theory in more depth and examine the properties of the setsof languages each grammar formalism can accomodate and the set of abstract machines that correspond to each type. But for now we would start with the things we need for proving the incompleteness theorems that is the goal of this draft.
                     \\
                     \\
-                    We assume that we are given a subset $T$ of language $L$, which is called the set of \textit{true statements}. This set should contain only the statements in the language that would evaluate as True. In the process of assuming such subset we ommit the part where we would consider the statemens true or false. A language then would be completely defined (for our purpose) if we are given the \textit{fundamental pair:}
-                    \begin{define}
-                        \textit{Given a language $L$ and the subset of true statements $T$, we call $\left<L,T\right>$ a fundamental pair.}
-                    \end{define}
                     \newpoint{Induction:} Induction is a method of proving that a statemens $P(n)$ is true for every natural number $n$, that is, that the infinitely many cases, $P(0), P(1),\dots$ all hold. \cite{enwiki:1157726892}
                     \begin{qt}
                         Mathematical induction proves that we can climb as high as we like on a ladder, by proving that we can climb onto the bottom rung (the basis) and that from each rung we can climb up to the next one (the step).
@@ -239,8 +252,8 @@
                         \begin{equation}
                             1+2+\dots + n = \frac{n(n+1)}{2}
                         \end{equation}
-                    \end{theorem}
-                    \textit{proof:} If $n=1$, the equality holds. For the inductive case, fix $k\geq 1$ and assume that:
+                    \
+                    \proof If $n=1$, the equality holds. For the inductive case, fix $k\geq 1$ and assume that:
                     \begin{equation}
                         1+2+\dots+k =\frac{k(k+1)}{2}
                     \end{equation}
@@ -256,6 +269,7 @@
                     \begin{qt}
                         \textit{If the formula holds for $k$, then the formula holds for $k+1$.}
                     \end{qt}
+                    \end{theorem}
                     Looking at this from a slightly different angle, what we have done is to construct a set of numbers with a certain property. If we let $S$ stand for the set of numbers for which our theorem holds, in out proof by induction we whow that the set $S$, is identical with the set of natural numbers, thus the theorem holds for every natural number $n$, as needed.
                     \\
                     \\
@@ -512,58 +526,277 @@
                                     \right\}, \exists x\phi \rightarrow \psi\right)
                                 \end{align}
                             \end{define}
-                    \subsection{Soundness}
-                        Generally in mathematics we would like to be sure that when something has been proved, then it is for sure, true. In thi section we will prove a theorem that shows that the logical system that we have developed has this highly desirable property. This result is called the Soundness Theorem. As you might recall the requirements that we set for our rule of inference are:
+                \subsection{Soundness}
+                    Generally in mathematics we would like to be sure that when something has been proved, then it is for sure, true. In thi section we will prove a theorem that shows that the logical system that we have developed has this highly desirable property. This result is called the Soundness Theorem. As you might recall the requirements that we set for our rule of inference are:
+                    \begin{enumerate}
+                        \item There will be an algorithm that will decide, given a formula $\theta$, whether or not $\theta$ is a logical axiom.
+                        \item There will be an algorithm that will decide, given a finite set of formulas $\Gamma$ and a formula $\theta$, whether or not $(\Gamma, \theta)$ is a rule of inference.
+                        \item For each rule of inference $(\Gamma,\theta)$, $\Gamma$ will be a finite set of formulas.
+                        \item Each logical axiom will be valid.
+                        \item Our rules of inference will preserve truth, or in other words, for each rule of inference $(\Gamma,\theta)$, $\Gamma\vDash \theta$.
+                    \end{enumerate}
+                    These requirements serve two purposes: They allow us to verify mechanically that an alleged deduction is in fact a deduction, and they provide the basis of the Soundness Theorem. The idea behind the Soundness theorem is very simple. Suppose that $\Sigma$ is a set of $\curveL$-formulas and suppose that there is a deduction of $\phi$ from $\Sigma$. What the Soundness Theorem tells us is that in any structure $\curveA$ that makes all of the formulas of $\Sigma$ true, $\phi$ is true as well.
+                    \begin{theorem}
+                        If $\Sigma\vdash\phi$, then $\Sigma\vDash\phi$
+                        \\
+                        \\
+                        \textit{proof.} Let $\thm_\Sigma = \{\phi | \Sigma \vdash\phi\}$ and $C =\{\phi | \Sigma \vDash \phi\}$. By showing that $\thm\subseteq C$ we prove the theorem. Notice that $C$ has the following characteristics:
                         \begin{enumerate}
-                            \item There will be an algorithm that will decide, given a formula $\theta$, whether or not $\theta$ is a logical axiom.
-                            \item There will be an algorithm that will decide, given a finite set of formulas $\Gamma$ and a formula $\theta$, whether or not $(\Gamma, \theta)$ is a rule of inference.
-                            \item For each rule of inference $(\Gamma,\theta)$, $\Gamma$ will be a finite set of formulas.
-                            \item Each logical axiom will be valid.
-                            \item Our rules of inference will preserve truth, or in other words, for each rule of inference $(\Gamma,\theta)$, $\Gamma\vDash \theta$.
+                            \item $\Sigma \subseteq C$. If $\sigma\in\Sigma$ then certainly $\Sigma\vDash\sigma$.
+                            \item $\Lambda\subseteq C$. As the logical axioms are valid, they are true in any structure. Thus $\Sigma\vDash\lambda$ for any logical axiom.
+                            \item If $(\Gamma,\theta)$ is a rule of inference and $\Gamma\subseteq C$, then $\theta\in C$. Then because: $\curveA\vDash\Gamma$ and $\Gamma\vDash\theta$ we know that $\curveA\vDash\theta$.
                         \end{enumerate}
-                        These requirements serve two purposes: They allow us to verify mechanically that an alleged deduction is in fact a deduction, and they provide the basis of the Soundness Theorem. The idea behind the Soundness theorem is very simple. Suppose that $\Sigma$ is a set of $\curveL$-formulas and suppose that there is a deduction of $\phi$ from $\Sigma$. What the Soundness Theorem tells us is that in any structure $\curveA$ that makes all of the formulas of $\Sigma$ true, $\phi$ is true as well.
-                        \begin{theorem}
-                            If $\Sigma\vdash\phi$, then $\Sigma\vDash\phi$
-                            \\
-                            \\
-                            \textit{proof.} Let $\thm_\Sigma = \{\phi | \Sigma \vdash\phi\}$ and $C =\{\phi | \Sigma \vDash \phi\}$. By showing that $\thm\subseteq C$ we prove the theorem. Notice that $C$ has the following characteristics:
-                            \begin{enumerate}
-                                \item $\Sigma \subseteq C$. If $\sigma\in\Sigma$ then certainly $\Sigma\vDash\sigma$.
-                                \item $\Lambda\subseteq C$. As the logical axioms are valid, they are true in any structure. Thus $\Sigma\vDash\lambda$ for any logical axiom.
-                                \item If $(\Gamma,\theta)$ is a rule of inference and $\Gamma\subseteq C$, then $\theta\in C$. Then because: $\curveA\vDash\Gamma$ and $\Gamma\vDash\theta$ we know that $\curveA\vDash\theta$.
-                            \end{enumerate}
-                            Since we have the following proposition and $C$ has these characteritics the prove is completed:
-                            \textit{Fix sets of $\curveL$-formulas $\Sigma$ and $\Lambda$ and a collection of rules of inference. The set $\thm_\Sigma$ is the smallest set $C$ such:}
-                            \begin{itemize}
-                                \item $\Sigma\subseteq C$
-                                \item $\Lambda\subseteq C$ 
-                                \item If $(\Gamma,\theta)$ is a rule of inference and $\Gamma\subseteq C$, then $\theta\in C$.
-                            \end{itemize}
-                        \end{theorem}
-                    \subsection{Completeness - A brief overlook}
-                        We have established a deductive system consisting of logical axioms and rules of inference. The Soundness Theorem showed that our deductive system preserves truth; that is, if there is a deduction of a formula $\varphi$ from a set of formulas $\Sigma$, then $\varphi$ is true in any model of $\Sigma$. Formally, we write this as follows:
-                        $$\Sigma \vdash \varphi \implies \Sigma \models \varphi$$
-                        where $\vdash$ denotes provability in the deductive system, and $\models$ denotes semantic entailment.
-                        
-                        The Completeness Theorem is the first major result of this chapter, and it gives us the converse to the Soundness Theorem. Specifically, it states that every semantically valid formula is provable in our deductive system. In other words, if a formula is true in every model, then it can be proved using only the logical axioms and rules of inference we have established. Formally, we write this as follows:
+                        Since we have the following proposition and $C$ has these characteritics the prove is completed:
+                        \textit{Fix sets of $\curveL$-formulas $\Sigma$ and $\Lambda$ and a collection of rules of inference. The set $\thm_\Sigma$ is the smallest set $C$ such:}
+                        \begin{itemize}
+                            \item $\Sigma\subseteq C$
+                            \item $\Lambda\subseteq C$ 
+                            \item If $(\Gamma,\theta)$ is a rule of inference and $\Gamma\subseteq C$, then $\theta\in C$.
+                        \end{itemize}
+                    \end{theorem}
+            \section{Completeness}
+                Before beginning with the incompleteness theorem it might help to know actually what is completeness. We have established a deductive system consisting of logical axioms and rules of inference. The Soundness Theorem showed that our deductive system preserves truth; that is, if there is a deduction of a formula $\varphi$ from a set of formulas $\Sigma$, then $\varphi$ is true in any model of $\Sigma$. Formally, we write this as follows:
+                $$\Sigma \vdash \varphi \implies \Sigma \models \varphi$$
+                where $\vdash$ denotes provability in the deductive system, and $\models$ denotes semantic entailment.
+                
+                The Completeness Theorem is the first major result of this chapter, and it gives us the converse to the Soundness Theorem. Specifically, it states that every semantically valid formula is provable in our deductive system. In other words, if a formula is true in every model, then it can be proved using only the logical axioms and rules of inference we have established. Formally, we write this as follows:
 
-                        \begin{equation} 
-                            \Sigma \models \varphi \implies \Sigma \vdash \varphi
-                        \end{equation}
-                        
-                        Combined with the Soundness Theorem, the Completeness Theorem gives us the following equivalence:
-                        
+                \begin{equation} 
+                    \Sigma \models \varphi \implies \Sigma \vdash \varphi
+                \end{equation}
+                
+                Combined with the Soundness Theorem, the Completeness Theorem gives us the following equivalence:
+                
+                \begin{define}
+                    A deductive system consisting of a collection of logical axioms $\Lambda$ and a collection of rules of inference is said to be complete if for every set of nonlogical axioms $\Sigma$ and every $\curveL$-formula $\phi$,
+                    \begin{equation}
+                        \text{If } \Sigma\vDash\phi \text{, then } \Sigma\vdash\phi
+                    \end{equation}
+                \end{define}
+
+                This equivalence assures us that if our deductive system allows us to prove a statement, then that statement is true, and conversely, if a statement is true in every model, then it can be proved using our deductive system.
+                
+                However, it is important to note that the Completeness Theorem only applies to formulas that are true in every possible model. It does not necessarily extend to formulas that are true in some but not all models. Furthermore, the theorem applies specifically to first-order logic and may not hold for other logical systems.
+            \section{Incompleteness Theorems}
+                \subsection{Mathematics}
+                    \subsubsection{Prespective}
+                        In the last section we talked about the completeness theorem, which investigated the fact that our deductive system is sound and complete. For the collection of lpgical axioms that we have set out, any formula $\phi$ that can be deduced from a set of nonlogical axioms $\Sigma$ will be true in all models of $\Sigma$ under any variable assignment function (soundness), and furthermore any formula $\phi$ that is true in all models of $\Sigma$ under every assignment functionwill be deducible from $\Sigma$ (completeness)--This means that we can prove every true statement within the system. Thus our deductive system is the best it can be.
+                        \\
+                        \\
+                        Now in this section we would try to show how would Incompleteness be proved, since we have shown that th efirst order logic is sound and complete it is trvial to infere that Incompleteness and Completeness are to be proved for different languages, and wether or not we can use them in Physics is to be worked out separately. But in the last sections we surely developed necessary concepts for one, who would like to talk about completeness (or incompleteness) of a physical theory.
+                        \\
+                        \\
+                        Later on we would dicuss why in uor view. This might be the case.
+                    \subsubsection{Basic Proof from the Theory of Algorithm}
+                        We assume that we are given a subset $T$ of language $L$, which is called the set of \textit{true statements}. This set should contain only the statements in the language that would evaluate as True. In the process of assuming such subset we ommit the part where we would consider the statemens true or false. A language then would be completely defined (for our purpose) if we are given the \textit{fundamental pair:}
                         \begin{define}
-                            A deductive system consisting of a collection of logical axioms $\Lambda$ and a collection of rules of inference is said to be complete if for every set of nonlogical axioms $\Sigma$ and every $\curveL$-formula $\phi$,
-                            \begin{equation}
-                                \text{If } \Sigma\vDash\phi \text{, then } \Sigma\vdash\phi
-                            \end{equation}
+                            \textit{Given a language $L$ and the subset of true statements $T$, we call $\left<L,T\right>$ a fundamental pair.}
                         \end{define}
+                        \begin{define}
+                            \textit{\textbf{Unprovable} means not provable, and provable means there exist a proof for such statement.}
+                        \end{define}
+                        Also the concept of proof, deduction, and induction were defined in previous sections. For the sake of simplicity consider a deductive system that consists of an alphabet called \textit{Alphabet of Proofs}, and denoted $P$. Then we would generally have $P^\infty$ as all the words that alphabet can have, but restrictions by grammar, rules of inference, induction, deduction etc, would provide us with a set of proofs called $\bar P$. As you would recall our deductive system would prove a statement, and only one for each proof. Therefore given a language $\curveL_x$ and a proof language $P$ one would require the existence of an algorithm that can map a proof from $P$ to a true statement from $\curveL_x$. Therefore a deductive system (in the most simple manner, but you can still consider the deduction introduced in the previous sections.) would be made of $P$, $\bar P$, $\delta$, where $\delta$ is a function that maps proofs from $P$ to true statements from $\curveL_x$.
+                        \begin{define}
+                            \textit{We would call $\left<P,\bar P, \delta\right> a deductive system.$}
+                        \end{define}
+                        So our final definition is as follows:
+                        \begin{enumerate}
+                            \item We have a language $\curveL$ and an alphabet $P$ for the proofs. 
+                            \item In the set $P^\infty$ we are given a subset $\bar P$, whose elements are called proofs. We futher assume:
+                            \begin{enumerate}
+                                \item We shall allow different concepts of proofs, different proof subsets of $P^\infty$. We shall also allow the alphabet $P$ to vary.
+                                \item There has to be an effective method or algorithm to check if a given word in $P$ is a proof and to show what stetement it proves.
+                            \end{enumerate}
+                            \item We have a function $\delta$ (to determine what is being proved) whose domain of definition $\Delta$ satisfies $\bar P\subseteq \Delta\subseteq P^\infty$, and whose range of valurs is in $L^\infty$. We assue that we have an algorithm which computes this function. Therefore we might say that the proof $p$ in $\bar P$ is the proof of $\delta(p)$ in the language $\curveL$.
+                        \end{enumerate}
+                        Therefore we can now define consistency and completeness more easily:
+                        \begin{define}
+                            \textit{We say the deductive system $\left<P,\bar P, \delta\right>$ is consistent relative to the fundamental pair $\left<\curveL,T\right>$ if we have $\delta(\bar P) \subseteq T$. In other words our deductive system would not prove contradictory statements.}
+                        \end{define}
+                        \begin{define}
+                            \textit{We say the deductive system $\left<P,\bar P, \delta\right>$ is complete relative to the fundamental pair $\left<\curveL,T\right>$ if we have $T \subseteq \delta(\bar P)$. In other words our deductive system would prove every true statements within the language.}
+                        \end{define}
+                        Conditions for the nonexistence of a complete and consistent deductive system can easily be given in terms of the theory of algorithms. An algorithm is a set of instructions which, given an input enables us to obtain an output if such an output exists or else obtain nothing at all if theres no output for out particular input. For our purpose consider that every input and output is a word thus there exists alphabet $I$ for inputs and alphabet $O$ for outputs.
+                        \\
+                        \\
+                        In other words, in order to work with algorithms which process paris or sequences of words we must first compress such pairs or sequences of as single words in the algorithm, in a new alphabet.
+                        \\
+                        \\
+                        Let $\star$ denote for a new letter not in our alphabet $\curveL$. Thus $\curveL_\star$ is a new alphabet. We would use such letter to denote separation between words in our alphabet.
+                        \\
+                        \\
+                        Now we must define some terms:
+                        \begin{define}
+                            \textit{\textbf{Domain of Applicability:} The set of all inputa that can be processes by a given algorithm is called the domain of applicability of the algorithm.}
+                        \end{define}
+                        \begin{define}
+                            \textit{The algorithm $A$ computes the function $f$, if we have $A(x)\sim f(x)$ for all $x$}
+                        \end{define}
+                        \begin{callout}
+                            Note that $\sim$ is the conditional equality sign, both sides are equal when they are defined and bot sides are undefined under same $x$.
+                        \end{callout}
+                        \begin{define}
+                            \textit{A function that can be computed by some algorithm is called a computable function.}
+                        \end{define}
+                        \begin{define}
+                            \textit{\textbf{Decidable:} A subset $S$ of a set $A$ is said to be decidable if there exsits and algorithm which determines whether or not an element of $A$ is in $S$.}
+                        \end{define}
+                        We would require the set of all proofs be decidable set of all the words in proof alphabet. 
+                        \begin{lemma}
+                            For any subset $X$, the set $\emptyset$ and $X$ are decidable relative to $X$.
+                            \proof We provide an algorithm for the subset $X$ of $X$ that always returnes true. And for the $\emptyset$ always false.
+                        \end{lemma}
+                        \begin{theorem}
+                            If $T$ is an enumerable set, then one can find a complete and consistent deductive system for the fundamental pair $\left<\curveL, T\right>$
+                            \proof if $T=\emptyset$ the deductive system $\left<P, \bar P, \delta\right>$ where $\bar P = \emptyset$ and $delta(p)=\emptyset$ is consistent and complete relative to $T$.
+                            \\
+                            Otherwise if $T \not = \emptyset$ since it is enumerable (there exists an algorithm that maps the natural numbers to the set.), we would have the algoritm $\tau$ that enumerates $T$. We would later prove that the set of all proofs is enumerable therefore by choosing $\delta = \tau$ we would have a consistent and complete deductive system.
+                        \end{theorem}
+                        \begin{lemma}
+                            A decidable subset of an enumerable set is enumerable.
+                            \proof if $f$ is the enumerating function of a set $A$. If $S\subseteq A$ is empty set. Then it is enumerable by definition. If not there exists $s\in S$ thus we enumerate the set by the following function:
+                            \begin{equation}
+                                g(n)=\left\{\begin{matrix}
+                                    f(n) & \text{if } f(n) \in S\\
+                                    s & \text{otherwise}\end{matrix}\right.
+                            \end{equation}
+                        \end{lemma}
+                        \begin{lemma}
+                            A subset $S$ of an enumerable set $X$ is decidable relative to $X$ is decidable relative to $X$ if and only if both $S$ and its complement $X\backslash S$ are enumerable.
+                            \proof If $S$ is decidable, then so is $X\backslash S$, and so both $S$ and $X\backslash S$ are enumerable by Lemma 2. Conversely, suppose that both $S$ and $X\backslash S$ are enumerable. If either one is empty then, $S$ is decidable, by Lemma 1. Suppose both $S$ and its complement are nonempty sets, in which case they are enumerated by some computable functions $f$ and $g$, respectively. Then, for deciding $x$ we need only compute $f(0),g(0),f(1),g(1),\dots$ until we encounter $x$.
+                        \end{lemma}
+                        \begin{theorem}
+                            The set of all proofs is enumerable.
+                            \proof Fir any enumerable alphabet $L$ we have:
+                            \begin{equation}
+                                L^\infty = \left\{x | x\in L\right\} \cup \left\{xy|x,y\in L\right\}\dots
+                            \end{equation}
+                            Therefore we have an algorithm that goes through all the words now since the alphabet of $P$ is enumerable, then $P^\infty$ and its subsets are enumerable.
+                        \end{theorem}
+                        \begin{lemma}
+                            Suppose that $R$ is an enumerable set and $f$ is a computable function which is defined on all elements of $R$. Then $f(R)$ is an enumerable set.
+                            \proof If $R$ is empty, then so is $f(R)$ therefore enumerable by definition. If $R$ is enumerated by a function $\rho(x)$ then $f(R)$ is enumerated by $\eta(x) = f(\rho(x))$.
+                        \end{lemma}
+                        \begin{theorem}
+                            The set of all provable words (for a deductive system) is enumerable.
+                            \proof Let $Q$ be the set of all provable words for the deductive system $\left<P, \bar P, \delta\right>$  obviously $Q = \delta(\bar P)$. However $P$ is enumerable by theorem 4. Hence $Q$ is also enumerable by lemma 4.
+                        \end{theorem}
+                        It follows now that if $T$ is not enumerable set, then it is impossible to find a complete and consistent deductive system for the pair $\left< \curveL,T\right>$, since the set $Q$ of provable words for any consistent deductive system is a proper subset of $T$, and there will have to be an element on complement $T\backslash Q$. Such an element is a true but unprovable statement!
+                        \\
+                        \\
+                        Theorems 3 and 5 together give a condition on a fundamental pair which is necessary and sufficient for the existence of a complete and consistent deductive system for the pair. This condition is enumerability of the set of all truths. 
+                        \\
+                        \\
+                        One would expect that in a "rich" or "expressive" language the set of all truths is too complicated to be enumerable, and hence there are no complete and consistent deductive systems for such a language. However, the criterion in theorems 3 and 5 is not very convineint to use, since it is often difficult to study the entire set $T$. 
 
-                        This equivalence assures us that if our deductive system allows us to prove a statement, then that statement is true, and conversely, if a statement is true in every model, then it can be proved using our deductive system.
+
+                \subsection{Philosophy}
+                        In this section we would try to understand the incompleteness theorems out of the formal mathematical language. We would then proceed to talk about a mathematical universe.
+                        \subsection{Introduction}
+                            Gödel's incompleteness theorems are groundbreaking outcomes in present-day logic that transformed the comprehension of mathematics and logic, and had significant implications for the philosophy of mathematics. While some philosophers have attempted to utilize these outcomes in other areas of philosophy, the validity of many such applications is often debatable.
+                            \\
+                            \\
+                            To comprehend Gödel's theorems, it is imperative to clarify crucial ideas related to them, including "formal system," "consistency," and "completeness." Essentially, a formal system signifies a collection of axioms furnished with inference rules, which enable the generation of new theorems. The axioms must be finite or at least decidable, meaning that an algorithm can determine whether a given statement is an axiom or not. If this criteria is fulfilled, the theory is known as "recursively axiomatizable," or simply "axiomatizable." The inference rules of a formal system are also effective operations that allow one to ascertain if one has made a legitimate application of a rule of inference. As a result, it is always possible to determine if any given finite sequence of formulas constitutes a real derivation in the system, given the axioms and the rules of inference.
+                            \\
+                            \\
+                            A formal system is complete if every statement of the language of the system can be derived (proven) in the system or its negation can be proven. A formal system is consistent when there exists no statement in which the statement itself and its negation can both be derived in the system. In this context, only consistent systems are of interest since an inconsistent formal system renders every statement derivable, hence rendering such a system trivially complete.
+                            \\
+                            \\
+                            Gödel discovered two distinct yet interconnected incompleteness theorems, typically known as the first and second incompleteness theorems. Although "Gödel's theorem" may refer to both in conjunction, it often refers to the first one separately. With a modification introduced by J. Barkley Rosser in 1936, the first theorem can be roughly stated as follows:
+                            \begin{qt}
+                                Any consistent formal system $F$ within which a certain amount of elementary arithmetic can be carried out is incomplete, meaning there are statements in the language of $F$ which can neither be proved nor disproved in $F$.
+                            \end{qt}
+                            Gödel's theorem not only asserts the existence of such statements, but also explicitly produces a specific sentence that is neither provable nor refutable in formal system $F$ through Gödel's proof method. This "undecidable" statement can be mechanically generated from a specification of $F$ and is a relatively simple statement of number theory, a purely universal arithmetical sentence.
+                            \\
+                            \\
+                            One common misconception about Gödel's first theorem is interpreting it as showing the presence of truths that cannot be proven. However, this is incorrect because the incompleteness theorem deals with derivability in a particular formal system, rather than provability in an absolute sense. For any statement $A$ unprovable in a given formal system $F$, there are other formal systems where $A$ is provable (by taking $A$ as an axiom). On the other hand, the standard axiom system of Zermelo-Fraenkel set theory (denoted as $ZF$ or $ZFC$ with the axiom of choice) is powerful enough to derive all ordinary mathematics. Nevertheless, there exist arithmetical truths that are not provable even in $ZFC$ due to Gödel's first theorem. Hence, proving them would require a formal system that goes beyond $ZFC$ methods. Therefore, these truths are not provable using today's "ordinary" mathematical methods and axioms, nor can they be proved in a way that mathematicians would regard as conclusive and unproblematic.
+                            \\
+                            \\
+                            Gödel's second incompleteness theorem concerns the limitations of consistency proofs and can be roughly stated as:
+                            \begin{qt}
+                                For any consistent system $F$ within which a certain amount of elementary arithmetic can be carried out, the consistency of $F$ cannot be proved in $F$  itself.
+                            \end{qt}
+                            The second theorem requires a slightly more elaborate version of formal system $F$, encompassing more arithmetic than the one required for the first theorem, which holds under much weaker assumptions. It is important to note that, like the first incompleteness theorem, the second theorem pertains only to formal provability or derivability relative to some formal system (in this case, $F$ itself). It does not imply anything about whether the statement "$T$ is consistent" can be proven true by an argument considered conclusive or acceptable by mathematicians for a particular theory $T$ satisfying the conditions of the theorem. For many theories, such proof is possible.
+                            
+                        \subsection{Incompleteness Theorems and The Church-Turing Thesis}
+                            Initially, Gödel demonstrated the incompleteness of a particular but extensive formalized theory $P$, which is a variation of Russell's type-theoretical system $PM$ (Principia Mathematica). This system encompasses all extensions of $P$ with the same language whose set of axioms is primitive recursive. Although Gödel did not demonstrate, he suggested that the proof could be adapted to apply to standard axiom systems of set theory such as $ZFC$. At that time, it was unclear how general the result was, despite the fact that Gödel had a very general outcome.
+                            \\
+                            \\
+                            What remained uncertain was the analysis of the intuitive notion of decidability, necessary in characterizing the concept of an arbitrary formal system. Mathematicians and logicians have employed the intuitive notion of a decision method since ancient times. For the general results such as the general incompleteness theorems or the undecidability results, however, a precise mathematical explication of the notion would be necessary. Instead of decidable sets or properties, effective or computable functions or operations are often considered, but these are two sides of the same coin.
+                            \\
+                            \\
+                            Gödel, Church, and Turing independently proposed different exact mathematical definitions of computable functions and decidable sets of numbers, which were later found to be equivalent. Turing's careful conceptual analysis that used fictional and abstract computing machines, conventionally known as "Turing machines," was significant, as emphasized by Gödel himself. The intuitive notion and some of these mathematical explications are often labeled as "The Church-Turing thesis." For historical reasons, the term "recursive function" has been dominant in the logical literature, so decidable sets are often termed as "recursive sets."
+                            \\
+                            \\
+                            To comprehend the incompleteness and undecidability results correctly, understanding the distinction between two key concepts regarding sets is crucial. First, there may be a mechanical method that decides whether any given number belongs to the set or not, in which case, the set is referred to as "decidable" or "recursive." Second, there may be a mechanical method that generates or lists the elements of the set, number by number. In the latter case, the set is referred to as "recursively enumerable" (r.e.), meaning it can be effectively generated or is "semi-decidable." A fundamental outcome of the theory of computability is that semi-decidable sets can be effectively generated but not decidable. This is essentially the essence of the first incompleteness theorem at an abstract level. However, if both a set and its complement are recursively enumerable, the set is recursive, i.e., decidable.
+            \section{Nature aa a Mathematical Entity}
+                The incompleteness theorem, together with the computation theorem (Church-Turing Thesis) establish a limit on mathematical abstraction. Being depended on the choice of axioms the two refer to unprovable or incomputable entities in mathematics and computations. There can be a lot to learn from these two theorems and to grasp a better understanding of the world as a whole. But there is a subtle difference between a physicists and a mathematicians. 
+                \\
+                \\
+                The assumption that world is the realism of an abstraction is not a new one. In fact, it is as ancient as Plato! 
+                \subsection{Platonism in Mathematics}
+                    \subsubsection{Some Definitions of Platonism}
+                    \subsubsection{What is MAthematical Platonism}
+                        Mathematical platonism can be defined as the conjunction of the following three theses:
+                        \begin{enumerate}
+                            \item  \textbf{Existence: }There are mathematical objects.
+                            \item  \textbf{Abstractness:} Mathematical objects are abstract.
+                            \item  \textbf{Independence:} Mathematical objects are independent of intelligent agents and their language, thought, and practices.
+                        \end{enumerate}
+                        Platonism, not just limited to mathematics, encompasses any belief system that is based on the three aforementioned claims. The first two claims are relatively straightforward: existence can be expressed as "$\exists xMx$," where "$Mx$" represents the predicate "$x$ is a mathematical object," which refers to objects studied in pure mathematics such as numbers, sets, and functions. Abstractness asserts that all mathematical objects are non-spatiotemporal and therefore causally inefficacious. 
+                        \\
+                        \\
+                        Independence, however, is a bit more complex. It is commonly understood as the notion that even if there were no intelligent agents or if their language, thought, or practices were different, mathematical objects would still exist. However, this interpretation may be insufficient to fully capture the concept of independence At present, the concept of independence remains somewhat vague.
+                    \subsubsection{Historical Remarks}
+                        Platonism should be distinguished from the historical view of Plato himself. In contemporary debates about platonism, few argue for a strong exegetical interpretation of Plato's view, let alone defend it. While the term "platonism" is inspired by Plato's theory of abstract and eternal Forms, the current definition of platonism is independent of its original historical inspiration.
+                        \\
+                        \\
+                        It's important to note that platonism is purely a metaphysical view and distinct from other views with substantive epistemological content. Past characterizations of platonism often included strong epistemological claims that implied we have an immediate insight or grasp of the realm of abstract objects. However, it is now more common to reserve the term "platonism" for the purely metaphysical view described earlier. Many philosophers who defend platonism in this sense would reject the additional epistemological claims, including Quine and those drawn to the indispensability argument, which aims to provide an empirical defense of mathematical platonism.
+                        \\
+                        \\
+                        Lastly, the definition of "mathematical platonism" excludes the claim that all truths of pure mathematics are necessary, despite it being traditionally held by most platonists. This exclusion is justified by the fact that some philosophers considered platonists, such as Quine and advocates of the aforementioned indispensability argument, reject this additional modal claim.
+                    \subsubsection{The Philosophical Significance of Mathematical Platonism}
+                        Mathematical platonism has significant philosophical implications that challenge the physicalist idea that reality is limited to the physical world. According to platonism, reality extends beyond the physical and includes abstract objects that are not part of the spatiotemporal and causal order studied by the physical sciences. Additionally, if mathematical platonism is true, it would put pressure on many naturalistic theories of knowledge because we undeniably possess mathematical knowledge, which implies knowledge of causally inefficacious objects.
+                        \\
+                        \\
+                        While these philosophical consequences are not exclusive to mathematical platonism, this form of platonism is uniquely equipped to support them due to the tremendous success of mathematics as a discipline in its own right and as a tool for other sciences. Contemporary analytic philosophers are reluctant to contradict any of the core claims of a discipline with the scientific credentials of mathematics. Rejecting mathematics outright would be unattractive if philosophical analysis were to reveal some strange and surprising consequences of the discipline. In contrast, a form of platonism based on a discipline with less impressive scientific credentials than mathematics would not be as fortunate. For example, when theology leads to unexpected philosophical consequences, many philosophers do not hesitate to reject the relevant parts of theology.
+                    \subsubsection{Object Realism}
+                        Object realism asserts the existence of abstract mathematical objects and is the combination of Existence and Abstractness. This view stands in contrast to nominalism, which holds that there are no abstract objects, although the term "nominalism" may refer to the belief that there are no universals in traditional philosophical usage. 
+                        \\
+                        \\
+                        Object realism is logically weaker than mathematical platonism because it does not include Independence. Consequently, the philosophical implications of object realism are not as strong as those of platonism. Physicalists may accept non-physical objects if they are dependent on or reducible to physical objects, such as corporations, laws, and poems. Furthermore, there is no mystery about acquiring knowledge of non-physical objects that we have constituted or made.
+                        \\
+                        \\
+                        Some views in the philosophy of mathematics align with object realism but are not platonist. Traditional intuitionist views, for example, affirm the existence of mathematical objects but maintain that these objects depend on or are constituted by mathematicians and their activities. 
+                    \subsubsection{Truth-Value Realism}
+                        Truth-value realism posits that every well-formed mathematical statement has a unique and objective truth-value that is independent of our ability to know it or whether it logically follows from current mathematical theories. Furthermore, this view asserts that most statements deemed to be true in mathematics are indeed true. Although this is a metaphysical view, it differs from platonism in that truth-value realism does not commit to an ontology of mathematical objects to explain the truth-values of mathematical statements.
+                        \\
+                        \\
+                        Platonism may provide motivation for truth-value realism by explaining how mathematical statements acquire their truth-values. However, truth-value realism does not entail platonism or object realism unless additional premises are added. Nominalists, who do not believe in the existence of abstract objects, may still endorse truth-value realism, at least for basic branches of mathematics such as arithmetic. In this case, they translate mathematical statements into a language that does not rely on the existence of abstract objects.
+                        \\
+                        \\
+                        Some philosophers suggest that the debate about platonism should be transformed into a debate about truth-value realism because it is clearer and more important to both philosophy and mathematics than the former. They argue that the debate about truth-value realism is more tractable than the debate about platonism, which is often unclear.
+                    \subsubsection{The Mathematical Significance of Platonism}
+                        Working realism is a methodological view that advocates for practicing mathematics as if platonism were true, according to Bernays (1935) and Shapiro (1997, pp. 21-27 and 38-44). This requires further clarification. Platonism has been used in the past to defend particular mathematical methods in debates about the foundations of mathematics, including:
+                        \begin{enumerate}
+                            \item Classical first-order (or stronger) languages whose singular terms and quantifiers appear to be referring to and ranging over mathematical objects. (This contrasts with the languages that dominated earlier in the history of mathematics, which relied more heavily on constructive and modal vocabulary.)
+                            \item Classical rather than intuitionistic logic.
+                            \item Non-constructive methods (such as non-constructive existence proofs) and non-constructive axioms (such as the Axiom of Choice).
+                            \item Impredicative definitions (that is, definitions that quantify over a totality to which the object being defined would belong).
+                            \item ‘Hilbertian optimism’, that is, the belief that every mathematical problem is in principle solvable.
+                          \end{enumerate}
+                        Working realism endorses classical methods, including non-constructive methods and impredicative definitions, in mathematical reasoning. However, it does not take a stance on whether these methods require philosophical defense, or if such defense must be based on platonism. Working realism is primarily a view within mathematics about the correct methodology of the discipline, whereas platonism is an explicitly philosophical view. Therefore, they are distinct views.
+                        \\
+                        \\
+                        Mathematical platonism provides strong support for working realism. If platonism is true, then the language of mathematics should follow classical first-order logic, and non-constructive methods, impredicative definitions, and Hilbertian optimism would also be justified. Furthermore, the truth of platonism would have significant implications within mathematics, justifying the use of classical methods and motivating the search for new axioms to settle unresolved mathematical questions.
+                        \\
+                        \\
+                        However, working realism does not necessarily imply platonism. Although it endorses the use of the platonistic language of contemporary mathematics, this falls short of platonism in two ways. Firstly, the platonistic language can be analyzed without reference to and quantification over mathematical objects. Secondly, even if face-value analysis of the language could be justified, this would only support object realism, not platonism. An additional argument would be necessary to uphold Independence, the third component of platonism.
+                    \subsubsection{}
                         
-                        However, it is important to note that the Completeness Theorem only applies to formulas that are true in every possible model. It does not necessarily extend to formulas that are true in some but not all models. Furthermore, the theorem applies specifically to first-order logic and may not hold for other logical systems.
-                        
+
+                            
+
 
                         
 
