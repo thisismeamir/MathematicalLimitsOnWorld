@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.19)  8 JUN 2023 15:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.19)  10 JUN 2023 06:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1502,30 +1502,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 733--737
 
  []
 
-[14] (logicandcomputation.bbl) [15] (logicandcomputation.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--749
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 750--757
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 750--757
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 758--762
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 763--770
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 763--770
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 771--778
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 771--778
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 787--794
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 787--794
+
+ []
+
+[15] [16] (logicandcomputation.bbl) [17] (logicandcomputation.aux) ) 
 Here is how much of TeX's memory you used:
- 18495 strings out of 476374
- 367632 string characters out of 5789326
+ 18502 strings out of 476374
+ 367754 string characters out of 5789326
  1871340 words of memory out of 5000000
- 38516 multiletter control sequences out of 15000+600000
+ 38523 multiletter control sequences out of 15000+600000
  602885 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,12n,117p,1076b,849s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{C:/Users/Amir/A
-ppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Amir/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mcl.pfb><C:/Users/Ami
-r/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mex.pfb><C:/
-Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-ml.
-pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fou
-rier-mlit.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/f
-ourier/fourier-ms.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/
-adobe/utopia/putb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type
-1/adobe/utopia/putbi8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/adobe/utopia/putr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts
-/type1/adobe/utopia/putri8a.pfb>
-Output written on logicandcomputation.pdf (15 pages, 173213 bytes).
+ 83i,12n,117p,1102b,849s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Users/A
+mir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Amir/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mcl.pfb><C:/User
+s/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mex.pfb
+><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourie
+r-ml.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourie
+r/fourier-mlit.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/fourier/fourier-ms.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/adobe/utopia/putb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts
+/type1/adobe/utopia/putbi8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fo
+nts/type1/adobe/utopia/putr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/
+fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on logicandcomputation.pdf (17 pages, 186314 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 106 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
