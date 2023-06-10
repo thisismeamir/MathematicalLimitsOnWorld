@@ -206,14 +206,252 @@
 \begin{document}
         \maketitle
         \tableofcontents
+        \newpage
+        
         \section{Ground Works}
             \subsection{Vorwort}
-                Gödel's incompleteness theorems, are two theorems of mathematical logic that deal with the limits of provability in formal axiomatic theories. The theorems are interpreted as showing that Hilber's program to find a complete and consistent set of axioms for all mathematics is impossible.
+              In this paper we would work our way to understand basic epistemology, mathematical theory of formal systems, the way we prove statements and deduction as pure mathematical descriptions, incompleteness theorems and computational limits. Then we would talk about measurement and the similar behavious by nature and what the incompleteness theorem would suggest. 
+                \section{What is Epistemology?}
+                \indent At the core of the science there's always a simple question to be answered, the question that needs to be asked and properly investigated before any kind of scientific advancement is acheived. That is \textit{"Why are we sure about the knowledge we have, and what is it after all?"}. The boundaries of science are small to hold such a question within, since they infact are the product of it themselves.
                 \\
                 \\
-                In the following work we will first describe the theorem and preliminaries, and then prove it using algorithm theory methods and other methods. Then we are going to talk about it's consequences in pure mathematics and philosophy of mathematics, later we will discuss the relation between the theorems and the church-turing thesis We then would discuss related works that has pushed the theorem further and shown aspects of it. At the final section we will investigate a philosophical picture of Mathematical Universe and if it is acceptable to consider a bigger abstract world of mathematical objects where the real world is a subset of it. 
+                It seems to be a good place to start, since the question of the whole research lies upon the statement that \textit{maybe} it is not possible to know everything about the universe, where we have to first define what we mean by everything. But knowledge itself is where we begin.
+                \\
+                \\
+                \indent Epistemology, concerns itself about the problems and theories regarding knowldege. The word is derived from the Greek words \textit{epistéme} and \textit{logos}, which together means the study of knowledge. But to even begin with such philosophy one must try to define first hand:
+                \begin{itemize}
+                    \item What is knowledge, and what do we mean when we say that we know something?
+                    \item What is the source of knowledge, how do we gain reliable information and consider them as knowledge?
+                    \item Is absolute knowledge possible? If not, what are the limitation?\cite{CW/E}
+                \end{itemize}
+                \indent The first question, seems to be a matter of definition, but an important roleis being played by asking about \textit{"What knowledge is?"}. The importance of the question arises from the fact that by defining knowledge carelessly we might include falsehood with the truth. which by any good considerations, is the last thing, which one in search of knowing would intend to do. Beside that if you define knowledge in a careless manner, you get in trouble to argue for good strategies and sources, and even not be able to find true limitations of knowledge.
+                \\
+                \\
+                \indent The second question concerns us to think about methods, with which we gain information (false or true premises) about anything. What makes a method reliable and other don't. This qeustion incudes the old fashioned problem \textit{Why should we trust science?}, with this question I'll try to show that science, and specifically the process of experimenting is found to be the most reliable way to produce knowledge.
+                \\
+                \\
+                \indent The last question is rather the aim of the project in front of you. This questions invites the careful study of the source of knowledge to be more specific, to show if it has any boundaries, or is it an endless tunnel of ever comming knowledge. We may what to argue, or more clearly, philosophize about the topic. Where we investigate the logic of the world, Computation, and mathematical view of nature and experience.
+            
+            \section{Knowledge and Justification}
+                \subsection{Absilute Knowledge} The idea starts with the question, is there an absolute knowledge, and if so is it possible to gain it. Parmenide wanted the idea to be true, and for being so, he describes that knowledge should not depend upon changing observations and experiences, because it has its sole origin in the logic of rational thought; A knowledge that is to assure the experiences but at the same time, a knowledge that is given a priori and is conditioned by nothing but itself. \textit{A Knowledge that can claim for itself absolute centainty and validity.}
+                \\
+                \\
+                Parmendise could be the first to attain the concept that it might be possible to grasp the absolute knowledge of the world, with the vision that the phenomenal reality is merely the deceptive illusiveness of a true and unchangeable worl. This hidden world, was believed to be accessible only by pure reasoning.
+                \begin{qt}
+                    Thus, the idea coagulated that true knowledge of the world could only be arrived at by following the path of rational thought,
+                \end{qt}
+                The weak point in the ontology of Parmenides was already pointed out by Aristotle. Instead Aristotle introduced a distinction between that which is \textit{"actuality"} and that which might be \textit{"potentiality"}. This he ultimately raised to a point of departure for his own metaphysics, in which he differs clearly from that of the Eleates.
+                \\
+                \\
+                But as Parmendise intended the concept of \textit{true being, that is only accessible through rational thought} was sustained. We'll turn back again after some basic investigation.\cite{Kuppers2018-vv}
+    
+                \newpoint{Cognitive Success} is a term used to describe the ability of an individual to think, reason, learn, and solve probelms effectively. The ability to solve problems, and find the true values to things we seek, is a complex process, requiring one's mind to adjust, learn, be creative and manipulate information in a way that is actually useful to solve a problem. But despite that, one can easily argue that if you got the wrong information, false premises and false statements. No amount of intelligent process (without considering luck) would be able to make a useful prediction, or any effective progress toward one's goal. In fact this is known as a motto in data science \textit{Garbage in, Garbage out.}\cite{sep-epistemology}\cite{Clegg2017-ev}
+                \\
+                \\
+                Therefore it is safe to say: \textbf{\textit{By any process, of which we receive information from, we seek statements that are true}}. From here we first have to define a true statement (knowledge) which is the first question posed in the introduction.
+                \begin{callout}
+                    It is worth to note that since this is the study of science, we might not consider all the possible ways one might use \textit{knowledge}. One might know someone, know how to do something, etc... Although one can argue that these concepts are also a higher conceptions of just basic facts (one might know how to do something because he understands basic factual statements of the system and prepared a path to follow, which, because of the facts beneath, happens to reach the desiered goal). We would only talk about, things we consider to be facts, in it's scientific term. (i.e earth is orbiting sun.).
+                \end{callout}
+                    \subsection{Defining Knowldege} We have different opinion in different areas of our lives and works, we might have an opinion about who is going to be the president later this year, or if the stocks are going to be bullish or bearish next week; Although we are able to hold any opinion and belief in our mind, we might like to be able to categorize them by some statements.\cite{CW/E}\cite{sep-epistemology}
+                    \\
+                    \\
+                    \subsubsection{Validity} The first way to characterize an statement is the validity. It is safe to assume that we desire statements that we believe to be true. Consider the following statement:
+                    \begin{align*}
+                        \text{Gravity is described by Newton's law}
+                    \end{align*}
+                    The statement is true. Not always but if we have an accuracy of a 1700s' scientist, it is most certainly a true statement about the gravity. I would here propose that when we talk about the validity of an statement we might like to consider how accurate are we talking. For that the statement was considered to be a true statement for centuries; Now it is considered true but only if we change a little:
+                    \begin{align*}
+                        \text{In the limit of small velocities (with small accuracies)...}
+                    \end{align*}
+                    The validity of the statemen changed over time, it might happen to any statement, for instance if you believe that it's raining outside, you might find it true or false. This is a problem, not only you might find contradiction with what you hold as a belief. But the worst is yet to come, there can be scenarios where you are evaluating an statement correctly (you might be right about the weather), but it just happens to be a lucky guess. 
+                    \\
+                    \\
+                    Certainly we would like true statements we hold, which are not evaluated true by mere luck, to be considered as knowledge. This would lead us to the second characteristic of knowledge.
+                    \\
+                    \\
+                    \subsubsection{Justified} When Alice and Bob say that it's raining outside, where Alice just guessed, and Bob have looked through the window and actually saw the raining. One must consider the two ways, upon which they stated the condition of weather, differently. The first is unable to answer, \textit{"Why do you believe that it's raining?"}, while the latter would.
+                    \\
+                    \\
+                    Assume that Alice and Bob always hold believes, by the way proposed, Alice only guesses, and Bob tries to justify what he considers true and if there's no justification, he would simply change his mind. Now if you are to use the information from one of them, who would you choose? A logical answer would be to always ask Bob, since there's atleast and arguement upon which he considers the belief to be true. 
+                    \\
+                    \\
+                    Knowledge should be justifiable, this is more than just having good excuses to believe something, because it also helps the process of finding truth working, believing without justification cannot be questioned properly (other than questioning the unquestionability itself.). Being justifiable helps us to use the socratic method, either we derive an unquestionable fact underneath, or we find another belief which can or cannot be justified. Therefore it seems that \textit{Knowledge is Justified True Belief.}
+                    \\
+                    \\
+                    But there are problems with such statement, since the justification condition was added to ensure that the belief is not true merely because of luck. For instance believing you have lung cancer, because an astrology magazine suggests, would be considered not justified from a scientist prespective but justified if you believe in astrology.
+                    \\
+                    \\
+                    Edmun Gettier, showed that there are cases of \textit{Justified True Belief} that are not cases of knowledge. JTB, therefore, is not sufficient for knowledge. Cases that this is the case are known as the Gettier cases, which arise because neither the possession of adequate evidence, nor origination in reliable faculties, nor the conjunction of these conditions, is sufficient for ensuring that a belief is not true merely because of luck. This suggests that we must add another element to JTB, so that it is sufficient to be considered Knowledge.\cite{sep-epistemology}
+                    \\
+                    \\
+                    \subsection{Defining Justification}
+                    Imagine a situation where a kid, despite having a birth certificate, and what he has been told his entire life, were to find that the parents he thought are not his actual parents. This situation shows that although a belief was justified, it ultimately came to be wrong. Debates concerning the nature of justification can be understood as debates concernin the nature of such non-knowledge-guaranteeing cognitive successes as the one this imaginary kid would enjoy.
+                    \\
+                    \\
+                    The term justification is used as to say \textit{under no obligation to refrain.} This definition of understanding is labeled as \textit{Dentological Justification} we can define:
+                    \begin{define}
+                        $S$ is justified in doing $x$ if and only if $S$ is not obliged to refrain from doing $x$.
+                    \end{define}
+                    So for the term justification we would define:
+                    \begin{define}
+                        $S$ is justified in believing that $p$ if and only if $S$ is not oblied to refrain from believing that that $p$.
+                    \end{define}
+                    The dentological understanding of the concept of justification is common among philosophers such as, Descartes, Locke, Moore and Chisholm.
+                    \\
+                    \\
+                    Dentological justification is commonly used, \textit{"Inocent until proven guily"} is an obvious example in law, where we are assumming the most common assertion (people are mostly inocent) until there's an evidence to support otherwise. But such generalization is not the case in science, or to be more specific, until no evidence is gathered, we cannot put our finger on where the logical place to stand is. Although it is important to get back to dentological justification in science. We'll cover the use of it later.
+                    \\
+                    \\
+                    But on the other hand we can define another type for justification:
+                    \begin{define}
+                        $S$ is justified in believing that $p$ if and only if $S$ believes that $p$ in a way that makes it sufficiently likely that her belief is true.
+                    \end{define}
+                    Dentological justification, though promising, lacks an important concept, where the justification should be correlated with the evaluation of the belief, one can believe in a justified manner (dentologically), but nevertheless his/her belief is false. The problem arises since dentological justification asserts true until proven false (we are justified to believe that $p$ is true because there's no obligation to refrain us from doing so), This sort of implication puts facts, and unfalsifiable assertions into one basket. We are able to be justified in believing any sort of assertion even if it is not justified.\cite{sep-epistemology}
+                    \\
+                    \\
+                    As an easy example of how a dentological justification might result in a false belief let us review the Russell's teapot analogy, though the claim is to show that the philosophic burden of proof lies upon a person making empirically unfalsifiable, the example would also show how a dentological justification is weak. \cite{enwiki:1149010951}
+                    \\
+                    \\
+                    In his paper "Is There a God?" we have:
+                    \begin{qt}
+                        Many orthodox people speak as though it were the business of sceptics to disprove received dogmas rather than of dogmatists to prove them. This is, of course, a mistake. If I were to suggest that between the Earth and Mars there is a china teapot revolving about the sun in an elliptical orbit, nobody would be able to disprove my assertion provided I were careful to add that the teapot is too small to be revealed even by our most powerful telescopes. But if I were to go on to say that, since my assertion cannot be disproved, it is intolerable presumption on the part of human reason to doubt it, I should rightly be thought to be talking nonsense. If, however, the existence of such a teapot were affirmed in ancient books, taught as the sacred truth every Sunday, and instilled into the minds of children at school, hesitation to believe in its existence would become a mark of eccentricity and entitle the doubter to the attentions of the psychiatrist in an 10 enlightened age or of the Inquisitor in an earlier time.
+                    \end{qt}
+                    Although the debate, that is there any evidence to prove gods existence remains, for what seems like forever, the burden of proof is always upon the one claiming it. There are several more cases that can easily fit under the label \textit{Knowledge}, that no-one would accept, most of the folklore sotries of beings such as Zeus, Thor, unicorns, etc... were widely regarded as a true belief, with the justification that you cannot disprove their existence. But any person in the 21st century would deny their existence. Therefore, the second type (Sufficiently Likely Justification), seems to work the best for most cases, and be the justification that Russell would mean.\cite{Russell1952}
+                    \\
+                    \\
+                    \subsection{Kant, Schelling, Fichte and Evidence}  As we mentioned the idea of Parmendise was that the true knowledge must be based only upon rational thought, which lead to reconstruction of reality with deductive method. This has been applied by mathematician Euclid for the axiomatic foundations of his geometry, which was leading to the modern-rationalism. The idea was that the true knowledge should be deducible in its entirety from a highest,  and in itself irrefutable, but also to be capable of providing a justification for the claim that the knowledge deduced form it should be coherent and true. principle, which is still carried on by physicists who are dealing with the ultimate formulation that would describe the nature in its entirety. 
+                    \\
+                    \\
+                    This is a very basic but logical step toward knowledge, since the world around seems to have order, and order seems to originate in logic (you may be able to make an orderly system with chaos at its foundations but we are trying to follow a more common step.).\cite{Kuppers2018-vv}
+                    \\
+                    \\
+                    Kant's philosophy focuses on power and limitations of reson. Kant asks two questions whether reasoning can give us metaphysical knowledge, as rationalists claim? and whether reason can guide action and justify moral principles. He claims against the rationalists that if boundaries like knowledge of god or a world beyond senses is not considered, reasoning would provide contradiction. And for the empiricists, who claimed that emotions, and not reason would giude us toward act, he claims that reason can guide us toward principles that can be shared among rational beings.
+                    \\
+                    \\
+                    Kant argues that we obtain knowldge by two ways: sensibility and unedrstanding. Empirical judgement depend on both. Later in the book he discusses the \textit{Transcendental Dialectic}. He argues against the efforst by philosophers such as Parmendise that try to subject the true knowledge free of worldly objects. He adds that the \textit{Dialectic} for the things, which are not revelaed by any senses is \textit{logic of illusion} (This turns out to be an important part in later chapters where we enter mathematical logic, and show that there can be multiple logical systems, however inconvenient.)\cite{sep-kant-reason}
+                    \begin{qt}
+                        The law of reason to seek unity is necessary, since without it we would have no reason, and without that, no coherent use of the understanding, and, lacking that, no sufficient mark of empirical truth
+                    \end{qt}
+                    The analysis of the conditions under which knowledge becomes possible leg him to the concept of \textit{Transcendental Subject} as the source of knowledge. prior toall experience. He argues that the subject's perception of the externam world is affected by, as he called it, \textit{Things in Themselves}. Following Kant, this constitute reality intrinsically, that is, independently of how we may experience it. This can be thought of as objectivism, putted more easily by Democritus, the idea that has been employed in Democritus' discussion of the gods, where he clears that out knowledge of the gods comes from giant films of atoms (since he constructed his worldview with atomistic view). A report credits that Democritus and Leucippus argue that thought as well as sensation are caused by images impinging on the body from outside, and that thought as much as perception depends on images.\cite{Cartledge1998-CARDTG-3}\cite{sep-democritus}\cite{Graham2010-th}
+                    \\
+                    \\
+                    This conception was rejected first by Fichte, in 1794, in his \textit{"Doctrine of Science"}. He aegues that the knowledge engendering function of "things in themselves" leaves knowledge still dependent upon the external world, and that knowledge therefore lacks the property of being unconditional. However, in Fichte's viewm unconditionality is an indispensable prerequisite if knowledge acquired by the transcendental subject is to be absolute and no longer dependent upon changes in external experience. Fichte therefore set out from the idea that the actions of the transcendental subject must be completely unconditional, that it, caused only by itself.
+                    \\
+                    \\
+                    The radical subjectivism that we encounter here was already in Fichte's time a target of criticism. Fichte's philosophical approach, promoting the perceiving subject to the soleand unconditioned source of knowledge, led inevitably to a contradiction with empirical reality. In respect of its understanding of reality, the subjective idealism of Fichte clearly reveals the same weakness, the same loss of reality as did Parmenides' doctrine of true being.
+                    \\
+                    \\
+                    In his \textit{"Ideas for a Philosophy of Nature"}, published in 1797, Schelling attempted to correct this deficiency by first objectifying the subject-object identity and not as, Fichte had done, regarding it as an identity proceeding exclusively from the subject. Moreover, according to Schelling the subject-object identity must be considered as absolute. This means that the entire Subjective is at the same time the entire Objective, and the entire Objective is at the same time entire Subjective.
+                    \\
+                    \\
+                    Unlike Fichte, in Schellings philosophy real world is more than just an image of the ideal world. He considered the conceptual and material appearances as two manifestations of the same entity, which was an absolute subject-object identity.
+                \begin{qt}
+                    “Nature is the visible mind, the mind is invisible Nature”. This is to be taken as meaning that the perceiving subject can regard itself in Nature as in a mirror. Nature is the visible mind. Conversely, mind is invisible Nature, insofar as mind mirrors Nature at the highest level of its being. Thus, mind in Nature and Nature in mind can contemplate one another.
+                \end{qt}
+                In Schelling's system, the task of empirical science is —at best— to verify the principles dictated to it by natural philosophy. On no account could they be disproved: the refutation of these principles would immediately have refuted the principles of reason and, thus, pursued the possibilities of cognition ad absurdum. \textit{In fact, the principles of natural philosophy were seen as unchallengeably certain. If empirical results did not accord with them, then the principles remained unchallenged, whereas the empirical observations were taken to be obviously at fault, or incomplete, or deceptive.} This is yet again closer to the concepts introduced by Parmendise and Fichte than to what is science trying to acheive. Although it is true that logical statements remain unchallenged, this is not because they have a higher values regarding empiricism. The logical statements remain unchallenged because they statements are build upon logical systems, which are agreed upon. In that sense any logical system would be working as good as science, and if so the nature would act in thousands of ways at the same time just to make the logic be true. But if we assume that the logic of the world remains a unique one, then working with logics and using empirical information just to prove our points seems to be missing an important fact, that we are to choose between many ways of possible logical system and yet expect that to be the right one, which describes the universe, by pure chance.
+                \\
+                \\
+                A further aspect of Schelling's epistemology should be emphasized. In accordance with the identity principle, the ideal and the real together make up a whole that cannot be transcended. The whole is at the same time an allegory for the absolute, which however only reveals itself in the dichotomous form --that is, in ideal and real essence-- to the subject. However, the absolute, whe it “expands” into the ideal and the real, must not lead out of the absolute. As the absolute, it must always remain identical with itself in its entire absoluteness.
+                \begin{qt}
+                    Natural philosophy and empirical research into Nature are thus concerned with two fundamentally different objects of knowledge. One is concerned with “Nature as a subject” and the other with “Nature as an object”. “Nature as a subject” is a metaphor for the infinite productivity of Nature (“natura naturans”). It is downright natural dynamics. Its driving forces are the creatively acting natural principles, the discovery of which is the task of natural philosophy.  “Nature as an object”, in contrast, is the productivity of Nature as made manifest in her products (“natura naturata”). These products are in themselves finite and appear as a terminated network of actions, the elucidation of which is the task of empirical research into Nature. However, to avoid the conceptional separation of Nature into two forms, Schelling employed an artifice.
+                \end{qt}
+                According to this, the productivity of Nature is not really extinguished in its products; rather, it still remains active with a force of production that, however, is infinitely delayed. As already encountered in the philosophy of the Eleates, the concept of the infinite again must be invoked in order to save the consistency of the epistemological model.\cite{Kuppers2018-vv}
+    
+                In summary, we can say that Schelling's philosophy of Nature ran counter to today's scientific method in two important respects: 
+                \begin{itemize}
+                    \item Theory occupies a more important place than empiricism. Claims to truth need not stand the test of experience; they are exclusively derived from logical reasoning. In short: Knowledge a priori is given precedence over knowledge a posteriori.
+                    \item The research strategy propagated by Descartes, Newton and others, according to which one should proceed from the simple to the complex, from the part to the whole, from the cause to the effect, is turned by Schelling into its opposite. The analytical method, based upon dismantling, abstraction and simplification, is discarded—or at least diminished in importance—in favour of a holistic method.
+                \end{itemize}
+                The addendum to the Introduction of Schelling's "Ideas of a Philosophy of Nature", in which he repeatedly attempts to express the inexpressible, is rich in morsels of poetic word-creation and pictorial comparison that exhaust themselves in nebulous abstraction. We read, for example, that the absolute is “enclosed and wrapped up into itself", or that the absolute “is born out of the night of its being into the day”. There Schelling speaks of the “æther of absolute ideality” and the "mystery of Nature".
+                \\
+                \\
+                Even the closest philosophers of the Jena Romantics' Circle, such as Friedrich Schlegen and Johann Wilhelm Ritter, criticised the notion that pure speculation, unaided by any experience, could provide the basis for any profound knowledge about the world. We shall according to Ritter, : approach imperceptibly the true theory, without searching for it-- we shall find it by observing what really happens, for what more do we desire of the atheory than that it tells us what is really happening?"\cite{Kuppers2018-vv} 
+    
+            \section{Evidentialism} 
+                Whether a blief is truley justified or not, there's something that makes it so. But before we begin with the concept of evidence it is useful to check some ideas from Parmendise, Schelling and others.\cite{sep-epistemology}
+                \\
+                \\
+                The strongest case for a justification to be accurate seems to be the case of evidence.
+                \begin{define}
+                    According to Evidentialism, one is justified to believe something if and only if that person has evidence which supports said belief. \cite{enwiki:1149588226}
+                \end{define}
+                It is commonsense that one possessing a belief must have a reason to, whatever that may be. This dependence on reasons seems to be central to the very concept of justified only if one has adequate reasons to believe. Richard Feldman and Earl Conne, were two leading defenders of ecidentialism using their definition:
+                \begin{define}
+                    Evidentialism is a thesis about the justifactory status of all the doxastic attitudes: belief, disbelief, and suspension of judgement.
+                \end{define}
+                There fore defining justification all again as:
+                \begin{define}
+                    The Doxastic attitude, $d$, toward $p$ is justified for one at $t$ if and only if one's evidence at $t$ supports ones tading $d$ towards $p$.
+                \end{define}
+                \newpoint{Evidence:} Evidence for or against $p$ is any information that can evaluate the validity of $p$. That is to say any statement that can prove $p$ of being true or false.\cite{Mittag2015-qc}
+                \\
+                \\
+                With such broad definition we can consider Schelling, Fichte, and Parmendise as evidence. But as we memtioned the nature of such justifications are far form being scientific. Here we examine ways that one would consider as ways  to acheive evidence
+                \\
+                \\
+                \subsection{Rationalism and Reliabilism} We already investigated how Schelling would consider rational thought and logical process to be evidential. Though he considered empiricism to be important he didn't consider it as equal to ratoinal thought, therefore we can consider him as a rationalis. Rationalists believe that logic is the source of knowledge, Syllogisms, which is a logical argument that applies deductive reasoning to arrive at a conclusion, can be used --and if used properly-- to acheive knowledge. \cite{enwiki:1145200450}
+                \begin{align*}
+                    \text{If} A, \text{then} B;
+                    \\ A;
+                    \\ \therefore B
+                \end{align*}
+                The problem with such method is, that there's no limits on what permises you use. One can form such arguments using this logic:
+                \begin{align*}
+                    \text{If Alice is awake, it is morning.}
+                    \\ \text {Alice is awake.}
+                    \\ \therefore \text{It's morning.}
+                \end{align*}
+                Although many people would consider these statements as true and thus regard the whole argument as true, one can easily see that the premise would not necessarily follow the conclusion (Alice could grow insomnia and not sleep at all). Beside the usage of different logic systems that can raise contradiction with the reality, using premises that doesn't imply the conclusion are another problems many logical arguments can have. This can be at best put in a toolbox of evidences, not the evidence as a whole.
+                \\
+                \\
+                Reason alone, shall not be taken for granted. The premises should follow the conclusion, and the logic must be the actual logic that is working in reality (or nature). The conclusion of this point is that rational thought is not enough to be considered evidence. \cite{CW/E}
+                \\
+                \\
+                Extending beyond human reasoning which shown to be mistakeful, what if we use a mathematical approach. The investigation over if mathematics can be a solid ground work would be passed to next sections, but for now, as we mentioned for the logical errors one might get consider the following argument:
+                \begin{align*}
+                    x &=c \\
+                    x^2 &= cx\\
+                    x^2 - c^2 &= cx - c^2\\
+                    (x+c)(x-c) &= c(x-c)\\
+                    x + c &= c \\
+                    2c &= c \\ 
+                    2 &=1 \\ 
+                \end{align*}
+                Here we found an argument that works by mathematical laws but yet results in errors. To be more accurate this problem is not because of matheamtics, since in itself won't allow $(x-c)$ to be canceled out from the sides of the equation when it's zero. Here we made the mistake by not using the logical system properly. \cite{CW/E}
+                \\
+                \\
+                \subsection{Coherentism}
+                 We might look for an all-time true statement, which cannot be false anyway, and then try to work through other statments to see if they can be implied by that statement, or any other statemtens, which validity are proved by the original one. By this method we are looking for coherent statements beside the original-true-statement. 
+                \\
+                \\
+                Coherentism lends itself to yet another way of knowinig that can be similarly flawed, the \textit{Perfect credibility}, In the paper \cite{CW/E}, Wenning argues:
+                \begin{qt}
+                    To the medieval mind it was only reasonable that the Earth was at the center of the universe, the lowest point possible under the heavens. To medieval thinkers humanity was at the center of the universe not because of our noble status as the pinnacle of creation, but because we were so very despicable with our fallen nature. Closer to the center of the universe still was that place at the very center of the Earth that was reserved for the most despicable of all – hell. Those not so terribly bad were relegated to the underworld or Hades upon death, but not hell.
+                \end{qt}
+                This is the reason why the medieval viewpoint envisioned heaven as “up” and hell as “down.” Man’s position near or at the center of the universe was not pride of place; rather, it was a matter of making perfect sense in man’s relationship with the deities. This belief was perfectly credible. Interpreting things in any other way would have made no sense given the then prevailing theological understanding.But still these conclusions were false, this problem arises because in choosing a coherent statement with the all-true-statement we are neglecting that in principle such statement may be false, thus the system would collapse as soon as one of the all-true-statements proved to be wrong. Using such method can be helpful to gather coherent statements together, but also can be dangerous if it is to lead us alone. We would like to find a law that implies good results and then finding coherent laws that would imply more things but we have to make sure that we are always in search to disprove such law. But how?
+                
+            \section{Empiricism}
+                EMpiricists also endorse the Intuition/Deductio thesis as would rationalists do but for a significat difference, the use of rational though, mathematics and logic is not to prove all alone but to guide us throught what to check for.  By contrast, empiricists reject the Innate Knowledge and Innate Concept theses. Insofar as we have knowledge in a subject, our knowledge is gained, not only triggered, by our experiences, be they sensorial or reflective. Experience is, thus, our only source of ideas. Moreover, they reject the corresponding version of the Superiority of Reason thesis. Since reason alone does not give us any knowledge, it certainly does not give us superior knowledge. Empiricists need not reject the Indispensability of Reason thesis, but most of them do.\cite{sep-rationalism-empiricism}
+                \begin{define}
+                    \textit{The EMpiricism Thesis: } We have no source of knowledge in S or for the concepts we use in S other than experience.
+                \end{define}
+                \begin{callout}
+                    To be clear, the Empiricism thesis does not entail that we have empirical knowledge. It entails that knowledge can only be gained, if at all, by experience.
+                \end{callout}
+                The Empiricism is not better just because of empirical data, but also since it uses the best other ways have to offer. The data is to prevent us from being mistakeful. 
+                \\
+                \\
+                We are blinded by many things, our logical errors, our low intuitions in the world, our ability to cause mistakes in logical systems and so on, so one would argue that it is logical to find a source, not in ourselves but in anything else, that acts in logics, but also cannot be threatend by our flaws. The reason natural philosophy has took the turn into empiricism might be the from that reason, since the task itself is to describe nature, why not ask her for knwoledge.
+                \\
+                \\
+                Here one might ask for the role rational thought, mathematics and logic. The use of them are not to invent the nature, as we saw earlier they can put us in a lot of trouble. But the problems with purely observing at nature is two, firstly it is pretty hard to dervie a conclusion since the systems in nature are complex, thus one cannot observe and the dervie the rule behind it, although we try to isolate simple system in the lab to be able to preceive the most from them. Second there are many ways to describe a natural process in terms of words and intuition,  Aristotle said that objects fall because each of the four elements (earth, air, fire, and water) had their natural place, and these elements had a tendency to move back toward their natural place. Thus, objects that were made of earth wanted to return to Earth, whereas fire, for example, rose toward heaven.\cite{greg-grav}. This would make us consider a more rigid form of reasoning, that is mathematics, which uses more than words, but describes relations:
+                \begin{equation}
+                    F = \frac{d}{dt} p
+                \end{equation}
+                The newton law describes the relation between a net force, and the objects momentum, which are also defined using mathematics. With this equation we don't need to say what an object if moving toward is, we just need to ask if there's a force acting upon it. Therefore it is necessary to use a rigid format of logic to describe what seems to be a logical nature.
+        
             \section{Formal Language Theory}
-                The investigation of Incompleteness theorem requiers the knowledge of some basic ideas such as languages, grammars, automatas and others. Therefore we start this draft by talking about these topics in a general format. A more detailed version would be published later.\cite{Leary2019-ip}
+                The investigation of Incompleteness theorem requiers the knowledge of some basic ideas such as languages, grammars, automatas and others. Therefore we start this section by talking about these topics in a general format. A more detailed version would be published later.\cite{Leary2019-ip}
                 \subsection{Languages}
                     We would begin by the definition of a language. In a informal way a language is what we speak or what we write on a paper to give information to another person, mathematically and a more abstract idea of a language is a bunch of symbols that we have to make words (gluing symbols together to resemble a unity of them); To give a precise mathematical definition of language we would first define alphabet as:
                     \begin{define}
@@ -236,13 +474,10 @@
                     \begin{define}
                         \textit{A Grammar is a set $\{V_T,V_N,S, R\}$ where $V_T$ is the set of terminal elements, $V_N$ is the set of non-terminal elements, $S$ is a memeber of $V_N$, and $R$ is a finite set of rules.}
                     \end{define}
-                    We would use these definitions in the later sections of this draft. But for now let us give a formal definition of $R$ as well:
+                    We would use these definitions in the later sections of this paper. But for now let us give a formal definition of $R$ as well:\cite{Leary2019-ip}
                     \begin{define}
                         \textit{$R$ is a finite set of ordered pairs from $\Sigma^\infty V_N \Sigma^\infty\times \Sigma^\infty$, where $\Sigma = V_T\cup V_N$.}
                     \end{define}
-                    In later drafts we would get back to the Formal language theory in more depth and examine the properties of the setsof languages each grammar formalism can accomodate and the set of abstract machines that correspond to each type. But for now we would start with the things we need for proving the incompleteness theorems that is the goal of this draft.\cite{Leary2019-ip}
-                    \\
-                    \\
                     \newpoint{Induction:} Induction is a method of proving that a statemens $P(n)$ is true for every natural number $n$, that is, that the infinitely many cases, $P(0), P(1),\dots$ all hold. \cite{enwiki:1157726892}
                     \begin{qt}
                         Mathematical induction proves that we can climb as high as we like on a ladder, by proving that we can climb onto the bottom rung (the basis) and that from each rung we can climb up to the next one (the step).
@@ -783,20 +1018,208 @@
                             \item Non-constructive methods (such as non-constructive existence proofs) and non-constructive axioms (such as the Axiom of Choice).
                             \item Impredicative definitions (that is, definitions that quantify over a totality to which the object being defined would belong).
                             \item ‘Hilbertian optimism’, that is, the belief that every mathematical problem is in principle solvable.
-                          \end{enumerate}
-                        Working realism endorses classical methods, including non-constructive methods and impredicative definitions, in mathematical reasoning. However, it does not take a stance on whether these methods require philosophical defense, or if such defense must be based on platonism. Working realism is primarily a view within mathematics about the correct methodology of the discipline, whereas platonism is an explicitly philosophical view. Therefore, they are distinct views.
+                        \end{enumerate}
+                        Working realism and platonism are two distinct views with regards to mathematics. While working realism is a view within mathematics that concerns the correct methodology of the discipline, platonism is an explicitly philosophical view. Working realism does not take a stance on whether classical methods require any philosophical defense, or if such defense must be based on platonism.
                         \\
                         \\
-                        Mathematical platonism provides strong support for working realism. If platonism is true, then the language of mathematics should follow classical first-order logic, and non-constructive methods, impredicative definitions, and Hilbertian optimism would also be justified. Furthermore, the truth of platonism would have significant implications within mathematics, justifying the use of classical methods and motivating the search for new axioms to settle unresolved mathematical questions.
+                        However, there are logical relations between the two views. If mathematical platonism is true, then it would justify the classical methods associated with working realism. Mathematical platonism would also encourage the search for new axioms to settle questions left open by current mathematical theories, such as the Continuum Hypothesis.
                         \\
                         \\
-                        However, working realism does not necessarily imply platonism. Although it endorses the use of the platonistic language of contemporary mathematics, this falls short of platonism in two ways. Firstly, the platonistic language can be analyzed without reference to and quantification over mathematical objects. Secondly, even if face-value analysis of the language could be justified, this would only support object realism, not platonism. An additional argument would be necessary to uphold Independence, the third component of platonism.\cite{sep-platonism-mathematics}\cite{Benson2006-jm}\cite{Tegmark2008-qv}
-                        
+                        On the other hand, working realism does not necessarily imply platonism. While working realism says we are justified in using the platonistic language of contemporary mathematics, this falls short of platonism in at least two ways. Firstly, the platonistic language of mathematics can be analyzed in a way that avoids reference to and quantification over mathematical objects. Secondly, even if a face-value analysis of the language of mathematics could be justified, this would support object realism but not platonism. An additional argument would be needed for the third component of platonism, namely, Independence.\cite{sep-platonism-mathematics}\cite{Benson2006-jm}\cite{Tegmark2008-qv}
+                \subsection{The Fregean Argument for Existence}
+                    Here, we present a general template for an argument that supports the existence of mathematical objects, which is commonly referred to as the Fregean argument. While Frege was the first philosopher to develop an argument of this form, the template can be applied more broadly and abstractly, without necessarily relying on specific aspects of Frege's own defense of the existence of mathematical objects.
+                    \\
+                    \\
+                    It is important to note that Fregean logicism represents just one way in which this argument can be developed. Other philosophers have presented variations of this argument, which will be discussed below.
+                    \subsubsection{Structure of the Argument}
+                        The Fregran argument is based on two premises, the first of which concenrs the semantics of the language of mathematics:
+                        \begin{qt}
+                            \textbf{Classical Semantics}
+                            \\
+                            The singular terms of the language of mathematics purport to refer to mathematical objects, and its first-order quantifiers purport to range over such objects.
+                        \end{qt}
+                        The word 'purpot' needs to be explained. When a sentence $S$ purports to refer or quantify in a certain way, this means that for $S$ to be true, $S$ must succeed in referring or quantifying in this way. The second premise does not require much explanation:
+                        \begin{qt}
+                            \textbf{Truth}
+                            \\
+                            Most sentences accepted as mathematical theorems are true (regardless of their syntactic and semantic structure).
+                        \end{qt}
+                        Consider sentences that are accepted as mathematical theorems and that contain one or more mathematical singular terms. By Truth, most of these sentences are true. Let $S$ be one such sentence. By Classical Semantics, the truth of $S$ requires that its singular terms succeed in referring to mathematical objects. Hence there must be mathematical objects, as asserted by Existence.
+                    \subsubsection{Defending Classical Semantics}
+                        Classical Semantics is a hermeneutic claim about the language of mathematics, which asserts that it functions semantically in much the same way as ordinary language. This claim is descriptive rather than normative and is broadly compatible with traditional views on semantics. The plausibility of Classical Semantics stems from the apparent semantic similarities between mathematical and non-mathematical language, which are supported by standard semantic analyses proposed by linguists and semanticists.
+                        \\
+                        \\
+                        However, some philosophers, including nominalists like Hellman and Hofweber, have challenged Classical Semantics. They argue that the semantic structure of mathematical language is fundamentally different from that of ordinary language and that this difference undermines the prima facie plausibility of Classical Semantics. To substantiate these challenges, they must show that the apparent semantic similarities between mathematical and non-mathematical language are deceptive and provide convincing arguments that linguists and semanticists would recognize as significant.
+                    \subsubsection{Defending Truth}
+                        There are a variety of ways to defend the truth of mathematical statements. In general, these defenses first identify a standard by which truth-values can be assessed and then argue that mathematical theorems meet this standard.
+                        \\
+                        \\
+                        One option is to appeal to a fundamental standard outside of mathematics, such as in the case of Logicism. This approach claims that any theorem of pure logic is true and attempts to prove that theorems of certain branches of mathematics can be derived from pure logic and definitions.
+                        \\
+                        \\
+                        Another option is to appeal to the standards of empirical science, as in the Quine-Putnam indispensability argument. Here, it's argued that any indispensable part of empirical science is likely to be true and therefore justifiable for belief. It's then claimed that large amounts of mathematics are indispensable to empirical science, and thus belief in Truth is justified.
+                        \\
+                        \\
+                        A third option, referred to as naturalism or mathematical naturalism, appeals to the standards of mathematics itself. The justification for mathematical claims is based on the sui generis standards provided by mathematics, rather than appealing to non-mathematical standards like logic or empirical science. This strategy has gained attention recently. For instance, mathematicians generally accept the truth of mathematical theorems, and this acceptance constitutes a plausible stance for defending mathematical truth.
+                        \begin{enumerate}
+                            \item Mathematicians are justified in accepting the theorems of mathematics.
+                            \item Accepting a mathematical statement $S$ invloves $S$ to be true.
+                            \item When a mathematician accepts a mathematical statement $S$, the content of this attitude is in general the literal meaning of $S$.
+                        \end{enumerate}
+                        From these three claims it follows that mathematical experts are justified in taking the theorems of mathematics to be literal truths. By extension the rest of us too are justified in believing Truth. Note that the experts with whom (1) is concerned need not themselves believe (2) and (3), let alone be justified in any such belief. What matters is that the three claims are true. The task of establishing the truth of (2) and (3) may fall to linguists, psychologists, sociologists, or philosophers, but certainly not to mathematicians themselves.
+                        \\
+                        \\
+                        Admittedly, fictionalists about mathematics will try to resist (2) or (3).\cite{sep-platonism-mathematics}
+                    \subsubsection{The Notion of Ontological Commitment}
+                        Versions of the Fregean argument are sometimes stated in terms of the notion of ontological commitment. Suppose we operate with the standard Quinean criterion of ontological commitment:
+                        \begin{qt}
+                            \textbf{Quine’s Criterion.}
+                            A first-order sentence (or collection of such sentences) is ontologically committed to such objects as must be assumed to be in the range of the variables for the sentence (or collection of sentences) to be true.
+                        \end{qt}
+                        Classical Semantics holds that many mathematical sentences are committed to mathematical objects. This is because singular terms and first-order quantifiers, which are expressions that refer to or range over mathematical objects, must succeed in doing what they purport to do for a mathematical theorem to be true. Therefore, the theorem must be ontologically committed to mathematical objects according to Quine's Criterion. However, there have been challenges to this criterion, with some philosophers suggesting that not all of the objects within the range of the quantifiers need to exist for a sentence to be true, or that the link between the first-order existential quantifier and ontological commitment should be severed. 
+                        \\
+                        \\
+                        One counterargument to these challenges is that the Fregean argument presented above does not rely on the concept of ontological commitment, and therefore, the challenges to its definition are irrelevant. However, challengers may argue that the argument's conclusion, Existence, is too weak to have its intended effect. The conclusion is formalized as '$\exists xMx$' in the philosophical meta-language $LP$, which may fail to incur ontological commitment if the challengers dispute the standard Quinean notion of ontological commitment. Ultimately, the challengers must provide an account of why their non-standard notion of ontological commitment is superior and more theoretically interesting than the standard Quinean notion.
+                    \subsubsection{From Existence to Mathematical Platonism?}
+                        Suppose we accept Existence, perhaps based on the Fregean argument. As we have seen, this is not yet to accept mathematical platonism, which is the result of adding to Existence the two further claims Abstractness and Independence. Are these two further claims defensible?
+                        \\
+                        \\
+                        By the standards of philosophy, Abstractness has remained relatively uncontroversial. Among the few philosophers to have challenged it are Maddy (1990) (concerning impure sets) and Bigelow (1988) (concerning sets and various kinds of numbers). This relative lack of controversy means that few explicit defenses of Abstractness have been developed. But it is not hard to see how such a defense might go. Here is one idea. It is a plausible prima facie constraint on any philosophical interpretation of mathematical practice that it should avoid ascribing to mathematics any features that would render actual mathematical practice misguided or inadequate. This constraint makes it hard to deny that the objects of pure mathematics are abstract. For if these objects had spatiotemporal locations, then actual mathematical practice would be misguided and inadequate, since pure mathematicians ought then to take an interest in the locations of their objects, just as zoologists take an interest in the locations of animals. The fact that pure mathematicians take no interest in this question suggests that their objects are abstract.
+                        \\
+                        \\
+                        Independence says that mathematical objects, if there are any, are independent of intelligent agents and their language, thought, and practices.
+        \section{Determinism and Computation}
+            \subsection{Turing Machines}
+                Alan Turing introduced Turing machines in 1936-37 as basic theoretical computational devices designed to explore the boundaries of what can be computed and the limitations thereof. Originally referred to as "automatic machines," they were initially designed for computing real numbers and later dubbed "Turing machines" by Alonzo Church in his review of Turing's paper (Church 1937). Today, Turing machines are one of the fundamental models in computer science and computability theory that have significant implications for understanding the nature of computation and the limits of what computers can do.
+                \\
+                \\
+                Turing introduced Turing machines in the context of research into the foundations of mathematics. More particularly, he used these abstract devices to prove that there is no effective general method or procedure to solve, calculate or compute every instance of the following problem:
+                \begin{qt}
+                    \textbf{Entscheidungsproblem} The problem to decide for every statement in first-order logic whether or not it is derivable in that logic.\cite{sep-spacetime-bebecome}
+                \end{qt}
+                The original version of the problem, as proposed by Hilbert and Ackermann in 1928, focused on the concept of validity rather than derivability. However, Gödel's completeness theorem from 1929 demonstrated that proving the existence (or non-existence) of an effective procedure for derivability would also resolve the issue of validity. To address this question properly, a clear understanding of what constitutes an "effective procedure" is necessary, which is where Turing machines come into play. These machines were developed by Alan Turing in 1936 as an abstract model of computation, providing a formalized definition of an effective procedure and allowing researchers to investigate the Entscheidungsproblem with greater precision. Ultimately, Turing's work established that there is no algorithmic solution for determining the provability of arbitrary statements, leading to the undecidability of the Entscheidungsproblem.
+                \\
+                \\
+                A Turing machine, or computing machine as it was referred to by Turing, originally defined a machine that is capable of a finite set of configurations $q_1,\dots,q_n$ (referred to as m-configurations by Turing). The machine consists of a one-way infinite tape divided into squares, with each square able to hold exactly one symbol. These symbols are denoted by $S_0, S_1, ..., S_m$, where $S_1 = 0$ and $S_2 = 1$. During operation, the machine scans the content of one square on the tape, which can hold either a blank symbol ($S_0$) or one of the other symbols.
+                \\
+                \\
+                The Turing machine is classified as an automatic machine, or a-machine, which means that its behavior at any given moment is entirely determined by the current configuration being scanned (which consists of the current state and symbol). This condition is known as determinacy. A-machines are distinguished from choice machines, which rely on the decision of an external operator or device to determine the next state (as described by Turing in 1936-7: 232). The Turing machine is capable of performing three types of action:
+                \begin{itemize}
+                    \item Print $S_i$ move one square to the left ($L$) and go to state $q_j$.
+                    \item Print $S_i$, move one square to the right ($R$) and go to state $q_j$.
+                    \item Print $S_i$, do not move ($N$) and go to state $q_j$
+                \end{itemize}
+                The ‘program’ of a Turing machine can then be written as a finite set of quintuples of the form:
+                \begin{equation}
+                    q_i S_jS_{i,j}M_{i,j}q_{i,j}
+                \end{equation}
+                Alan Turing's original definition of computing machines used two types of symbols - figures consisting entirely of 0s and 1s, as well as "symbols of the second kind" which were distinguished on the tape using a system of alternating squares. The sequence computed by the machine was contained in F-squares, while E-squares were used to mark F-squares and "assist the memory." However, using F and E-squares led to complications as noted by Emil L. Post.
+                \\
+                \\
+                There are two important aspects to note regarding the Turing machine setup. Firstly, the machine's tape is potentially infinite, implying that the memory of the machine is also potentially infinite. Secondly, a function is considered Turing computable if there exists a set of instructions resulting in a Turing machine computing the function, regardless of how much time it takes. These assumptions ensure that no computable functions fail to be Turing-computable due to limited time or memory. Nonetheless, some Turing-computable functions may not be carried out by existing computers due to memory limitations, and others may never be computable in practice because they require more memory than can be built using all of the atoms in the universe. When a function is shown to be not Turing-computable, this result is very strong because it implies that no computer we could ever build would carry out the computation.\cite{sep-turing-machine}
+            \subsubsection{Turing's Universal Machine}
+                The universal Turing machine was developed to demonstrate the uncomputability of certain problems. Essentially, it is a Turing machine that can compute anything another Turing machine computes. Assuming that the Turing machine concept fully captures computability (which implies the validity of Turing's thesis), it follows that anything that can be computed can be computed by the universal machine. Conversely, any problem that cannot be computed by the universal machine is considered uncomputable.
+                \\
+                \\
+                This is the powerful rhetorical and theoretical idea behind the universal machine - one simple formal device capable of capturing all possible processes involved in computing a number. It is also a key reason why Alan Turing is now revered as one of the founding fathers of computer science.\cite{sep-turing-machine}
+            \subsection{Philosophical Issues Related to Turing Machines}             
+                \subsubsection{Human and Machine Computations}
+                Alan Turing's original identification between computable numbers and Turing machines aimed to demonstrate that the Entscheidungsproblem is not a computable problem and therefore not a "general process" problem. However, the question remains as to what Turing's intuitive notion of computability was and whether it actually encompasses all computable problems and types of computation. This is a fundamental issue in the philosophy of computer science.
+                \\
+                \\
+                It should be noted that when Turing wrote his paper, modern computers had not yet been developed. Thus, interpretations that identify Turing computability with computability by a modern computer are not historically accurate statements of Turing's thesis. The computing machines of the time, such as differential analyzers and desk calculators, were limited in their computational abilities and were used primarily in the context of human computational practices. Therefore, Turing formalized human computation rather than machine computation in his paper, and his concept of computable problems referred to those that could be solved by human means.
+                \\
+                \\
+                In Section 9 of his paper, Turing explained that Turing machines were a natural model of human computation by analyzing the process of human computation. He created an abstract human "computor" who fulfilled a set of conditions based on human limitations that restrict what we can compute (including limitations of our sensory and mental apparatus). This "computor" computed real numbers on an infinite one-dimensional tape divided into squares, with certain restrictions. These limitations and restrictions have been further analyzed by scholars such as Gandy and Sieg.
+                \begin{itemize}
+                    \item \textbf{Determinacy condition D} “The behaviour of the computer at any moment is determined by the symbols which he is observing and his ‘state of mind’ at that moment.” (Turing 1936–7: 250)
+                    \item \textbf{Boundedness condition B1} “there is a bound B to the number of symbols or squares which the computer can observe at one moment. If he wishes to observe more, he must use successive observations.” (Turing 1936–7: 250)
+                    \item \textbf{Boundedness condition B2} “the number of states of mind which need be taken into account is finite”
+                    \item \textbf{Locality condition L1} “We may […] assume that the squares whose symbols are changed are always ‘observed’ squares.” (Turing 1936–7: 250)
+                    \item \textbf{Locality condition L2} “each of the new observed squares is within L squares of an immediately previously observed square.” (Turing 1936–7: 250)
+                \end{itemize}
+                Turing's analysis and the resulting model are considered by many as the best standard model of computability today, owing to their so-called "direct appeal to intuition." This is because the conditions presented above can quite easily be used to derive Turing machines by analyzing them into simple operations that are elementary enough to not require further division. For a strong statement of this point of view, see Soare 1996.
+                \\
+                \\
+                It is worth noting that although Turing's analysis of computation focused on human computation, his identification between (human) computation and Turing machine computation applied to the Entscheidungsproblem implies that he did not contemplate the existence of a model of computation that surpasses human computation capabilities, which can offer a general and effective method for solving the Entscheidungsproblem. If he had considered the possibility of such a model, he would have deemed the Entscheidungsproblem computable rather than uncomputable.
+                \\
+                \\
+                Turing's focus on human computation in his analysis of computation has prompted researchers to broaden the scope of Turing's analysis to include computation by physical devices, leading to versions of the physical Church-Turing thesis. Robin Gandy, for instance, extended Turing's analysis to discrete mechanical devices and developed a new model based on a fundamental set of constraints that were reducible to the Turing machine model. Wilfried Sieg continued this work and proposed the framework of Computable Dynamical Systems (Sieg 2008). Others have explored the possibility of "reasonable" models from physics that can "compute" something non-Turing computable. For instance, Aaronson, Bavarian, \& Gueltrini 2016 (Other Internet Resources) demonstrated that the halting problem would be solvable with finite resources if closed timelike curves existed. Some have also suggested alternative models for computation that are inspired by the Turing machine model but better equipped to capture specific aspects of current computing practices. One example is persistent Turing machines designed to capture interactive processes. However, these proposals do not demonstrate the existence of "computable" problems beyond those that the Turing machine can compute. Some authors consider them reasonable models of computation that seemingly compute more than Turing machines, leading to debates in the computer science community on hypercomputation in the early 2000s. See Teuscher 2004 for various positions.\cite{sep-turing-machine}
+        \subsection{Causal Determinism}
+            I will generally use the term "determinism" throughout this piece, rather than "causal determinism," in line with recent philosophical practice of distinguishing views and theories on causation from conclusions about the success or failure of determinism. However, it is important to note that cause and effect are often closely related to our understanding of determinism, as we will explore later. Historically, determinism has been defined in various imprecise ways, which can be problematic when investigating determinism within a specific theoretical context. To avoid major errors in definition, we can start with a loose but comprehensive definition of determinism:
+            \begin{qt}
+                Determinism: The world is governed by (or is under the sway of) determinism if and only if, given a specified way things are at a time $t$, the way things go thereafter is fixed as a matter of natural law.
+            \end{qt}
+            The idea of determinism can be traced back to the philosophical notion that everything can, in principle, be explained - that everything has a sufficient reason for being and existing as it does. Leibniz termed this idea the Principle of Sufficient Reason. However, with the emergence of precise physical theories that appeared to be deterministic, the concept of determinism became distinguishable from these philosophical roots. In philosophy of science, there is frequent interest in determining the determinism or indeterminism of different theories, without necessarily starting from a view on Leibniz’ Principle.\cite{sep-determinism-causal}
+            \subsubsection{Natural Laws}
+                Throughout the scientific approach to the nature, we described the world in terms of states and the evolutions that they are undertaking. As Heraclitus wrote:
+                \begin{qt}
+                    Everything flows and nothing abides; everything gives way and nothing stays fixed.
+                \end{qt}
+                It was later on when we started to define these becomings in terms of mathematical equations. In classical mechanics, the state of a system can be fully determined by specifying its position and momentum at a particular moment in time, and its subsequent evolution is governed by deterministic differential equations. 
+                \\
+                \\
+                However, in quantum mechanics, although the Schrödinger equation describing a system's wave function is deterministic, the relationship between the wave function and the observable properties of the system appears to be non-deterministic. The wave function provides all the information that can be known about the system, but it does not give a complete description of its properties. Instead, the wave function gives probabilities for different outcomes of measurements that can be performed on the system. This apparent non-determinism is a prominent characteristic of quantum mechanics that sets it apart from classical mechanics.\cite{enwiki:1092966327}
+    \section{Is Quantum Mechanics Deterministic?}
+        Now the formal and philosophical structure that we would need to have has been completed to a good degree. It's time to have a talk with quantum mechanics.
+        \\
+        \\
+        The theory was developed almost in three years, a really quick way to have a fundamental theory of nature (I didn't consider the field theory or potentially the unified theory). The result that quantum mechanics had gave scientist was extremely accurate, if we don't consider one issue with it.\cite{enwiki:1142268588}
+        \subsection{Measurement is the Only Mystery}
+            The theory of quantum mechanics in it's whole is a non deterministic theory. There exists a wave-function that propagates or evolves through space and time with different evolutions, looked mathematically as operators, that would evolve until we measure it.
+            \\
+            \\
+            The geenral view would be to separate quantum systems behaviour in three steps:
+            \begin{enumerate}
+                \item \textbf{State:} A system is in it's core a state, described by it's enviorment and it's describtions. To start any quantum process we would need an initial system with an initial state. The state is a mathematical object that we would notationally denote as:
+                \begin{equation}
+                    \left| \psi_i \right> 
+                \end{equation}
+                \item \textbf{Evolution:} Interactions and evolutions that a system undergoes would be described by operators. Basically anything that would affect the state of our system, would be an operator acting on the state, thus we denote that:
+                \begin{equation}
+                    \left|\psi_f\right>  = \hat U \left|\psi_i\right>
+                \end{equation}
+                Or described with Schrödinger equation:
+                \begin{equation}
+                    -\hbar\frac{\partial}{\partial t} \psi = \frac{\hbar^2}{2m}\nabla^2 \psi + V(x)\psi 
+                \end{equation}
+                \item \textbf{Measurement:} The process through which we get information about the system, is fundamentally seen different that the evolution, one might think if we are physical systems then the interaction between us and a quantum system would be described as an operator acting on it. But it seems to be tricky thing that happens fundamentally different than the normal evolutions.
+            \end{enumerate}
+            The process of measurement is as follows. Suppose you have a wave-function, with measuring you get an answer of say $x$. If you measure this system (which you already measured) again, you would get the same result. As if the measurement has an exact answer. Similar to a classical measurement where the length of a table stays the same, how many times you would try to measure it.
+            \\
+            \\
+            Then suppose you have an ensemble of exact same states, measuring each one of them would give you different answers $x_i$. You therefore for predicting the measurement of a system, is bounded to talk about probabilities of different outcomes. The probability distribution of the appearance of your system at the spatial area $(a,b)$ as an example is shown as:
+            \begin{equation}
+                P = \int_a^b |\psi|^2 dx 
+            \end{equation}
+            In Physics (up to measurement in quantum mechanics) Probabilities is used when you are blinded. If the equations are to many and to hard to solve then you would use probabilities, to address some answers and not strugling with the hard equations. Or when the exact interactions are not needed to be known. In thermodynamics for instance we are interested in pressure, temprature, things that doesn't really have adefinition at atomic levels. It is shown that these properties are for macrosopic view and have statistical definitions. 
+            \\
+            \\
+            In measurement of quantum system, on the other hand, we got an intrinsically probabilistic behaviour. But that's not the probelm. The problem is that this type of process has never seen in physical description of nature! The Measurement is not deterministic. From a collapsed wave-function, there's no way to work back to the initial state. Although you are able yo do this with any process in classical and quantum physics (beside the measurement). 
+            \\
+            \\
+            Therefore it is safe to assume that the measurement problem if the problem of describing the first nondeterministic phenomena we encountered. And the only mystery of quantum physics.\cite{ep-qm}
+    \section{Summing Up}
+    \subsection{Conclusion}
+        There we are, describing phenomenas that are deterministic, having a model to describe them, and giving predictions and histories, but at the core of the mathematics that we are using, there exists the theorem that states that not all the statements we are able to create within this formal system is able to have a proof, a model to go backwards.
+        \\
+        \\
+        There can be assumptions, which has been for centuries. That the mathematical models that we are using, are not invented by us, but they are the formal language that the world itself is. The abstractions that Plato would describe. The World can be a subset of the mathematical abstract world. And we are watching the shadows of that abstractions. And then comes the theorems that would describe the abstraction itself, can contain flaws. Flaws in the sense of not being complete. If one accepts or proves that the world is the subset of mathematical universe and abstraction, it is intrinsically obvious to claim that such flaws must exists within the world and therefore within the formal theories we would give about the world.
+        \\
+        \\
+        I would here try to link the dots, and to argue that measurement, can be fundamentally impossible to explain. Not because of hard equations or behaviours that doesn't make sense to us. But because the existence of statements in the world that cannot be modeled is a fundamenta property of the nature itself.
+        \subsection{Where to Go?}
+        Now there are some questions to be answered in order to achieve any progress in this idea.
+        \begin{enumerate}
+            \item \textit{Is the world a Formal System?} This question would be the starting point of our investigation. We have to find a way to show if the world is a formal system or not, since it is not trivial to consider the reality a mathematical abstraction.
+            \item \textit{How are incompleteness, nondeterminacy and computation limits connected?} We have to show a good mathematical model that how are these things connected to one another.
+            \item \textit{Can Measurement be seen as a Gödel incompleteness byproduct?} This question is the next step. We would have to show that measurement is infact the byproduct of the Gödel's incompleteness theorem.
+            \item \textit{Applications of nondeterministic processes in computation machines}
+            \item \textit{What are physical theories formal system?}
+            \item \textit{How can incompleteness show itself through theories and phenomenas}
+        \end{enumerate}
 
-                            
-
-
-                        
+            
 
 
 

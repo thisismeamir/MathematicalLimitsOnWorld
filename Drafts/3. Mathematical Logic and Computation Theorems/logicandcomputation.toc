@@ -1,24 +1,54 @@
-\contentsline {section}{\numberline {1}Ground Works}{1}{}%
-\contentsline {subsection}{\numberline {1.1}Vorwort}{1}{}%
-\contentsline {section}{\numberline {2}Formal Language Theory}{2}{}%
-\contentsline {subsection}{\numberline {2.1}Languages}{2}{}%
-\contentsline {subsection}{\numberline {2.2}Deductions}{6}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Logical Axioms}{7}{}%
-\contentsline {subsubsection}{\numberline {2.2.2}Rules of Inference:}{7}{}%
-\contentsline {subsection}{\numberline {2.3}Soundness}{8}{}%
-\contentsline {section}{\numberline {3}Completeness}{9}{}%
-\contentsline {section}{\numberline {4}Incompleteness Theorems}{9}{}%
-\contentsline {subsection}{\numberline {4.1}Mathematics}{9}{}%
-\contentsline {subsubsection}{\numberline {4.1.1}Prespective}{9}{}%
-\contentsline {subsubsection}{\numberline {4.1.2}Basic Proof from the Theory of Algorithm\cite {Uspensky1995-sm}}{10}{}%
-\contentsline {subsection}{\numberline {4.2}Philosophy}{12}{}%
-\contentsline {subsection}{\numberline {4.3}Introduction}{12}{}%
-\contentsline {subsection}{\numberline {4.4}Incompleteness Theorems and The Church-Turing Thesis}{13}{}%
-\contentsline {section}{\numberline {5}Nature aa a Mathematical Entity}{14}{}%
-\contentsline {subsection}{\numberline {5.1}Platonism in Mathematics}{14}{}%
-\contentsline {subsubsection}{\numberline {5.1.1}What is Mathematical Platonism}{14}{}%
-\contentsline {subsubsection}{\numberline {5.1.2}Historical Remarks}{14}{}%
-\contentsline {subsubsection}{\numberline {5.1.3}The Philosophical Significance of Mathematical Platonism}{14}{}%
-\contentsline {subsubsection}{\numberline {5.1.4}Object Realism}{15}{}%
-\contentsline {subsubsection}{\numberline {5.1.5}Truth-Value Realism}{15}{}%
-\contentsline {subsubsection}{\numberline {5.1.6}The Mathematical Significance of Platonism}{15}{}%
+\contentsline {section}{\numberline {1}Ground Works}{3}{}%
+\contentsline {subsection}{\numberline {1.1}Vorwort}{3}{}%
+\contentsline {section}{\numberline {2}What is Epistemology?}{3}{}%
+\contentsline {section}{\numberline {3}Knowledge and Justification}{3}{}%
+\contentsline {subsection}{\numberline {3.1}Absilute Knowledge}{3}{}%
+\contentsline {subsection}{\numberline {3.2}Defining Knowldege}{4}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Validity}{4}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Justified}{5}{}%
+\contentsline {subsection}{\numberline {3.3}Defining Justification}{5}{}%
+\contentsline {subsection}{\numberline {3.4}Kant, Schelling, Fichte and Evidence}{6}{}%
+\contentsline {section}{\numberline {4}Evidentialism}{8}{}%
+\contentsline {subsection}{\numberline {4.1}Rationalism and Reliabilism}{9}{}%
+\contentsline {subsection}{\numberline {4.2}Coherentism}{9}{}%
+\contentsline {section}{\numberline {5}Empiricism}{10}{}%
+\contentsline {section}{\numberline {6}Formal Language Theory}{11}{}%
+\contentsline {subsection}{\numberline {6.1}Languages}{11}{}%
+\contentsline {subsection}{\numberline {6.2}Deductions}{15}{}%
+\contentsline {subsubsection}{\numberline {6.2.1}Logical Axioms}{16}{}%
+\contentsline {subsubsection}{\numberline {6.2.2}Rules of Inference:}{16}{}%
+\contentsline {subsection}{\numberline {6.3}Soundness}{17}{}%
+\contentsline {section}{\numberline {7}Completeness}{18}{}%
+\contentsline {section}{\numberline {8}Incompleteness Theorems}{18}{}%
+\contentsline {subsection}{\numberline {8.1}Mathematics}{18}{}%
+\contentsline {subsubsection}{\numberline {8.1.1}Prespective}{18}{}%
+\contentsline {subsubsection}{\numberline {8.1.2}Basic Proof from the Theory of Algorithm\cite {Uspensky1995-sm}}{19}{}%
+\contentsline {subsection}{\numberline {8.2}Philosophy}{21}{}%
+\contentsline {subsection}{\numberline {8.3}Introduction}{21}{}%
+\contentsline {subsection}{\numberline {8.4}Incompleteness Theorems and The Church-Turing Thesis}{22}{}%
+\contentsline {section}{\numberline {9}Nature aa a Mathematical Entity}{23}{}%
+\contentsline {subsection}{\numberline {9.1}Platonism in Mathematics}{23}{}%
+\contentsline {subsubsection}{\numberline {9.1.1}What is Mathematical Platonism}{23}{}%
+\contentsline {subsubsection}{\numberline {9.1.2}Historical Remarks}{23}{}%
+\contentsline {subsubsection}{\numberline {9.1.3}The Philosophical Significance of Mathematical Platonism}{23}{}%
+\contentsline {subsubsection}{\numberline {9.1.4}Object Realism}{24}{}%
+\contentsline {subsubsection}{\numberline {9.1.5}Truth-Value Realism}{24}{}%
+\contentsline {subsubsection}{\numberline {9.1.6}The Mathematical Significance of Platonism}{24}{}%
+\contentsline {subsection}{\numberline {9.2}The Fregean Argument for Existence}{25}{}%
+\contentsline {subsubsection}{\numberline {9.2.1}Structure of the Argument}{25}{}%
+\contentsline {subsubsection}{\numberline {9.2.2}Defending Classical Semantics}{25}{}%
+\contentsline {subsubsection}{\numberline {9.2.3}Defending Truth}{25}{}%
+\contentsline {subsubsection}{\numberline {9.2.4}The Notion of Ontological Commitment}{26}{}%
+\contentsline {subsubsection}{\numberline {9.2.5}From Existence to Mathematical Platonism?}{26}{}%
+\contentsline {section}{\numberline {10}Determinism and Computation}{27}{}%
+\contentsline {subsection}{\numberline {10.1}Turing Machines}{27}{}%
+\contentsline {subsubsection}{\numberline {10.1.1}Turing's Universal Machine}{28}{}%
+\contentsline {subsection}{\numberline {10.2}Philosophical Issues Related to Turing Machines}{28}{}%
+\contentsline {subsubsection}{\numberline {10.2.1}Human and Machine Computations}{28}{}%
+\contentsline {subsection}{\numberline {10.3}Causal Determinism}{29}{}%
+\contentsline {subsubsection}{\numberline {10.3.1}Natural Laws}{29}{}%
+\contentsline {section}{\numberline {11}Is Quantum Mechanics Deterministic?}{30}{}%
+\contentsline {subsection}{\numberline {11.1}Measurement is the Only Mystery}{30}{}%
+\contentsline {section}{\numberline {12}Summing Up}{31}{}%
+\contentsline {subsection}{\numberline {12.1}Conclusion}{31}{}%
+\contentsline {subsection}{\numberline {12.2}Where to Go?}{31}{}%

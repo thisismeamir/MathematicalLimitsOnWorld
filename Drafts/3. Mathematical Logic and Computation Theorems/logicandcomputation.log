@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.19)  10 JUN 2023 06:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.26)  10 JUN 2023 13:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./logicandcomputation.tex
 (logicandcomputation.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-02-02>
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+L3 programming layer <2023-03-30>
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
@@ -23,32 +23,38 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.s
+ty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.s
+ty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.st
+y
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen141
 ))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.st
+y
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen142
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.st
+y
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count193
@@ -99,7 +105,8 @@ LaTeX Info: Redefining \Relbar on input line 971.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts
+.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -107,62 +114,74 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.
+sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+) (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/base\makeidx.sty
+) (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/base\makeidx.st
+y
 Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx
+.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.s
+ty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics
+.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cf
-g
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\grap
+hics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdft
+ex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen150
 \Gin@req@width=\dimen151
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustb
+ox.sty
 Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.s
+ty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval
+.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutil
+s.tex
 \XKV@toks=\toks24
 \XKV@tempa@toks=\toks25
 )
 \XKV@depth=\count271
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+))
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc
+.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
-) (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimcli
+p.sty
 Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.st
-y
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collec
+tbox.sty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box53
 )
@@ -172,7 +191,8 @@ Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \tc@ury=\dimen155
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdft
+ex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen156
@@ -184,16 +204,20 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 \adjbox@pdepth=\dimen162
 \adjbox@ptotalheight=\dimen163
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpa
+ge.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count272
-) (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth
+.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box54
 \sift@deathcycles=\count273
 \@vwid@loff=\dimen164
 \@vwid@roff=\dimen165
-)) (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+))
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -228,10 +252,11 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fourier.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fourier.s
+ty
 Package: fourier 2022/02/05 2.3 fourier-GUTenberg package
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
 Now handling font encoding FML ...
@@ -241,18 +266,19 @@ Now handling font encoding FMS ...
 Now handling font encoding FMX ...
 ... no UTF-8 mapping file for font encoding FMX
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+futs on input line 1
 12.
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\t1futs.fd
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 ))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fourier-orns.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fourier-o
+rns.sty
 Package: fourier-orns 2022/02/05 2.3 fourier-ornaments package
 )
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 63.
@@ -381,7 +407,8 @@ LaTeX Font Info:    Redeclaring math accent \hat on input line 267.
 LaTeX Font Info:    Redeclaring math accent \dot on input line 268.
 LaTeX Font Info:    Redeclaring math accent \mathring on input line 269.
 \symUfutm=\mathgroup7
-) (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count274
 \float@exts=\toks26
@@ -389,11 +416,13 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks27
 \@floatcapt=\box56
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.s
+ty
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.
+sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
 \caption@tempdima=\dimen166
 \captionmargin=\dimen167
 \caption@leftmargin=\dimen168
@@ -408,7 +437,8 @@ Package caption Info: Standard document class detected.
 \c@continuedfloat=\count276
 Package caption Info: float package is loaded.
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.s
+ty
 \wrapoverhang=\dimen174
 \WF@size=\dimen175
 \c@WF@wrappedlines=\count277
@@ -416,22 +446,24 @@ Package caption Info: float package is loaded.
 \WF@everypar=\toks28
 Package: wrapfig 2003/01/31  v 3.6
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/mhchem\mhchem.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/mhchem\mhchem.sty
 Package: mhchem 2021/12/31 v4.09 for typesetting chemical formulae
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2023-02-02 L3 programming layer (loader) 
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.st
+y
+Package: expl3 2023-03-30 L3 programming layer (loader) 
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
-ex.def
-File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backe
+nd-pdftex.def
+File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count278
 \l__pdf_internal_box=\box58
 ))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3ke
-ys2e.sty
-Package: l3keys2e 2023-01-16 LaTeX2e option processing using LaTeX3 keys
-) (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys
+2e\l3keys2e.sty
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count279
 \calc@Bcount=\count280
@@ -444,10 +476,11 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count281
 \calc@Cskip=\skip55
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/chemgreek\chemgreek.sty
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse
-.sty
-Package: xparse 2023-01-16 L3 Experimental document command parser
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/chemgreek\chemgre
+ek.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse
+\xparse.sty
+Package: xparse 2023-02-02 L3 Experimental document command parser
 )
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use
  in chemistry (CN)
@@ -479,10 +512,13 @@ Package mhchem Warning: You did not specify a 'version' option for the mhchem
 (mhchem)                different output with the same input in future versions
 .
 
-) (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry
+.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.st
+y
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count286
@@ -498,8 +534,10 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen189
 \Gm@dimlist=\toks29
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry
+.cfg))
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.st
+y
 Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \c@tracingmulticols=\count289
 \mult@box=\box59
@@ -568,27 +606,52 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \colbreak@box=\box103
 \mc@col@check@num=\count298
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
-Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
+Package: soul 2023-02-18 v3.0 Permit use of UTF-8 characters in soul (HO)
+
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul-ori.s
+ty
+Package: soul-ori 2023-02-18 v3.0 letterspacing/underlining (mf)
 \SOUL@word=\toks30
 \SOUL@lasttoken=\toks31
-\SOUL@cmds=\toks32
-\SOUL@buffer=\toks33
-\SOUL@token=\toks34
+\SOUL@syllable=\toks32
+\SOUL@cmds=\toks33
+\SOUL@buffer=\toks34
+\SOUL@token=\toks35
+\SOUL@syllgoal=\dimen199
+\SOUL@syllwidth=\dimen256
+\SOUL@charkern=\dimen257
+\SOUL@hyphkern=\dimen258
+\SOUL@dimen=\dimen259
+\SOUL@dimeni=\dimen260
+\SOUL@minus=\count299
+\SOUL@comma=\count300
+\SOUL@apo=\count301
+\SOUL@grave=\count302
 \SOUL@spaceskip=\skip68
-\SOUL@ttwidth=\dimen199
-\SOUL@uldp=\dimen256
-\SOUL@ulht=\dimen257
+\SOUL@ttwidth=\dimen261
+\SOUL@uldp=\dimen262
+\SOUL@ulht=\dimen263
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwa
+rerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcm
+ds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\colo
+r.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolo
+r.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -599,291 +662,297 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam
+.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
-Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorb
+ox.sty
+Package: tcolorbox 2023/03/17 version 6.0.3 text color boxes
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
-
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-
-common.tex
-\pgfutil@everybye=\toks35
-\pgfutil@tempdima=\dimen258
-\pgfutil@tempdimb=\dimen259
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pg
+f.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgf
+rcs.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\p
+gfutil-common.tex
+\pgfutil@everybye=\toks36
+\pgfutil@tempdima=\dimen264
+\pgfutil@tempdimb=\dimen265
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-
-latex.def
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\p
+gfutil-latex.def
 \pgfutil@abb=\box104
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.c
-ode.tex
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\p
+gfrcs.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revisio
+n.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.s
-ty
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.s
-ty
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys
-.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pg
+fcore.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\p
+gfsys.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer
+\pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.
-code.tex
-\pgfkeys@pathtoks=\toks36
-\pgfkeys@temptoks=\toks37
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\p
+gfkeys.code.tex
+\pgfkeys@pathtoks=\toks37
+\pgfkeys@temptoks=\toks38
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeysl
-ibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks38
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\p
+gfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks39
 ))
-\pgf@x=\dimen260
-\pgf@y=\dimen261
-\pgf@xa=\dimen262
-\pgf@ya=\dimen263
-\pgf@xb=\dimen264
-\pgf@yb=\dimen265
-\pgf@xc=\dimen266
-\pgf@yc=\dimen267
-\pgf@xd=\dimen268
-\pgf@yd=\dimen269
+\pgf@x=\dimen266
+\pgf@y=\dimen267
+\pgf@xa=\dimen268
+\pgf@ya=\dimen269
+\pgf@xb=\dimen270
+\pgf@yb=\dimen271
+\pgf@xc=\dimen272
+\pgf@yc=\dimen273
+\pgf@xd=\dimen274
+\pgf@yd=\dimen275
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count299
-\c@pgf@countb=\count300
-\c@pgf@countc=\count301
-\c@pgf@countd=\count302
-\t@pgf@toka=\toks39
-\t@pgf@tokb=\toks40
-\t@pgf@tokc=\toks41
-\pgf@sys@id@count=\count303
+\c@pgf@counta=\count303
+\c@pgf@countb=\count304
+\c@pgf@countc=\count305
+\c@pgf@countd=\count306
+\t@pgf@toka=\toks40
+\t@pgf@tokb=\toks41
+\t@pgf@tokc=\toks42
+\pgf@sys@id@count=\count307
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cf
-g
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer
+\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys
--pdftex.def
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer
+\pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys
--common-pdf.def
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer
+\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys
-softpath.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer
+\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count304
-\pgfsyssoftpath@bigbuffer@items=\count305
+\pgfsyssoftpath@smallbuffer@items=\count308
+\pgfsyssoftpath@bigbuffer@items=\count309
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys
-protocol.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer
+\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.
-tex
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.c
-ode.tex)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser
-.code.tex
-\pgfmath@dimen=\dimen270
-\pgfmath@count=\count306
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+h.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hutil.code.tex)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hparser.code.tex
+\pgfmath@dimen=\dimen276
+\pgfmath@count=\count310
 \pgfmath@box=\box105
-\pgfmath@toks=\toks42
-\pgfmath@stack@operand=\toks43
-\pgfmath@stack@operation=\toks44
+\pgfmath@toks=\toks43
+\pgfmath@stack@operand=\toks44
+\pgfmath@stack@operation=\toks45
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
-ons.code.tex)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
-ons.basic.code.tex)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
-ons.trigonometric.code.tex)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
-ons.random.code.tex)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
-ons.comparison.code.tex)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
-ons.base.code.tex)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
-ons.round.code.tex)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
-ons.misc.code.tex)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
-ons.integerarithmetics.code.tex)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.c
-ode.tex)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.
-code.tex
-\c@pgfmathroundto@lastzeros=\count307
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.code.tex)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.basic.code.tex)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.trigonometric.code.tex)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.random.code.tex)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.comparison.code.tex)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.base.code.tex)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.round.code.tex)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.misc.code.tex)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.integerarithmetics.code.tex)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hcalc.code.tex)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count311
 ))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.t
-ex)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-points.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint
+.code.tex)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen271
-\pgf@picmaxx=\dimen272
-\pgf@picminy=\dimen273
-\pgf@picmaxy=\dimen274
-\pgf@pathminx=\dimen275
-\pgf@pathmaxx=\dimen276
-\pgf@pathminy=\dimen277
-\pgf@pathmaxy=\dimen278
-\pgf@xx=\dimen279
-\pgf@xy=\dimen280
-\pgf@yx=\dimen281
-\pgf@yy=\dimen282
-\pgf@zx=\dimen283
-\pgf@zy=\dimen284
+\pgf@picminx=\dimen277
+\pgf@picmaxx=\dimen278
+\pgf@picminy=\dimen279
+\pgf@picmaxy=\dimen280
+\pgf@pathminx=\dimen281
+\pgf@pathmaxx=\dimen282
+\pgf@pathminy=\dimen283
+\pgf@pathmaxy=\dimen284
+\pgf@xx=\dimen285
+\pgf@xy=\dimen286
+\pgf@yx=\dimen287
+\pgf@yy=\dimen288
+\pgf@zx=\dimen289
+\pgf@zy=\dimen290
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-pathconstruct.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen285
-\pgf@path@lasty=\dimen286
+\pgf@path@lastx=\dimen291
+\pgf@path@lasty=\dimen292
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-pathusage.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen287
-\pgf@shorten@start@additional=\dimen288
+\pgf@shorten@end@additional=\dimen293
+\pgf@shorten@start@additional=\dimen294
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-scopes.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box106
 \pgf@hbox=\box107
 \pgf@layerbox@main=\box108
-\pgf@picture@serial@count=\count308
+\pgf@picture@serial@count=\count312
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-graphicstate.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen289
+\pgflinewidth=\dimen295
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-transformations.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen290
-\pgf@pt@y=\dimen291
-\pgf@pt@temp=\dimen292
+\pgf@pt@x=\dimen296
+\pgf@pt@y=\dimen297
+\pgf@pt@temp=\dimen298
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-quick.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-objects.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-pathprocessing.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-arrows.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen293
+\pgfarrowsep=\dimen299
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-shade.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen294
-\pgf@sys@shading@range@num=\count309
-\pgf@shadingcount=\count310
+\pgf@max=\dimen300
+\pgf@sys@shading@range@num=\count313
+\pgf@shadingcount=\count314
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-image.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-external.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfexternal@startupbox=\box109
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-layers.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-transparency.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-patterns.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
-rdf.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodules
-hapes.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgf
+moduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodeparttextbox=\box110
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulep
-lot.code.tex
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgf
+moduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcom
-p-version-0-65.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility
+\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen295
-\pgf@nodesepend=\dimen296
+\pgf@nodesepstart=\dimen301
+\pgf@nodesepend=\dimen302
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcom
-p-version-1-18.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility
+\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 ))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
-Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks45
-\verbatim@line=\toks46
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.st
+y
+Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks46
+\verbatim@line=\toks47
 \verbatim@in@stream=\read3
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.s
+ty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.st
-y
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimsp
+aces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox
+.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count311
+\etb@tempcnta=\count315
 )
 \tcb@titlebox=\box111
 \tcb@upperbox=\box112
 \tcb@lowerbox=\box113
 \tcb@phantombox=\box114
-\c@tcbbreakpart=\count312
-\c@tcblayer=\count313
-\c@tcolorbox@number=\count314
+\c@tcbbreakpart=\count316
+\c@tcblayer=\count317
+\c@tcolorbox@number=\count318
 \tcb@temp=\box115
 \tcb@temp=\box116
 \tcb@temp=\box117
 \tcb@temp=\box118
 )
-\c@theo=\count315
-\c@defcounting=\count316
-\c@lemmacount=\count317
-\c@examplecounter=\count318
-\c@figurecounter=\count319
-
-(logicandcomputation.aux)
+\c@theo=\count319
+\c@defcounting=\count320
+\c@lemmacount=\count321
+\c@examplecounter=\count322
+\c@figurecounter=\count323
+ (logicandcomputation.aux)
 \openout1 = `logicandcomputation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 206.
@@ -904,7 +973,8 @@ LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 206.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
 206.
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.f
+d
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    ... okay on input line 206.
@@ -912,7 +982,8 @@ LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 206.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
 206.
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.f
+d
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
 LaTeX Font Info:    ... okay on input line 206.
@@ -920,34 +991,35 @@ LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 206.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
 206.
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.f
+d
 File: fmxfutm.fd futm-extension
 )
 LaTeX Font Info:    ... okay on input line 206.
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
-i
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-
+pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count320
-\scratchdimen=\dimen297
+\scratchcounter=\count324
+\scratchdimen=\dimen303
 \scratchbox=\box119
-\nofMPsegments=\count321
-\nofMParguments=\count322
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count323
-\MPscratchDim=\dimen298
-\MPnumerator=\count324
-\makeMPintoPDFobject=\count325
-\everyMPtoPDFconversion=\toks48
+\nofMPsegments=\count325
+\nofMParguments=\count326
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count327
+\MPscratchDim=\dimen304
+\MPnumerator=\count328
+\makeMPintoPDFobject=\count329
+\everyMPtoPDFconversion=\toks49
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
-se.sty
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epst
+opdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cf
-g
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf
+-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 206.
@@ -995,7 +1067,9 @@ Package chemgreek Info: Activating mapping `fourier' on line 206.
 
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
  207.
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
+
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.
+fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1007,13 +1081,12 @@ LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 LaTeX Font Info:    Trying to load font information for U+msa on input line 207
 .
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 207
 .
-
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
@@ -1022,7 +1095,6 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 207.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.43999pt on input line 207.
-
 (logicandcomputation.toc
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 2.
@@ -1036,45 +1108,42 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 2.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 2.
-)
+ [1
+
+{C:/Users/amirebrahim/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/User
+s/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}])
 \tf@toc=\write4
 \openout4 = `logicandcomputation.toc'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--215
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 215--222
 
  []
 
-[1
 
-{C:/Users/Amir/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 221--221
-[] 
+Underfull \hbox (badness 10000) in paragraph at lines 215--222
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
+223.
+
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\ts1futs.f
+d
+File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 227--234
+
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 224--224
-[] 
+Underfull \hbox (badness 10000) in paragraph at lines 227--234
+
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 228--228
-[] 
- []
+Underfull \hbox (badness 10000) in paragraph at lines 236--242
 
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 231--231
-[] 
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 234--234
-[] 
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 238--238
-[] 
  []
 
 
@@ -1082,104 +1151,194 @@ Overfull \hbox (1.0pt too wide) in paragraph at lines 242--242
 [] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--249
-
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 249--249
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 254--257
-
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 271--271
-[] 
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 272--272
-[] 
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 273--287
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 273--287
-
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 287--287
-[] 
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 297--297
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 298--303
-
- []
-
 [3]
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
-304.
- (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\ts1futs.fd
-File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-)
-Overfull \hbox (1.0pt too wide) in paragraph at lines 315--315
+Underfull \hbox (badness 10000) in paragraph at lines 243--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--254
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 254--254
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 321--321
-[] 
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 330--330
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--337
+Underfull \hbox (badness 10000) in paragraph at lines 255--258
 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 337--337
-[] 
+Underfull \hbox (badness 10000) in paragraph at lines 255--258
+
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 348--348
-[] 
+Underfull \hbox (badness 10000) in paragraph at lines 265--272
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--361
+Underfull \hbox (badness 10000) in paragraph at lines 265--272
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--272
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--287
 
  []
 
 [4]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 361--361
+Underfull \hbox (badness 10000) in paragraph at lines 288--294
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 294--294
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 374--374
+Overfull \hbox (1.0pt too wide) in paragraph at lines 298--298
 [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--308
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 308--308
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--318
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--318
+
+ []
+
+[5]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 318--318
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--334
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 334--334
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--350
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--350
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--350
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--350
+
+ []
+
+[6]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 350--350
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--357
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 357--357
+[] 
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 365--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--377
+
  []
 
 
@@ -1188,98 +1347,163 @@ Overfull \hbox (1.0pt too wide) in paragraph at lines 377--377
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--393
-
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 393--393
+Overfull \hbox (1.0pt too wide) in paragraph at lines 381--381
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 407--407
-[] 
- []
-
-[5]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 411--411
+Overfull \hbox (1.0pt too wide) in paragraph at lines 385--385
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 415--415
+Underfull \hbox (badness 10000) in paragraph at lines 386--392
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--392
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--392
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 403--411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--430
+
+ []
+
+[9]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 430--430
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 418--418
+Overfull \hbox (1.0pt too wide) in paragraph at lines 437--437
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--427
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 420--427
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 434--445
-
- []
-
-[6]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 445--445
+Overfull \hbox (1.0pt too wide) in paragraph at lines 440--440
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 449--449
+Underfull \hbox (badness 10000) in paragraph at lines 441--448
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 441--448
+
+ []
+
+[10]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 459--459
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--455
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 473--477
-
- []
-
-[7]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 499--499
+Overfull \hbox (1.0pt too wide) in paragraph at lines 462--462
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 509--509
+Overfull \hbox (1.0pt too wide) in paragraph at lines 466--466
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 513--513
+Overfull \hbox (1.0pt too wide) in paragraph at lines 469--469
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 516--516
+Overfull \hbox (1.0pt too wide) in paragraph at lines 472--472
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 528--528
+Overfull \hbox (1.0pt too wide) in paragraph at lines 476--476
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 539--544
+Overfull \hbox (1.0pt too wide) in paragraph at lines 480--480
+[] 
+ []
 
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 484--484
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--492
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 506--506
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 507--507
+[] 
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 508--522
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 508--522
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 522--522
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 532--532
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--538
+
+ []
+
+[12]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 550--550
+[] 
  []
 
 
@@ -1287,295 +1511,623 @@ Overfull \hbox (1.0pt too wide) in paragraph at lines 556--556
 [] 
  []
 
-[8]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 575--575
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 565--565
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 583--590
+Underfull \hbox (badness 10000) in paragraph at lines 566--572
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 583--590
-
- []
-
-[9]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 594--594
+Overfull \hbox (1.0pt too wide) in paragraph at lines 572--572
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 597--597
+Overfull \hbox (1.0pt too wide) in paragraph at lines 583--583
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 601--601
-[] 
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 615--615
-[] 
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 618--618
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 619--631
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 619--631
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 619--631
-
- []
-
-[10]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 631--631
-[] 
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 634--634
-[] 
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 637--637
-[] 
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 640--640
-[] 
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 643--643
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 645--648
-
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 648--648
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 649--654
-
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 654--654
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 655--658
-
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 663--663
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 664--667
-
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 667--667
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--671
-
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 675--675
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 676--679
-
- []
-
-[11]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 679--679
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 680--683
-
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 683--683
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 684--691
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 684--691
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 696--708
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 696--708
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 696--708
-
- []
-
-[12]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 708--708
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 709--718
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 709--718
-
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 718--718
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 722--732
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 722--732
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 722--732
+Underfull \hbox (badness 10000) in paragraph at lines 584--596
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 733--737
+Overfull \hbox (1.0pt too wide) in paragraph at lines 596--596
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 609--609
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 612--612
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 613--628
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--749
-
+Overfull \hbox (1.0pt too wide) in paragraph at lines 628--628
+[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--757
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 750--757
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 758--762
-
+Overfull \hbox (1.0pt too wide) in paragraph at lines 642--642
+[] 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 763--770
+Overfull \hbox (1.0pt too wide) in paragraph at lines 646--646
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 650--650
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 653--653
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--662
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 763--770
+Underfull \hbox (badness 10000) in paragraph at lines 655--662
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 771--778
+Underfull \hbox (badness 10000) in paragraph at lines 669--680
+
+ []
+
+[15]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 680--680
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 684--684
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 686--690
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 771--778
+Underfull \hbox (badness 10000) in paragraph at lines 708--712
+
+ []
+
+[16]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 734--734
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 744--744
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 748--748
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 751--751
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 763--763
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 774--779
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 787--794
+Overfull \hbox (1.0pt too wide) in paragraph at lines 791--791
+[] 
+ []
+
+[17]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 810--810
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--825
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 787--794
+Underfull \hbox (badness 10000) in paragraph at lines 818--825
 
  []
 
-[15] [16] (logicandcomputation.bbl) [17] (logicandcomputation.aux) ) 
+[18]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 829--829
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 832--832
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 836--836
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 850--850
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 853--853
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 854--866
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 854--866
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 854--866
+
+ []
+
+[19]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 866--866
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 869--869
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 872--872
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 875--875
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 878--878
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--883
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 883--883
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 884--889
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 889--889
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 890--893
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 898--898
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 899--902
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 902--902
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 903--906
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 910--910
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 911--914
+
+ []
+
+[20]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 914--914
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 915--918
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 918--918
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 919--926
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 919--926
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 931--943
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 931--943
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 931--943
+
+ []
+
+[21]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 943--943
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 944--953
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 944--953
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 953--953
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--967
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--967
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--967
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 968--972
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 980--984
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--992
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--992
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--997
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 998--1005
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--1005
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1013
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1013
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1022--1029
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1022--1029
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 1030--1034
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 1040--1040
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 1046--1046
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1064
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1064
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1064
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1073
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 1078--1078
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1079--1083
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1084--1091
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1084--1091
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 1093--1099
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 1099--1099
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1115--1120
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1127--1134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1127--1134
+
+ []
+
+
+Overfull \hbox (3.91286pt too wide) in paragraph at lines 1138--1139
+[]\T1/futs/b/n/10 Locality con-di-tion L1 \T1/futs/m/n/10 ^^PWe may [...] as-su
+me that the squares whose sym-bols are changed are al-ways `ob-served' squares.
+^^Q
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1141--1148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1141--1148
+
+ []
+
+[28]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 1152--1152
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 1158--1158
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1159--1163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1164--1168
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1188--1192
+
+ []
+
+
+LaTeX Warning: Citation `ep-qm' on page 30 undefined on input line 1201.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1211
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1211
+
+ []
+
+[30] [31] (logicandcomputation.bbl
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
+8.
+
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Underfull \hbox (badness 10000) in paragraph at lines 45--50
+[]\T1/futs/m/n/10 Erik. Gregersen.  Grav-ity: From ap-ples to the uni-verse.  $
+\T1/lmtt/m/n/10 https : / / www . britannica . com / story /
+ []
+
+) [32{C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-
+ec.enc}] (logicandcomputation.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 18502 strings out of 476374
- 367754 string characters out of 5789326
- 1871340 words of memory out of 5000000
- 38523 multiletter control sequences out of 15000+600000
- 602885 words of font info for 120 fonts, out of 8000000 for 9000
+ 18769 strings out of 476331
+ 375949 string characters out of 5784933
+ 1871660 words of memory out of 5000000
+ 38822 multiletter control sequences out of 15000+600000
+ 603204 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,12n,117p,1102b,849s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{C:/Users/A
-mir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Amir/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mcl.pfb><C:/User
-s/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mex.pfb
-><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourie
-r-ml.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourie
-r/fourier-mlit.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/fourier/fourier-ms.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/adobe/utopia/putb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts
-/type1/adobe/utopia/putbi8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fo
-nts/type1/adobe/utopia/putr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/
-fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on logicandcomputation.pdf (17 pages, 186314 bytes).
+ 83i,12n,117p,1598b,848s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourie
+r/fourier-mcl.pfb><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/fourier/fourier-mex.pfb><C:/Users/amirebrahim/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/fourier/fourier-ml.pfb><C:/Users/amirebrahim/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Users/ami
+rebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-ms.pf
+b><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmt
+t10.pfb><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/symbols/msam10.pfb><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX
+/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/amirebrahim/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/adobe/utopia/putbi8a.pfb><C:/Users/amirebrahim/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/amirebrahim/A
+ppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on logicandcomputation.pdf (32 pages, 302177 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
+ 165 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,10 +1,26 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Benson2006-jm}
 Hugh~H Benson, editor.
 \newblock {\em A Companion to Plato}.
 \newblock Blackwell Companions to Philosophy. Blackwell Publishing, London,
   England, October 2006.
+
+\bibitem{sep-democritus}
+Sylvia Berryman.
+\newblock {\em {Democritus}}.
+\newblock Metaphysics Research Lab, Stanford University, {S}pring 2023 edition,
+  2023.
+
+\bibitem{Cartledge1998-CARDTG-3}
+R.~Cartledge.
+\newblock {\em Democritus: The Great Philosophers}.
+\newblock Routledge, 1998.
+
+\bibitem{Clegg2017-ev}
+Brian Clegg.
+\newblock {\em Big data}.
+\newblock Hot Science. Icon Books, Basingstoke, England, August 2017.
 
 \bibitem{sep-church-turing}
 B.~Jack Copeland.
@@ -13,10 +29,42 @@ B.~Jack Copeland.
   Philosophy}. Metaphysics Research Lab, Stanford University, {S}ummer 2020
   edition, 2020.
 
+\bibitem{sep-turing-machine}
+Liesbeth De~Mol.
+\newblock {Turing Machines}.
+\newblock In Edward~N. Zalta, editor, {\em The {Stanford} Encyclopedia of
+  Philosophy}. Metaphysics Research Lab, Stanford University, {W}inter 2021
+  edition, 2021.
+
+\bibitem{Graham2010-th}
+Daniel~W Graham.
+\newblock {\em The texts of early Greek philosophy}.
+\newblock Cambridge University Press, Cambridge, England, September 2010.
+
+\bibitem{greg-grav}
+Erik. Gregersen.
+\newblock Gravity: From apples to the universe.
+\newblock
+  \url{https://www.britannica.com/story/gravity-from-apples-to-the-universe.}
+\newblock Accessed: 2023-4-29.
+
 \bibitem{Hajek2007-fq}
 Petr H{\'a}jek.
 \newblock Kurt g{\"o}del, completeness, incompleteness.
 \newblock {\em J. Phys. Conf. Ser.}, 82:012005, November 2007.
+
+\bibitem{sep-determinism-causal}
+Carl Hoefer.
+\newblock {Causal Determinism}.
+\newblock In Edward~N. Zalta and Uri Nodelman, editors, {\em The {Stanford}
+  Encyclopedia of Philosophy}. Metaphysics Research Lab, Stanford University,
+  {S}pring 2023 edition, 2023.
+
+\bibitem{Kuppers2018-vv}
+Bernd-Olaf K{\"u}ppers.
+\newblock Is absolute knowledge of the world possible?
+\newblock In {\em The Frontiers Collection}, Frontiers Collection. Springer
+  International Publishing, Cham, 2018.
 
 \bibitem{Leary2019-ip}
 Christopher~C Leary and Lars Kristiansen.
@@ -31,6 +79,37 @@ Christopher~C Leary and Lars Kristiansen.
   Encyclopedia of Philosophy}. Metaphysics Research Lab, Stanford University,
   {S}ummer 2023 edition, 2023.
 
+\bibitem{sep-rationalism-empiricism}
+Peter Markie and M.~Folescu.
+\newblock {Rationalism vs. Empiricism}.
+\newblock In Edward~N. Zalta and Uri Nodelman, editors, {\em The {Stanford}
+  Encyclopedia of Philosophy}. Metaphysics Research Lab, Stanford University,
+  {S}pring 2023 edition, 2023.
+
+\bibitem{Mittag2015-qc}
+Daniel~M Mittag.
+\newblock Evidentialism.
+\newblock In {\em The Routledge Companion to Epistemology}. Routledge, 2015.
+
+\bibitem{Russell1952}
+Bertrand Russell.
+\newblock Is there a god?
+\newblock 1952.
+
+\bibitem{sep-spacetime-bebecome}
+Steven Savitt.
+\newblock {Being and Becoming in Modern Physics}.
+\newblock In Edward~N. Zalta, editor, {\em The {Stanford} Encyclopedia of
+  Philosophy}. Metaphysics Research Lab, Stanford University, {W}inter 2021
+  edition, 2021.
+
+\bibitem{sep-epistemology}
+Matthias Steup and Ram Neta.
+\newblock {Epistemology}.
+\newblock In Edward~N. Zalta, editor, {\em The {Stanford} Encyclopedia of
+  Philosophy}. Metaphysics Research Lab, Stanford University, {F}all 2020
+  edition, 2020.
+
 \bibitem{Tegmark2008-qv}
 Max Tegmark.
 \newblock The mathematical universe.
@@ -43,10 +122,48 @@ Vladimir~A Uspensky and Valery~Ye Plisko.
   + 139 pp.
 \newblock {\em J. Symb. Log.}, 60(4):1320--1324, December 1995.
 
+\bibitem{CW/E}
+Carl~J. Wenning.
+\newblock Scientific epistemology: How scientists know what they know.
+\newblock 2009.
+
+\bibitem{enwiki:1092966327}
+{Wikipedia contributors}.
+\newblock Deterministic system --- {Wikipedia}{,} the free encyclopedia, 2022.
+\newblock [Online; accessed 10-June-2023].
+
+\bibitem{enwiki:1149588226}
+{Wikipedia contributors}.
+\newblock Evidentialism --- {Wikipedia}{,} the free encyclopedia, 2023.
+\newblock [Online; accessed 29-April-2023].
+
 \bibitem{enwiki:1157726892}
 {Wikipedia contributors}.
 \newblock Mathematical induction --- {Wikipedia}{,} the free encyclopedia,
   2023.
 \newblock [Online; accessed 5-June-2023].
+
+\bibitem{enwiki:1149010951}
+{Wikipedia contributors}.
+\newblock Russell's teapot --- {Wikipedia}{,} the free encyclopedia, 2023.
+\newblock [Online; accessed 26-April-2023].
+
+\bibitem{enwiki:1145200450}
+{Wikipedia contributors}.
+\newblock Syllogism --- {Wikipedia}{,} the free encyclopedia, 2023.
+\newblock [Online; accessed 29-April-2023].
+
+\bibitem{enwiki:1142268588}
+{Wikipedia contributors}.
+\newblock Wave function collapse --- {Wikipedia}{,} the free encyclopedia,
+  2023.
+\newblock [Online; accessed 10-June-2023].
+
+\bibitem{sep-kant-reason}
+Garrath Williams.
+\newblock {Kant’s Account of Reason}.
+\newblock In Edward~N. Zalta and Uri Nodelman, editors, {\em The {Stanford}
+  Encyclopedia of Philosophy}. Metaphysics Research Lab, Stanford University,
+  {S}pring 2023 edition, 2023.
 
 \end{thebibliography}
