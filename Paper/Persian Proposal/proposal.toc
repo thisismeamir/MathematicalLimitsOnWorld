@@ -1,7 +1,54 @@
-\contentsline {section}{\numberline {1}مقدمه}{1}{}%
-\contentsline {section}{\numberline {2}چگونه میدانیم؟}{1}{}%
-\contentsline {subsection}{\numberline {2.1}معرفت های ابتدایی}{1}{}%
-\contentsline {subsection}{\numberline {2.2}تجربه گرایی}{2}{}%
-\contentsline {subsection}{\numberline {2.3}قالب ریاضیاتی فیزیک}{2}{}%
-\contentsline {section}{\numberline {3}مکانیک کوانتومی و علیت}{2}{}%
-\contentsline {subsection}{\numberline {3.1}آماده سازی}{2}{}%
+\contentsline {section}{\numberline {1}Ground Works}{3}{}%
+\contentsline {subsection}{\numberline {1.1}Vorwort}{3}{}%
+\contentsline {section}{\numberline {2}What is Epistemology?}{3}{}%
+\contentsline {section}{\numberline {3}Knowledge and Justification}{3}{}%
+\contentsline {subsection}{\numberline {3.1}Absilute Knowledge}{3}{}%
+\contentsline {subsection}{\numberline {3.2}Defining Knowldege}{4}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Validity}{4}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Justified}{4}{}%
+\contentsline {subsection}{\numberline {3.3}Defining Justification}{4}{}%
+\contentsline {subsection}{\numberline {3.4}Kant, Schelling, Fichte and Evidence}{5}{}%
+\contentsline {section}{\numberline {4}اثبات‌گرایی }{7}{}%
+\contentsline {subsection}{\numberline {4.1}Rationalism and Reliabilism}{7}{}%
+\contentsline {subsection}{\numberline {4.2}Coherentism}{8}{}%
+\contentsline {section}{\numberline {5}Empiricism}{8}{}%
+\contentsline {section}{\numberline {6}Formal Language Theory}{9}{}%
+\contentsline {subsection}{\numberline {6.1}Languages}{9}{}%
+\contentsline {subsection}{\numberline {6.2}Deductions}{13}{}%
+\contentsline {subsubsection}{\numberline {6.2.1}Logical Axioms}{13}{}%
+\contentsline {subsubsection}{\numberline {6.2.2}Rules of Inference:}{14}{}%
+\contentsline {subsection}{\numberline {6.3}Soundness}{15}{}%
+\contentsline {section}{\numberline {7}Completeness}{15}{}%
+\contentsline {section}{\numberline {8}Incompleteness Theorems}{16}{}%
+\contentsline {subsection}{\numberline {8.1}Mathematics}{16}{}%
+\contentsline {subsubsection}{\numberline {8.1.1}Prespective}{16}{}%
+\contentsline {subsubsection}{\numberline {8.1.2}Basic Proof from the Theory of Algorithm\cite {Uspensky1995-sm}}{16}{}%
+\contentsline {subsection}{\numberline {8.2}Philosophy}{18}{}%
+\contentsline {subsection}{\numberline {8.3}Introduction}{18}{}%
+\contentsline {subsection}{\numberline {8.4}Incompleteness Theorems and The Church-Turing Thesis}{18}{}%
+\contentsline {section}{\numberline {9}Nature aa a Mathematical Entity}{19}{}%
+\contentsline {subsection}{\numberline {9.1}Platonism in Mathematics}{19}{}%
+\contentsline {subsubsection}{\numberline {9.1.1}What is Mathematical Platonism}{19}{}%
+\contentsline {subsubsection}{\numberline {9.1.2}Historical Remarks}{19}{}%
+\contentsline {subsubsection}{\numberline {9.1.3}The Philosophical Significance of Mathematical Platonism}{19}{}%
+\contentsline {subsubsection}{\numberline {9.1.4}Object Realism}{20}{}%
+\contentsline {subsubsection}{\numberline {9.1.5}Truth-Value Realism}{20}{}%
+\contentsline {subsubsection}{\numberline {9.1.6}The Mathematical Significance of Platonism}{20}{}%
+\contentsline {subsection}{\numberline {9.2}The Fregean Argument for Existence}{20}{}%
+\contentsline {subsubsection}{\numberline {9.2.1}Structure of the Argument}{20}{}%
+\contentsline {subsubsection}{\numberline {9.2.2}Defending Classical Semantics}{21}{}%
+\contentsline {subsubsection}{\numberline {9.2.3}Defending Truth}{21}{}%
+\contentsline {subsubsection}{\numberline {9.2.4}The Notion of Ontological Commitment}{21}{}%
+\contentsline {subsubsection}{\numberline {9.2.5}From Existence to Mathematical Platonism?}{22}{}%
+\contentsline {section}{\numberline {10}Determinism and Computation}{22}{}%
+\contentsline {subsection}{\numberline {10.1}Turing Machines}{22}{}%
+\contentsline {subsubsection}{\numberline {10.1.1}Turing's Universal Machine}{22}{}%
+\contentsline {subsection}{\numberline {10.2}Philosophical Issues Related to Turing Machines}{23}{}%
+\contentsline {subsubsection}{\numberline {10.2.1}Human and Machine Computations}{23}{}%
+\contentsline {subsection}{\numberline {10.3}Causal Determinism}{23}{}%
+\contentsline {subsubsection}{\numberline {10.3.1}Natural Laws}{24}{}%
+\contentsline {section}{\numberline {11}Is Quantum Mechanics Deterministic?}{24}{}%
+\contentsline {subsection}{\numberline {11.1}Measurement is the Only Mystery}{24}{}%
+\contentsline {section}{\numberline {12}Summing Up}{25}{}%
+\contentsline {subsection}{\numberline {12.1}Conclusion}{25}{}%
+\contentsline {subsection}{\numberline {12.2}Where to Go?}{25}{}%
